@@ -1,0 +1,57 @@
+{
+  "660e3221a3d1fadc": {
+    "id": "660e3221a3d1fadc",
+    "label": "Default admin key",
+    "user_email": "luispessoa18@gmail.com",
+    "key_hash": "660e3221a3d1fadc62d7c71ec30f232b4ff7369c14cd7d1dba4fbef35c6ae8bc",
+    "created_at": 1775570642,
+    "revoked": false,
+    "last_used_at": 0
+  },
+  "f71adc456dbf73ff": {
+    "id": "f71adc456dbf73ff",
+    "label": "Default admin key",
+    "user_email": "luispessoa18@gmail.com",
+    "key_hash": "f71adc456dbf73ff7094a03754fd157cc5b03ce713cc0f9d931bd43c22190a2a",
+    "created_at": 1775579602,
+    "revoked": false,
+    "last_used_at": 1776288497
+  },
+  "f6e7fbb61052c7cd": {
+    "id": "f6e7fbb61052c7cd",
+    "label": "Default admin key",
+    "user_email": "luispessoa18@gmail.com",
+    "key_hash": "f6e7fbb61052c7cd4fde34fbced416c700794ccf3c5b273e9e0a07beffcb83cd",
+    "created_at": 1775665119,
+    "revoked": false,
+    "last_used_at": 0
+  },
+  "c0cdc1df0aaeecbd": {
+    "id": "c0cdc1df0aaeecbd",
+    "label": "Minha chave",
+    "user_email": "danielcarius94@icloud.com",
+    "key_hash": "c0cdc1df0aaeecbd5fb99eeb8f8e2fad518089faef2a7a8c9eb04ba224dda25e",
+    "created_at": 1775960175,
+    "revoked": true,
+    "last_used_at": 0,
+    "revoked_at": 1775960182
+  },
+  "2896bdf634db3302": {
+    "id": "2896bdf634db3302",
+    "label": "Minha chave",
+    "user_email": "luispessoa18@gmail.com",
+    "key_hash": "2896bdf634db330252f774521eb0609cd43132817ed4dd128f68cb64c7fcd93b",
+    "created_at": 1776289216,
+    "revoked": false,
+    "last_used_at": 0
+  },
+  "7626bc20079f8bde": {
+    "id": "7626bc20079f8bde",
+    "label": "SocialFlow Front",
+    "user_email": "luispessoa18@gmail.com",
+    "key_hash": "7626bc20079f8bdef50340e79f2f59969e663322b14d350238f786a46ff82c0f",
+    "created_at": 1776289867,
+    "revoked": false,
+    "last_used_at": 0
+  }
+}

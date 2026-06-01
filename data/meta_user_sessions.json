@@ -1,0 +1,1379 @@
+{
+  "davidcamiliex@gmail.com": {
+    "token": {
+      "access_token": "EAALo4hoUwykBRLZAVCvMYr01ZCEItZBrmHdBhCdeaxepKGyJcQZC3VX46TkAulxpVgwz5AOToK9LZCUaHNAZBqLbNyYiQ4uJVAeFeZCF5kOwQkZA3ZCxf8F7XXKVZCnlBzCPuZBCR8yRFLXK8nBD6Y9ZAr4cxs78z0lCZC5VW1AFmHsiWtsvdJrFZBC66Mc9CZBEwkVORvcOSevM6j4dxrT6y0G4WoHoaWR28ASZCKXyLVMduR7S2w22DTZBzkglY4gzrYU9ponNmDyWXcLyZB0VJ0pA2cVkIRU9qcPhZBcoiIe64GZA",
+      "token_type": "bearer"
+    },
+    "me": {
+      "id": "880385028337951",
+      "name": "Luis Filho"
+    },
+    "pages": [
+      {
+        "id": "966290376572116",
+        "name": "Comer Bem RJ",
+        "access_token": "EAALo4hoUwykBRE8crZCjDZCoSd0CiqCk30ph0G7SfMpoeyySIqPJz3wO53v7cmF7LmkuZCFjowrcIpSYToPdii6MTZCL4n8Eymw5PjLuSrgtxnZBllUZANTw9Jj8IzjsCicDzZCOKvToyvK9GnhQ9OHf2gJikP5spHk3l9r0zArWBZBP8Jt3dWJuZBlFTVy43x2IQXqZADIW3P",
+        "category": "Restaurante",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE",
+          "MANAGE_LEADS",
+          "VIEW_MONETIZATION_INSIGHTS"
+        ]
+      },
+      {
+        "id": "994795243709353",
+        "name": "Cico Host",
+        "access_token": "EAALo4hoUwykBRKUK3ttjnoPYhx3p8R4dZB7x6CyBiAdZAzKG7ep4KlJyj38IJH2ErMlXPcLVWCMDPuzO80HsgFwhosvmQUCzy7ZBxhK5crV0uHpSr3zZCH6IUf35EHsb52KjHc1ENKbzbvfbdZAPsWJXtwk8z55a8lR4bBSsE64tWwXK83uwLTZBIZBdAPTV9WQIVgl62YK",
+        "category": "Empresa de tecnologia da informação",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "992746487247103",
+        "name": "Tania Nascimento ",
+        "access_token": "EAALo4hoUwykBRBuDQPiF94VVgFsswhJaZAXpwRVWCMq6AS0pANtFDZBRcFUJp2zx1VqzEIGglQor0N3t61GL70hRTBlX7ziCdpRRZAlaUOQfIK72NFZAb9cc52eV96op5xBmUNyCpL1BXSjlfAP8VNMNH7srPpZBTQZCJmBhPZB18S6smIy3LL1It7WssYvnee1QZAoTT1xE",
+        "category": "Corretora",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "964609183398328",
+        "name": "Robotzap",
+        "access_token": "EAALo4hoUwykBRLlksKJu540I6nR93EXVcfkwoY06HUKoeVLHYEWnsgBBAWtZB9aUTkErHqXU86UI8bGgKAjk1KFyoEA3NUgka2Uee3gX4oLyy1HX77FjsQtt13uHbK2ZBtQsA5gTqHzLZCSTSgIBTK5zg4pbpIZAmGFoOZCNc6v2soLiYulP2WI0A9ZCuF76PZC2HZA2dK9O",
+        "category": "Página de app",
+        "instagram_business_account": {
+          "id": "17841445066879813",
+          "username": "homeunity.oficial",
+          "name": "chatflow CRM"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "840283685841859",
+        "name": "Aline Lemos Fotografia",
+        "access_token": "EAALo4hoUwykBRAb54ZCAWVFkV0vFkiilp1aGMGiV9iJ9XuuZBjDXtsjkH2Bc1F3jENCYRfErEwJzwo3UNghsh4hrEzz6roilLZAvqzPCGgnFrgUMV114Lu56QxrGNdZBvZBYBZCP4CXFIi1k6NUkuoTt40wS9l4AIHrZAclVaTvu4oBMFiPn2dNXxPivhIxrZAY3m0qwlt6v",
+        "category": "Fotografia e videografia",
+        "tasks": [
+          "MODERATE",
+          "MESSAGING",
+          "ANALYZE",
+          "ADVERTISE",
+          "CREATE_CONTENT",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "895878630266994",
+        "name": "Imob.Day",
+        "access_token": "EAALo4hoUwykBRILAOdaWckVRrXSFGJNZBIImPpAoR7aCeIZAbqZCZCMVeZAusZBER9d275xuqkDEkf3NWl4W3SNKQNh5aIcDahOcEOxLoViggekXpwPNbIBbb1cEP8V1PBxMY9yWZC0gEGIKaZATnHvZCnzng6uzMKsqTqslYLvzu0ZC7mI1akZBXGfCnNSYXg8k5T9reBkOB6ZA",
+        "category": "Imobiliária",
+        "instagram_business_account": {
+          "id": "17841477407909944",
+          "username": "imob.day",
+          "name": "IMOB DAY"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "676073195598347",
+        "name": "Dexcap Finance",
+        "access_token": "EAALo4hoUwykBRGI0JLtByb53ZBWU5RPLGUH1MYZBMGctlQVfdy2ndW4bNXNqCSGeiWZCQzi4iQfbjftwONJmueGT9PPQTmspu9fnc6kivaQtBLaNaymZCACfLFkCFigrdIZCXYF3H7Tt0Ik1d6jtwImNcfocd6EQBXT3M1wjqhZCX7kl3RYrK96sDxnx0gNCHZBozzPSqG0",
+        "category": "Empresa de tecnologia da informação",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "642584102277878",
+        "name": "Minerax",
+        "access_token": "EAALo4hoUwykBRJ9IIQ1UnzmoqsqJZA98ZAJwXkxI3jTkBOnBFaqUdFyiCA042ZBVcN14WxTOrb0XsLrVXfCN9BqnZAtGRO1Ttm0VxxMKbIqDdwZC3DrrMiIU2gFTC2ZBEpBntgGM22qL1mHq15NpUGacVkZA0dKXTZABplhYXHalOOyrkcN2gN7ns7ZA7qWYolxlE6AwGTstp",
+        "category": "Ciência e tecnologia",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "656622707540218",
+        "name": "BracketWorks",
+        "access_token": "EAALo4hoUwykBRGxZCug3KPKxLKhNY6nkOk308EVVXZBcTf85cZAg8qIsXcBuw8ZC7wwSl45ZB2yNZBUYK4IZAZAyEzvuTQ0zeZBVe95PZCLIo89j91ZBWFGPTHEM0GzYY290yaymT64Csg6TgA97IbNFCm83ZBIZA2Dz6je9fVGjdnczIfKlDKFcedIspZAf4hG7CD8kZAxN8ZBP99Al",
+        "category": "Empresa de tecnologia da informação",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "627472960444363",
+        "name": "Viajarcomdesconto.ribus.io",
+        "access_token": "EAALo4hoUwykBRP2GiPNdlQE2U7wBk2SiIHFMUhrXJwsZCAgm6ONdZCkSlyFlCsJYfrQyp6owZCyjHxZBgZAIIpWM08tpQfage8EG6fZBDKQ8BdAMZCDXhaokRZCX6Ys6ZCxRSSvjowmYV3S9gTKEeej2s9kUlmPaWR0ZCXEvH0ZBXzXar71vxTcEqF3nOQD3vEZBtiNc5A3TSTMP",
+        "category": "Site de locais e viagem",
+        "instagram_business_account": {
+          "id": "17841473407497199",
+          "username": "viajarcomdesconto.ribus.io",
+          "name": "Ribus - Viajar com Desconto"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "549886734882444",
+        "name": "Academia Bodymix",
+        "access_token": "EAALo4hoUwykBREfMDoRN9nu8s2VZCErvkFYGZCdKCp1ZAOwYEmIctF5oF38g7YozBtTxK6P5Ebz2FVCVMZArlwW0M0Xqg9knb5ZCdOdmkM5R1zYjZCYgcL6JTeevmbGbZCWpLffZBN8Ryg286lwvRZBhDYRutZAWQqHtRCf8xJ4PvlIpCdl4NEizxqyMHvkPNWmmPVoWEBM8hZB",
+        "category": "Academia",
+        "instagram_business_account": {
+          "id": "17841404252201561",
+          "username": "academiabodymix",
+          "name": "Academia Body Mix"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "348490085018485",
+        "name": "Braemp incorporações inteligentes",
+        "access_token": "EAALo4hoUwykBRASjrtuHfJZAxRZBZALVc9vomfaJvs22JmQkpJhq5eBWORYJ28A3Ij5h63CVHGHnC8RZBDzVSmHZAdxi391cNO7hZAM2vi80emx0cCvkm4Ep7DY6HCKKqlFQ97Os4iwWZAmFM63J1DKcVCeUZBpTRz7aq6eCDZAUuMoMZBDHs8ehFEGe9t5NTWWHW6cuFeBM8h",
+        "category": "Construtora e incorporadora",
+        "instagram_business_account": {
+          "id": "17841450339863242",
+          "username": "braemp.incorporacoes",
+          "name": "Braemp Incorporadora"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "355146907683886",
+        "name": "Pizzaria Toscana Delivery",
+        "access_token": "EAALo4hoUwykBRGuVmMALZC9bZCGJJYdWgsXmToN9NIigIk9tmyZCOm4aAvpU6Rg6OQ8r3kxSVgchbzXfd9CwGPH2kebxsw9g14Ls8BPZChKyts1af6DRSOdmEMYztIhBfTOFEne2NE0HN1rrfgZAepdCF5hapXg0w89XbltQ46yKFjpQlnajtuuW0v7fwlnZA03lDDY6tZC",
+        "category": "Pizzaria",
+        "instagram_business_account": {
+          "id": "17841448529010359",
+          "username": "pizzariatoscanadelivery",
+          "name": "PIZZARIA LA DOLCE TOSCANAA DELIVERY 🇮🇹🍕"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "308427922358393",
+        "name": "English 4 Gamedevs",
+        "access_token": "EAALo4hoUwykBRPNYHsv4bfv2G4H1NP1uHmrgiojYbc2bXXelMNm7EfaQf9ASmcHFayTbV5lpN2kd2J4gk5SSQ0bXvCKNqY1qeXMyz8EMckZCvLjSQijnNuFZCVv9gG5SgG4Y3usqgO19s9EmstJTcGwbITy7TLgYR0YEMbeRKkQ5AAqptOE2CTf6HjZBz6kJVQhQ22v",
+        "category": "Educação",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "294251840446703",
+        "name": "Plan Design Móveis",
+        "access_token": "EAALo4hoUwykBRHBL5YeOTd6VOK215HxFNynM6va9eypMNyAfTNfTPAk6vOGvl3wZCPUZC3al3fLttwjpBj6ZBbO7z1dVb1zRuqHy7TaHaOLARwhjHEfD6YqtHmSu6pWqcvF0gE7V7NIZB11Ef4ElNxjCQtJ32d4DKxoej0RdVXtEb6n3nRXALh1ZBavqEfRROLlRb6FXZA",
+        "category": "Loja de móveis",
+        "instagram_business_account": {
+          "id": "17841464780085818",
+          "username": "plandesign2024",
+          "name": "Plan Design"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "299334929937009",
+        "name": "Hiper Mix compre bem",
+        "access_token": "EAALo4hoUwykBRJUKJtXdjJPekx4wZAwTbTLklsZBmv4Gbt5DRmLoR7ZAfbZAYEDB34VJljxMhafAX2owTZAYCAvNIZBc7HIoZBKRa8otj1i3e8GbzIg7nZCCqt48DZCIv2v0ZCaAcw8M9Hlhd9P3aqnsCapZBXZCH5CHYKsIzWrI073URoz2NfZCL32F4PbQdG05yRDr1JwxPgLoE",
+        "category": "Loja de conveniência",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "314840008372628",
+        "name": "Mais Nordeste Fibras",
+        "access_token": "EAALo4hoUwykBRIoxqtVYGADlRZBRbrPt1bhABf5Y2S1HSNQkwZCYYJ0knNCCyiI85A36lE7oADJSJGMf1DmT1lZAwOUyBLEC9dcxvnfXLanVM3bRFjfEMMpx7N3lXgC66yOYaLuB9eS91O4v9i9SF4gTfoJWIZBEXYqKgFwHZCmdRQvKOioaeeogLcZBT3HJkWDjAW3KQM",
+        "category": "Móveis",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "225697093959927",
+        "name": "Miguel Gomes",
+        "access_token": "EAALo4hoUwykBRD3N5pLw724zJ4uzTZCjbSO5WKjQ6nRsm6NwnHXOCZCYBKSubLVBRP1B0cKNpuSxhR95W4ZClTwcXpnWepqOQvMZCD538Npu5yTuJPy0jrlFsRlMI7bWpwpAd9DKNS1x4ZBKZAOmMOjA0BTcX2H74OGNhXg8ZARkhRAxs4j2ZBMeo6VmowvnFy4UNchdOZCYZD",
+        "category": "Agência de consultoria",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "201775389693253",
+        "name": "Marketing Filho",
+        "access_token": "EAALo4hoUwykBRIH7OvHPEscPVhKZAlRsalvXJTNZBHWvKe5XIADx7235E2epaaz5uWeZAOURYEZBNZAMbDJcdZAtL5KKKruetx4stFrso2gGQdKQrA4GyOMjpYNudPNL7EzDU7FN8tVdH1X1ZBQiu9RuOojTTZBoRLrLdHH0wk6vfWeCl78XVmAqlXZBZCZA2SQ9jSWdoiifzUZD",
+        "category": "Publicidade/marketing",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "241483639037866",
+        "name": "Viverde Itaipava ",
+        "access_token": "EAALo4hoUwykBRNiahrIGiiSgqRvNcnNeOi0PjOGnZCPSgzv2vEHforXBpbWnJZBHjSnlMv8SUeFmFu65PMvhttL4xXxZADGQphSBaMNxXMXvP1oOk0JdA0ZBN3MpqiF7zNPCt1ySKJM3E4CNaZAdyTYHCdsxvz68IycgRTuH5rLtEgKUqpJkNF1SoUeVGb8Xy6DWyZAQsZD",
+        "category": "Imóvel",
+        "instagram_business_account": {
+          "id": "17841462131207597",
+          "username": "viverdeitaipava",
+          "name": "Viverde Itaipava"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE",
+          "VIEW_MONETIZATION_INSIGHTS"
+        ]
+      },
+      {
+        "id": "107246259060110",
+        "name": "Guilherme Alvares - Advogado",
+        "access_token": "EAALo4hoUwykBRDmWLHejQ4hdwxy65WqrqYXhlSmZBuIwbfZBZBEapAfwMOahtkjMs0RgNmZB1MaGbMfbJXUGkwlAZCzMKNFdP0NWQFXa0trSnRu1IZASDOHMyccRqM0qugWoekz7TgEsHptCvbODYENDOAi2HPYEIwQOwphHWIhTY3386hNXXzBZAAyezfZCSZC8fK8aUzHYZD",
+        "category": "Advogado(a) e escritório de advocacia",
+        "tasks": [
+          "MODERATE",
+          "MESSAGING",
+          "ANALYZE",
+          "ADVERTISE",
+          "CREATE_CONTENT",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "114836947904568",
+        "name": "Plug and Plus",
+        "access_token": "EAALo4hoUwykBRPMSMZCaMpZBUfGZBrf8bYnO0tZCJqItwHVj2oBIPUl3AGVMaZAUvJJmHshyBC02sODZAIfrHKnxbZC9LQ1qalzwTnZC6R0P84B4KdlscdY9SbPnPWtTdtVv6whBDNzJRWZBFKM5qGh47PmQJWDvzsOmAJ60FMToybiyfHkVyhc0MVLOmHN5cIxfYphJEy5MZD",
+        "category": "Escola",
+        "instagram_business_account": {
+          "id": "17841453246240217",
+          "username": "plugandplus",
+          "name": "Plug and Plus"
+        },
+        "tasks": [
+          "MODERATE",
+          "MESSAGING",
+          "ANALYZE",
+          "ADVERTISE",
+          "CREATE_CONTENT"
+        ]
+      },
+      {
+        "id": "1359746874084677",
+        "name": "Game Jam Plus",
+        "access_token": "EAALo4hoUwykBRDYIFpN3qZA7kRsbu8PqGpVdr5o3YhFWo2I9Fa2ZBHbOsd259yqSqdV61xFgiudrnkM4JOkA3U01BRxx5zWHb27jpXZCaCZCBrnN0SLRgwxQlfGKqNZAzo6hwjVDljZCjZByDyWjzbqtXesmK0Oh6ZB3DAVMNJINv0CJXhgczEoAlGWay75exHez9RMRV7ZAZB",
+        "category": "Festival",
+        "instagram_business_account": {
+          "id": "17841405416055495",
+          "username": "gamejamplus",
+          "name": "GameJamPlus"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "545134258884175",
+        "name": "Gigas pizza",
+        "access_token": "EAALo4hoUwykBRNCVdH5rIZAdKTDY0GEpH9YaV4RoUAIVyGHbHHIA5QTnBZAK5BRQT0NpZCVFK7ZCjJ4CH9TMpDDkjj5GKwCEtqTp2gTYuvsBSVcrCktS6VNpGE2FBiWes7wczXepXrlAzO5BkpvFUcBi6yzKtEcgaDLCLrYwVyfoczfhEnfzpu0YHKQmCnMwBSBUShpU",
+        "category": "Pizzaria",
+        "tasks": [
+          "MODERATE",
+          "MESSAGING",
+          "ANALYZE",
+          "ADVERTISE",
+          "CREATE_CONTENT",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "100278135680139",
+        "name": "Ribus",
+        "access_token": "EAALo4hoUwykBRDhhNYrQQJqarV9p4ziJ1t7xmlJOovOcwapibYbr0TLOlrwxYw8yQ7zfN10R2XUZBszYSawVf5ZBa3IcVJIoo8dxuWhF1xeRcN0NuwiwpmlKQ9ru5qHSkl8Uf7YXn5Xr8OS2zkaRcNh46cEJNtAbgA1rtuoK0fBZCTvCOA4u8kKZBql5knx44LE1nNwZD",
+        "category": "Serviço imobiliário",
+        "instagram_business_account": {
+          "id": "17841448147453626",
+          "username": "ribus.io",
+          "name": "Ribus"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "VIEW_MONETIZATION_INSIGHTS",
+          "MANAGE"
+        ]
+      }
+    ],
+    "ad_accounts": [
+      {
+        "id": "act_235182655914418",
+        "account_id": "235182655914418",
+        "name": "CA01 - Zuca",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Comer Bem RJ",
+          "id": "117885249238254"
+        }
+      },
+      {
+        "id": "act_809396714231583",
+        "account_id": "809396714231583",
+        "name": "Ribus Instagram",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Ribus Tecnologia",
+          "id": "1125596662173981"
+        }
+      },
+      {
+        "id": "act_1448176942394413",
+        "account_id": "1448176942394413",
+        "name": "Braemp",
+        "account_status": 1,
+        "currency": "USD",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Braemp Incorporacoes E Participacoes Ltda",
+          "id": "676516284408524"
+        }
+      },
+      {
+        "id": "act_1510632572832110",
+        "account_id": "1510632572832110",
+        "name": "Plug and Plus",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "João Victor",
+          "id": "950526912015477"
+        }
+      },
+      {
+        "id": "act_1544221393099832",
+        "account_id": "1544221393099832",
+        "name": "GDH MKT",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "gamejamplus",
+          "id": "135566822422672"
+        }
+      },
+      {
+        "id": "act_1043510560042062",
+        "account_id": "1043510560042062",
+        "name": "crememed1",
+        "account_status": 101,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "crememed",
+          "id": "1361678281151617"
+        }
+      },
+      {
+        "id": "act_2791811934305687",
+        "account_id": "2791811934305687",
+        "name": "Luis Filho",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Noronha"
+      },
+      {
+        "id": "act_1035040154259123",
+        "account_id": "1035040154259123",
+        "name": "Miguel1",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Consultor Empresarial | Tributario",
+          "id": "738301334139722"
+        }
+      },
+      {
+        "id": "act_1210641879921875",
+        "account_id": "1210641879921875",
+        "name": "Wanderley",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Plan Design",
+          "id": "1301443120547345"
+        }
+      },
+      {
+        "id": "act_1096158805018067",
+        "account_id": "1096158805018067",
+        "name": "MaisNordeste",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Mais Nordeste",
+          "id": "945113893683780"
+        }
+      },
+      {
+        "id": "act_519163333782391",
+        "account_id": "519163333782391",
+        "name": "Toscana Delivery",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Pizzaria Toscana Delivery",
+          "id": "784037583935637"
+        }
+      },
+      {
+        "id": "act_3841715986057513",
+        "account_id": "3841715986057513",
+        "name": "Cleber Toscana",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo"
+      },
+      {
+        "id": "act_2828154830710856",
+        "account_id": "2828154830710856",
+        "name": "minerax",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Plan Design",
+          "id": "1301443120547345"
+        }
+      },
+      {
+        "id": "act_676386442065664",
+        "account_id": "676386442065664",
+        "name": "Bracketworks",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Plan Design",
+          "id": "1301443120547345"
+        }
+      },
+      {
+        "id": "act_4106819286203036",
+        "account_id": "4106819286203036",
+        "name": "CA - ImobDay",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "BM - imobday",
+          "id": "1145291783638241"
+        }
+      },
+      {
+        "id": "act_1496750718829327",
+        "account_id": "1496750718829327",
+        "name": "robotzap",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Robotzap",
+          "id": "1431385148987876"
+        }
+      },
+      {
+        "id": "act_1576441520296786",
+        "account_id": "1576441520296786",
+        "name": "CA - Viverde Itaipava ",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Viverde Itaipava",
+          "id": "1487819795119548"
+        }
+      }
+    ],
+    "state": ""
+  },
+  "danielcarius94@icloud.com": {
+    "token": {
+      "access_token": "EAALo4hoUwykBRKQt4Bvl8mJmmitzZA3qtsWNAZCIRVZCpwZCE0O7PSyJJgrBzvwWgoXMZBd13kIH0fsVG7h9EE35A7ZAEhKIckr7LmTx2pWCiwXNO5BKczPyDvPZAJaT133tWOaibebGwISFKlKxLlhDZCnafZAFw7owfAtzD7N8mhZBptacQFyLVoBUfkNJdIxZAhi8VTZAbEq6vZC3a4FRwikGOaVoSzsgXjMXq11IRexTYDmWZBXshZCYskHHIRkRZCZBiYWF2QZCfSHxM2tibc5ZCdiOXRGUPV6BNl8bUQ5sZAnDGeY3miBNnAZDZD",
+      "token_type": "bearer"
+    },
+    "me": {
+      "id": "26461859233474380",
+      "name": "Marcelle Bonomo"
+    },
+    "pages": [
+      {
+        "id": "160303960500377",
+        "name": "Marcellebonomo.pediatra",
+        "access_token": "EAALo4hoUwykBReAOnCNrvDxem2s6USJohFqecXulPWV8IlIkDWTJVb3lnfyRfm7sia82ZChandPzS6Nsr67hF5ATdjkD8WSmWTr98rE88P1ZCRqy7hoCYF5AgeUzxRDlVk0NKWM389ISSdeq3hM42ILbnRl9klHt1LEdaaZCcJWcg8O8n9jA8j5kJU9OowtbOuGZCLudar8c6sZC4C4UZD",
+        "category": "Medicina e saúde",
+        "instagram_business_account": {
+          "id": "17841401892196086",
+          "username": "marcellebonomo.pediatra",
+          "name": "Marcelle Bonomo"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      }
+    ],
+    "ad_accounts": [
+      {
+        "id": "act_2626940840862779",
+        "account_id": "2626940840862779",
+        "name": "Marcelle Bonomo",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo"
+      },
+      {
+        "id": "act_370852788940181",
+        "account_id": "370852788940181",
+        "name": "Marcele 01",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Marcelle Bonomo",
+          "id": "155810963921816"
+        }
+      }
+    ],
+    "state": "{\"panel_user\": \"danielcarius94@icloud.com\", \"ts\": 1776201745}",
+    "panel_user_email": "danielcarius94@icloud.com",
+    "connected_at": 1776201750
+  },
+  "luispessoa18@gmail.com": {
+    "token": {
+      "access_token": "EAALo4hoUwykBRplvy8tZAxUR0ZBC3Q7L6qo41gDkNnpvC2ulmHtyniriBuLxN61DWZCEFS7DUR2zYioOFkH0JA8VzFOib6VM2d2j7FlyyCoCJ2ZBXjh20P87AsK2XvLLLMRHeZAUHZCYeZCuRyd9H2YLtdRoqtTlOZBxm8YgHo5oXJp8t45nMnwseLrZCrAxOpGI3mQk7ZCWUnyXZApyZAdzBUWqpvOvOD5VDjf5QA4KwBt6HhjS26P2N63xbgo0zMQRNXYr0e4uohq93PDUlhkMtlKz5nIPXqZASIZC8R1bLK",
+      "token_type": "bearer"
+    },
+    "me": {
+      "id": "880385028337951",
+      "name": "Luis Filho"
+    },
+    "pages": [
+      {
+        "id": "966290376572116",
+        "name": "Comer Bem RJ",
+        "access_token": "EAALo4hoUwykBRhK7Bt3OTvDFvzFjOotilnaSU0UZAj5M9KgPX6GQYD2JE85NqYbqzW2s0CtEzMBJso21Por7uvZCZABxuWRJM9mngGG14WwPoF7tqD0x6ZANbGzKsy9LO1Pv0QljGIAXWshBgUvGke57JBN5pobhwAuuu5FjnV8sTQPOgo6rPHlIe4Hq2WTkXvZB1YA7E",
+        "category": "Restaurante",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE",
+          "MANAGE_LEADS",
+          "VIEW_MONETIZATION_INSIGHTS"
+        ]
+      },
+      {
+        "id": "994795243709353",
+        "name": "Cico Host",
+        "access_token": "EAALo4hoUwykBRi2iiUzYtzjZCpJsExd7iWVzGiOLOw9KvIz5GzTEMJmbVlCTrJUdeNucOxZCCySVVurrW8ilr9GgL59ZBSl9gEOtQUtKoTbfhJ2u7u6x1lVXr1Gq9ZB6q0DLOaL2gbMSsqZB3PKIcSl2YVQ7NZAT89UREZCxKgPWoMomUpWRJExkoQGcwpFYZAiw8yy9Swqq",
+        "category": "Empresa de tecnologia da informação",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "992746487247103",
+        "name": "Tania Nascimento ",
+        "access_token": "EAALo4hoUwykBRrFJouzfGcPHLsTngy4haqWiwm9s9Y5CoBU29vlqjRIjRmGCXUqgmZAzAKoVzV4q4GeaEC3EZAMeqmD2uqL1KWLBxujRrDJlsj8Ipo92W3psHcP7xnsFEckhnJ0T4ZBaT3DxtWXVUIcZBSMzZBqB1xvB5jFZBzOK0MaAkAG5iw2GD9O9E0ujeZCueaYg7Ov",
+        "category": "Corretora",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "964609183398328",
+        "name": "Robotzap",
+        "access_token": "EAALo4hoUwykBRvgr7aJPaZBdJQEURqrXhvIZBFSW65J3GeVUSqOWCBnZBkuq6iv5gZBKZBCyQgkqCsFHWQM5wlZBw9NkWzZAsqsKrxPOUAWUedBJlPyK1yZBheczQ3OpvbrkQtiXxKFL7quJHYZCXVjwLJ6J3AYjRfLzw1SaUdPlnnvVC2nIbtWPRSrWYZBF2QxDZAxsgZCtZA5XN",
+        "category": "Página de app",
+        "instagram_business_account": {
+          "id": "17841445066879813",
+          "username": "sellmax.crm",
+          "name": "Sellmax CRM"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "840283685841859",
+        "name": "Aline Lemos Fotografia",
+        "access_token": "EAALo4hoUwykBRhkclvQQZAJRav4tZAz8EDkF4tJCQCmkpC4PzcAj8ZAbQCrnRpxqTSu62FXKltHsHzysEZCS4jgo4fePsJl6Bdun2pYZAE8KsyiOZBejtj61BC2MfZAsOZBJLZALNiDQPnCvvWJnqpXhRJCe50ZBSUJS7Cn58zZArUbOhM0TYzqrASXmwB0xfDgY4pEiUzFT1A5",
+        "category": "Fotografia e videografia",
+        "tasks": [
+          "MODERATE",
+          "MESSAGING",
+          "ANALYZE",
+          "ADVERTISE",
+          "CREATE_CONTENT",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "895878630266994",
+        "name": "Imob.Day",
+        "access_token": "EAALo4hoUwykBRi9nutQbbSADj2CwD1y2gw6CYVHpG9C1ZCMMdITOsZBWQ9G1onjzESKEbsbU9vWt2seNXjEthxIcLPgE88W26QOXaNo0J6P9UP0lV3KZBge1pUBvlda8IEYrcK6c7nlugzr4xlIGN2mu4BJZC67nbn3vNnZBFePKQ8psvSaOVyakISCbcr7iBeIt6QcAt",
+        "category": "Imobiliária",
+        "instagram_business_account": {
+          "id": "17841477407909944",
+          "username": "imob.day",
+          "name": "IMOB DAY"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "676073195598347",
+        "name": "Dexcap Finance",
+        "access_token": "EAALo4hoUwykBRsYSZBafncPsy110UOzQlwqbufsa7nNjKmcK9QhD7rmv6QnGaphJsRc84SQMyx452SpppWfPZBEuswzXTdF6xmvPyqS5wa3txAB5zu4GAOJxTLTxttGL1JXQHRUZB0doHESbmkJLXnHnLORmJzWn43IegXwA9Ytc6dYQh7PbaQZAAxLXzKRpWSHiMpdy",
+        "category": "Empresa de tecnologia da informação",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "642584102277878",
+        "name": "Minerax",
+        "access_token": "EAALo4hoUwykBRiLdqPqMEvXUjOYBcfxu6XxDpr2IE3IDpWDMBUMCchZB65L5cEJITxVZAD1WcAgzVsWgUChYkxIZCXJP0CunZBJ8mE2M2FdGyAISoIUBsY9jBGTtcDbRsbm4d6ZCtvt3rdu97vOnmK9mvnWP7B14V1i6vqAYSmjB3ZCKcJbXiutulPeqnQyh2NQH1O0Exr",
+        "category": "Ciência e tecnologia",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "656622707540218",
+        "name": "BracketWorks",
+        "access_token": "EAALo4hoUwykBRuloPOuc0erECMBNEGDzwbinzSkin6ZA6z21wmV0F3v83ijbvtfNYDOQZAZCtTZBTmabeBpmSUidTyy4GuK1xbI68POsXUiAvimO5wAAHvZBFaYIUbyyZA2BFVLREkG7rZBZCPW29cSvAHZCoa2TCuQylKCK6DOrpF5XNkpgeXMiWZCLHFXb09vY0zBAA6UMyi",
+        "category": "Empresa de tecnologia da informação",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "627472960444363",
+        "name": "Viajarcomdesconto.ribus.io",
+        "access_token": "EAALo4hoUwykBRpZC6krZCNMjMMijdZC3JBbV850pOynUu0HQKW1qWQPZCaBCzYAEbjmaZA4ZCBz7VpwuBY8FZAGKeTZARXIxvlplZBPdoDAYXeifaZAWn0AdZCiZBl5kUsOQBZAqNoLWemqsWEOYvhZCJN2uABWHe8mX94CCmxOOXhht4y9isTBxzHkZAiKJdDaE09dnrDLxyf7hZBGy",
+        "category": "Site de locais e viagem",
+        "instagram_business_account": {
+          "id": "17841473407497199",
+          "username": "viajarcomdesconto.ribus.io",
+          "name": "Ribus - Viajar com Desconto"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "549886734882444",
+        "name": "Academia Bodymix",
+        "access_token": "EAALo4hoUwykBRniNmaf8Oz3GcBQSCiSHy2AMRA0vf9S6e3APL02FGOvluyTJqCiAw9Vd7cid1qz3biJ19SgR8J58AXqtGRqEETQ5tuZB2rHnGw4yONR3AWG3YawEXDx7Ye32tHO4OvvQfWBJSprbfqnEQKpfsfZA5ZBwZCTTpPRUUfB8IW2MxZBRu1H6CRZA6UnUhms8PS",
+        "category": "Academia",
+        "instagram_business_account": {
+          "id": "17841404252201561",
+          "username": "academiabodymix",
+          "name": "Academia Body Mix"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "348490085018485",
+        "name": "Braemp incorporações inteligentes",
+        "access_token": "EAALo4hoUwykBRoJtRV7wbscCvBXkCwUyZBNeHHazlpDRqKukYMnz5dziDdx0brjPUqkeauJF8F5CalAd6yoksbfdi9lZCngia1tCIkf1ZAbWHJcGCYRXIrlp3usehIdXER2xqZAKEYoHuvSDjUKzcKNUoLgQh7lmuDNIqmtrThH51O6uPHEUFr8JYrrdzkawUOgFg6GA",
+        "category": "Construtora e incorporadora",
+        "instagram_business_account": {
+          "id": "17841450339863242",
+          "username": "braemp.incorporacoes",
+          "name": "Braemp Incorporadora"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "308427922358393",
+        "name": "English 4 Gamedevs",
+        "access_token": "EAALo4hoUwykBRppzbrf4QVmi2jtUFaZBZAsuQTk7JZC66fC0TJHeHuzX7GR4g9Dp3On5Cm57YzgovpLVlSfY7umFH7ZCvQKPzyZBmD5OOZANuj9Y5sYFTSBnHWYEZCnxyuf6yKo4tCrCKPcJZCo73hBBGNWavISJ2CguYdZC22z0e1MRXNyAcnb7I5keq4wiUnGZAxqMjSjLqP",
+        "category": "Educação",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "294251840446703",
+        "name": "Plan Design Móveis",
+        "access_token": "EAALo4hoUwykBRgLNEmb29QzIw2ZB4jQZC67x79oPMvWgDOqmXhkIgu0fFZBGYBZAtFZASctpnmeQZBDUixHjiRu9WdttiSD9mamIkIZBsuBnuANqybc4Fcs3hUrA5skGScQu5DT3ALSkocFZCtgb75Ha74OMpVtrSAiL6i0oZC4t8mHiZCYAfHLJm5C3oy0ZC2xgk7inhv9V1OZB",
+        "category": "Loja de móveis",
+        "instagram_business_account": {
+          "id": "17841464780085818",
+          "username": "plandesign2024",
+          "name": "Plan Design"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "299334929937009",
+        "name": "Hiper Mix compre bem",
+        "access_token": "EAALo4hoUwykBRqfbZAW0YtglFAGpy3dxXTDShjsN8EDnE6sIftGuUSFN00ZCMHGgn5vkMf7ZCV5l8IfLnOmmEfYmQRZCO5TccYbuZAsEAHZAgaSIxCYKiu8LGLl6FexZAK8J8CB5IQhfzpeh895lr16Kw1YDnDRSZB5fpWI6daqIlAPARr9EGOLkPqdVhxJxikZCKHiSLMAA8",
+        "category": "Loja de conveniência",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "314840008372628",
+        "name": "Mais Nordeste Fibras",
+        "access_token": "EAALo4hoUwykBRmIgShVk4qxhOaCK5rroDPpe5HcojlMY8xyae7g2lRwbX2itbWZA6CZB7h58z67xaAmQo8gQSDG3UPJQAZA2wrKRbY8G7jVttQ0Dol2VYMBUxhTwlz0tDJ6GuPeEqxfDOSGEYksnrgrQA1Qjg8NwxoL7n4ClQCQdgICPPImggnqn69ZAJEuSySAM82oY",
+        "category": "Móveis",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "225697093959927",
+        "name": "Miguel Gomes",
+        "access_token": "EAALo4hoUwykBRoybnZCfz1outv5PGqD0ySyppi56CXHcthj17nPGTR4ENim6PGW0HgsI8XlAQVWwqEA28oomTt0pBuGeawvMd4kWSzjj5IXzIfZBRiV2U24vYEaNr9qow3IPpZC3k9EoqEX0ZBd3FKORT69c11xiuGzddVkForK1xjcJy6DDvUWhI1ZA4V4Jn5P0VE5cZD",
+        "category": "Agência de consultoria",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "201775389693253",
+        "name": "Marketing Filho",
+        "access_token": "EAALo4hoUwykBRrEQPaII0doo3LZB10iUTVjmVdNYVB898FdXhyZBZAt4vSUziOG4V6aJFH9ZA0vmrbuamradcR4cyoEigbjjMSejt9qmAFFryrwuPSZCb6nJ7ZCYit0hJ0BgPdNx3CpYDd6m6KmPBRdbcXRUE9F4hcrhO1PoKbCICvUXgWbch0x6zPVMUqBhCI40GMVEsZD",
+        "category": "Publicidade/marketing",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "241483639037866",
+        "name": "Viverde Itaipava ",
+        "access_token": "EAALo4hoUwykBRvNmCdr65ZCf04HWYccVzl13VOkSy88QBZCRau4qkCVfYuW6LI5jDt6lscrZAhLIBsUqgF0J5I2wZByJ0hQxsqrrebBQR92aP6UOGd7EIy3kxRAZCYTxZCXgZB7HD3OdpoKBsAQQXldPLkzpFzZBIocmjVqlgSkU2MAotO7R0REarseqgmH6N1ATl6oybSIZD",
+        "category": "Imóvel",
+        "instagram_business_account": {
+          "id": "17841462131207597",
+          "username": "viverdeitaipava",
+          "name": "Viverde Itaipava"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE",
+          "VIEW_MONETIZATION_INSIGHTS"
+        ]
+      },
+      {
+        "id": "107246259060110",
+        "name": "Guilherme Alvares - Advogado",
+        "access_token": "EAALo4hoUwykBRs29YXRAZBjZCNAQ2o6PbP0v0eVfiZCQqJLDaGOmCZCCWPvZC7apKT4YwX7zHN9DRTfsJ6uEdnwJGcak1B8zDeUMmSdMTTcg4tI0BsvQXnIUtpKiHqBvofeRktZAW7dbVTK49Cung5u9P7TmzivnAFj4dlkhh9HBteTenTuJiFRxN6JqunZBriZAOcNKMREZD",
+        "category": "Advogado(a) e escritório de advocacia",
+        "tasks": [
+          "MODERATE",
+          "MESSAGING",
+          "ANALYZE",
+          "ADVERTISE",
+          "CREATE_CONTENT",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "114836947904568",
+        "name": "Plug and Plus",
+        "access_token": "EAALo4hoUwykBRnfhVeWDnL9Ljb0UyaxssHpHPVSvZBLh9oMZCCfCWpmUjgFFjjc0ZBesCQWzXSZCY7qpSaV9gNvzCKGg0hCKhza6ZAZCMsv2vowUZAFmnsKJGjxDQffaj1ZBpQhJn2L8UHXZCkhik8sZCfLHRUtP07ZAjpMCRIb7Jh6joka0izH0ouRLjnRNOkHTSdCZBo3JJXwZD",
+        "category": "Escola",
+        "instagram_business_account": {
+          "id": "17841453246240217",
+          "username": "plugandplus",
+          "name": "Plug and Plus"
+        },
+        "tasks": [
+          "MODERATE",
+          "MESSAGING",
+          "ANALYZE",
+          "ADVERTISE",
+          "CREATE_CONTENT"
+        ]
+      },
+      {
+        "id": "1359746874084677",
+        "name": "Game Jam Plus",
+        "access_token": "EAALo4hoUwykBRnfep3LgipimUF5TD6ZAk6Vj2AltRL39edVVX3ClyZBsuB1OJXGAcQ2pT2PTd1yJZAm7x1M05BFE0g0wIeLz7ZBkgVXrVSEbfbddrQUxfcv5ZCF0FYBOuNXRZBwRhEi5SPuwedWSBVfBZCL5mSDJPiKc03SUQaLlrrcvyKs4jMYSv84CR8ZA51pd2Eca0cSV",
+        "category": "Festival",
+        "instagram_business_account": {
+          "id": "17841405416055495",
+          "username": "gamejamplus",
+          "name": "GameJamPlus"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "545134258884175",
+        "name": "Gigas pizza",
+        "access_token": "EAALo4hoUwykBRjLGeSTjwNZBIZBcZBCRhHSXrdjUfXehFP74T8yFpJakmyZB9HqG6vR0As7jojZChZCkqdZBK9JIRKpdNoAYmZAdxeb0VpkH0LUJEsAr8706473f2igEaAtZCDqXrPG6fAZAbKz1nrRBZAgkISLUGMheXAGnTgzfZB5q0U2zbtnf220RxpSS7mfx02WZBk9hKGnCT",
+        "category": "Pizzaria",
+        "tasks": [
+          "MODERATE",
+          "MESSAGING",
+          "ANALYZE",
+          "ADVERTISE",
+          "CREATE_CONTENT",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "100278135680139",
+        "name": "Ribus",
+        "access_token": "EAALo4hoUwykBRpY6lp3ut9a6mFObVvdrZA5iphhumLjfVntlWskRfuda8kNd3nHlxSSoafcTW7ZBpiR0hA5ebT1oo965BqKgY7U3tjvobE3BGOiIEvHIbSMrwcw4yw9HZCZAqcNCMa762KZAoKMkFH4nzTvleqaBqbfLkQADNAbXqPpG1KzGiZBoqJWAZCZBRsSspbK7BPAZD",
+        "category": "Serviço imobiliário",
+        "instagram_business_account": {
+          "id": "17841448147453626",
+          "username": "ribus.io",
+          "name": "Ribus"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "VIEW_MONETIZATION_INSIGHTS",
+          "MANAGE"
+        ]
+      }
+    ],
+    "ad_accounts": [
+      {
+        "id": "act_235182655914418",
+        "account_id": "235182655914418",
+        "name": "CA01 - Zuca",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Comer Bem RJ",
+          "id": "117885249238254"
+        }
+      },
+      {
+        "id": "act_809396714231583",
+        "account_id": "809396714231583",
+        "name": "Ribus Instagram",
+        "account_status": 3,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Ribus Tecnologia",
+          "id": "1125596662173981"
+        }
+      },
+      {
+        "id": "act_1448176942394413",
+        "account_id": "1448176942394413",
+        "name": "Braemp",
+        "account_status": 1,
+        "currency": "USD",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Braemp Incorporacoes E Participacoes Ltda",
+          "id": "676516284408524"
+        }
+      },
+      {
+        "id": "act_1510632572832110",
+        "account_id": "1510632572832110",
+        "name": "Plug and Plus",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "João Victor",
+          "id": "950526912015477"
+        }
+      },
+      {
+        "id": "act_1544221393099832",
+        "account_id": "1544221393099832",
+        "name": "GDH MKT",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "gamejamplus",
+          "id": "135566822422672"
+        }
+      },
+      {
+        "id": "act_1043510560042062",
+        "account_id": "1043510560042062",
+        "name": "crememed1",
+        "account_status": 101,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "crememed",
+          "id": "1361678281151617"
+        }
+      },
+      {
+        "id": "act_2791811934305687",
+        "account_id": "2791811934305687",
+        "name": "Luis Filho",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Noronha"
+      },
+      {
+        "id": "act_1035040154259123",
+        "account_id": "1035040154259123",
+        "name": "Miguel1",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Consultor Empresarial | Tributario",
+          "id": "738301334139722"
+        }
+      },
+      {
+        "id": "act_1210641879921875",
+        "account_id": "1210641879921875",
+        "name": "Wanderley",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Plan Design",
+          "id": "1301443120547345"
+        }
+      },
+      {
+        "id": "act_1096158805018067",
+        "account_id": "1096158805018067",
+        "name": "MaisNordeste",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Mais Nordeste",
+          "id": "945113893683780"
+        }
+      },
+      {
+        "id": "act_1671166816770003",
+        "account_id": "1671166816770003",
+        "name": "01. Vinclass",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Vinclass",
+          "id": "507308468953957"
+        }
+      },
+      {
+        "id": "act_1423849882117192",
+        "account_id": "1423849882117192",
+        "name": "Vinclass - 02",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Vinclass",
+          "id": "507308468953957"
+        }
+      },
+      {
+        "id": "act_2828154830710856",
+        "account_id": "2828154830710856",
+        "name": "minerax",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Plan Design",
+          "id": "1301443120547345"
+        }
+      },
+      {
+        "id": "act_676386442065664",
+        "account_id": "676386442065664",
+        "name": "Bracketworks",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Plan Design",
+          "id": "1301443120547345"
+        }
+      },
+      {
+        "id": "act_4106819286203036",
+        "account_id": "4106819286203036",
+        "name": "CA - ImobDay",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "BM - imobday",
+          "id": "1145291783638241"
+        }
+      },
+      {
+        "id": "act_1496750718829327",
+        "account_id": "1496750718829327",
+        "name": "robotzap",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Robotzap",
+          "id": "1431385148987876"
+        }
+      },
+      {
+        "id": "act_1576441520296786",
+        "account_id": "1576441520296786",
+        "name": "CA - Viverde Itaipava ",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Viverde Itaipava",
+          "id": "1487819795119548"
+        }
+      }
+    ],
+    "state": "{\"panel_user\": \"luispessoa18@gmail.com\", \"ts\": 1779913250, \"use_user_app\": false}",
+    "panel_user_email": "luispessoa18@gmail.com",
+    "connected_at": 1779913267
+  },
+  "tania.bindes@ribus.com.br": {
+    "token": {
+      "access_token": "EAALo4hoUwykBRvLXGjzj8zKrZCiXjonNWou2p8lSVzpV9BRZCfucjko9eyHUZBTyZAL1uZAiJDLBlcVkNxBfIijGXAErVUZCTQZBVpjBI99TH6jdMkEmywip0iEGhDX0ZBZBYrzY2AEEE1n8QPWZAP4Fmez8eeEfYVpedZCKqv6M2XfohO2aJKH2axOaV14DeXNyiVzdViEO426iUzd0ZBdqQZB6EMQrugqkvOz5qjYr4ygO4Ug0J6zbzdVtmPkaFe7KS8BpZAY9pmGpZCfa2sOuiqCdBWV40nC6y82Rfx54ZCBc",
+      "token_type": "bearer"
+    },
+    "me": {
+      "id": "1523135092855462",
+      "name": "Tania Fernandes"
+    },
+    "pages": [
+      {
+        "id": "434210743101210",
+        "name": "Livremente",
+        "access_token": "EAALo4hoUwykBRgJFotzPzDKvoZCV9zSFaL5GUj5XLZCkuUv6U0PAprLhvaodkJBRSxW8lKoEihbNStgGItXW49gF1lSeqgoSxN3AYvWNp89hnihHz37LVP4RybZCHPOJhxKr3ZBHFifQrgOkAZA3BoNKhmqxfYViCY97BgsCrsAZCZCx7YRZCOGW4x9LQrTSKsHmyZBSo7tnx",
+        "category": "Criador(a) de conteúdo digital",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "254004861133207",
+        "name": "Bruna Fernandes",
+        "access_token": "EAALo4hoUwykBRhfx8edOhTpSjddWZBQboP3rEOgdexFwugzqQDne5TaUnN25I6WsZADpyJY4S2qDZAjU3JSRa5KpR5591QvKp2PkiR7s2jYIXozen8tqBpMu8i41v8dZC3m1a6oVNVLEXBzZAemSIbMrrWOpnADcpT1qIn0OwbuzfjtxtWmPmkiw342NnAzRvX7lDRIMZD",
+        "category": "Saúde/beleza",
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      },
+      {
+        "id": "112519564416888",
+        "name": "Hecho a Mano",
+        "access_token": "EAALo4hoUwykBRgTlCm6CZC80jqDGp33l4JrX0S9xO20qFyEOsqLvNCMSSy52zw7COpeNyDLI9fO71zOEV93mAlzFZCHIkTEcbyVUQSIZCTZA6456Ngd2b1ZASZCuEQ4ZCtKnekxBAjk3N43wsEf6i9EcfvSoZAjpF1G2EuiiiQIz2N6f1Bha3PFmWPgQyEAcBxHYSPZCtDTwZD",
+        "category": "Empreendedor(a)",
+        "instagram_business_account": {
+          "id": "17841440043045355",
+          "username": "hecho_a_mano_fit",
+          "name": "Hecho a Mano"
+        },
+        "tasks": [
+          "ADVERTISE",
+          "ANALYZE",
+          "CREATE_CONTENT",
+          "MESSAGING",
+          "MODERATE",
+          "MANAGE"
+        ]
+      }
+    ],
+    "ad_accounts": [
+      {
+        "id": "act_675436356440313",
+        "account_id": "675436356440313",
+        "name": "Tania Fernandes",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo"
+      },
+      {
+        "id": "act_421812185835253",
+        "account_id": "421812185835253",
+        "name": "h1",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "Hecho a mano BM1",
+          "id": "531802941481983"
+        }
+      },
+      {
+        "id": "act_991188651951486",
+        "account_id": "991188651951486",
+        "name": "CA - AFILIADO",
+        "account_status": 1,
+        "currency": "BRL",
+        "timezone_name": "America/Sao_Paulo",
+        "business": {
+          "name": "BM",
+          "id": "367175392323889"
+        }
+      }
+    ],
+    "state": "{\"panel_user\": \"tania.bindes@ribus.com.br\", \"ts\": 1779920376}",
+    "panel_user_email": "tania.bindes@ribus.com.br",
+    "connected_at": 1779920394
+  }
+}

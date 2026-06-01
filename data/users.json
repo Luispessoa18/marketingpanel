@@ -1,0 +1,70 @@
+{
+  "luispessoa18@gmail.com": {
+    "email": "luispessoa18@gmail.com",
+    "username": "luispessoa",
+    "name": "Luis Pessoa",
+    "role": "admin",
+    "salt": "a1f8abdfaab59085",
+    "password_hash": "7bb52ea61df842720920a92ef084060e777fc41b518c36021a3badfff85ee3a4",
+    "created_at": 1775570642,
+    "updated_at": 1776289867,
+    "api_key_ids": [
+      "660e3221a3d1fadc",
+      "f71adc456dbf73ff",
+      "f6e7fbb61052c7cd",
+      "2896bdf634db3302",
+      "7626bc20079f8bde"
+    ]
+  },
+  "davidcamiliex@gmail.com": {
+    "email": "davidcamiliex@gmail.com",
+    "created_at": 1775752756,
+    "api_key_ids": [],
+    "name": "David",
+    "role": "user",
+    "allowed_page_ids": [
+      "895878630266994",
+      "676073195598347",
+      "627472960444363",
+      "348490085018485",
+      "100278135680139"
+    ],
+    "salt": "28d6740f02248bee",
+    "password_hash": "824c7c37141c7082332c446675a5e305e93f72748a7f7da6b9fd36bd20e3ac82",
+    "updated_at": 1775752756
+  },
+  "danielcarius94@icloud.com": {
+    "email": "danielcarius94@icloud.com",
+    "created_at": 1775782435,
+    "api_key_ids": [
+      "c0cdc1df0aaeecbd"
+    ],
+    "name": "Daniel",
+    "role": "admin",
+    "allowed_page_ids": [
+      "895878630266994",
+      "676073195598347",
+      "627472960444363",
+      "348490085018485",
+      "100278135680139",
+      "160303960500377"
+    ],
+    "meta_connection_enabled": true,
+    "salt": "0cb29bd3e8edb495",
+    "password_hash": "13580bd17ac85d51cc222068ff1028b48d20af894c1ff03d1be1db834f6b5033",
+    "updated_at": 1779373605
+  },
+  "tania.bindes@ribus.com.br": {
+    "email": "tania.bindes@ribus.com.br",
+    "created_at": 1779913307,
+    "api_key_ids": [],
+    "name": "Tania",
+    "role": "user",
+    "allowed_page_ids": [],
+    "allowed_ad_account_ids": [],
+    "meta_connection_enabled": true,
+    "salt": "54927063ffe9d704",
+    "password_hash": "975ceb9f5444704007bb6d48b5706c00c83cf4d5f752174c60e8f8f764f25e21",
+    "updated_at": 1779913329
+  }
+}

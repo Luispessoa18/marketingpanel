@@ -1,0 +1,15 @@
+{
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "access_token": "bUppdzJXbzBIMWpUUE5nWmVQZ1VtakhjYkdGOU5xT3JnTG5QME9MdGM0MUZHOjE3NzU1Njg5NTkxNjM6MTowOmF0OjE",
+  "scope": "tweet.write users.read tweet.read offline.access",
+  "refresh_token": "QTZzenVuYVVHanVjYTVOeDRwOWdwZzdBREllcE44RmpqdmVvSHp6SFN1YjdzOjE3NzU1Njg5NTkxNjM6MTowOnJ0OjE",
+  "state": "x",
+  "me": {
+    "data": {
+      "id": "2041506205093298176",
+      "name": "Luís Pessoa",
+      "username": "luispessoa1896"
+    }
+  }
+}

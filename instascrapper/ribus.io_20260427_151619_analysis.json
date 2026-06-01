@@ -1,0 +1,322 @@
+{
+  "header": {
+    "username": "ribus.io",
+    "full_name": "Ribus",
+    "subtitle": "Soluções imobiliárias · Outubro 2023",
+    "stats": {
+      "posts": "356",
+      "followers": "13K",
+      "following": "363",
+      "engagement_rate": "~0.5%"
+    }
+  },
+  "diagnosis": {
+    "current_positioning": "Perfil focado em soluções imobiliárias digitais, impulsionado por inovação tecnológica.",
+    "positioning_verdict": "O perfil apresenta uma proposta de valor clara, mas poderia se beneficiar de maior clareza e engajamento visual.",
+    "content_pillars": [
+      {
+        "label": "Soluções Imobiliárias",
+        "pct": 40,
+        "color_var": "purple"
+      },
+      {
+        "label": "Educacional",
+        "pct": 25,
+        "color_var": "blue"
+      },
+      {
+        "label": "Promoções",
+        "pct": 15,
+        "color_var": "green"
+      },
+      {
+        "label": "Engajamento Comunidade",
+        "pct": 10,
+        "color_var": "cyan"
+      },
+      {
+        "label": "Inovações Tecnológicas",
+        "pct": 10,
+        "color_var": "accent"
+      }
+    ],
+    "central_problem": "Conteúdo excessivamente técnico e com baixa interação.",
+    "formats": [
+      {
+        "format": "Reels",
+        "presence": "~30%",
+        "note": "Podem ser mais frequentes para engajar usuários."
+      },
+      {
+        "format": "Posts estáticos",
+        "presence": "~40%",
+        "note": "Bom para educar e informar."
+      },
+      {
+        "format": "Stories",
+        "presence": "~20%",
+        "note": "Uso não otimizado."
+      },
+      {
+        "format": "Lives",
+        "presence": "~5%",
+        "note": "Raro, mas pode criar engajamento."
+      },
+      {
+        "format": "IGTV",
+        "presence": "~5%",
+        "note": "Uso não frequente."
+      }
+    ],
+    "tone": "Técnico, mas pode ser mais acessível e amigável.",
+    "visual": "Identidade visual consistente, mas poderia utilizar mais elementos interativos.",
+    "audience_current": "Profissionais do setor imobiliário e entusiastas de tecnologia.",
+    "audience_target": "Clientes potenciais e novos investidores no mercado imobiliário.",
+    "audience_gap": "Não está atraindo o público geral que poderia se beneficiar das soluções imobiliárias.",
+    "critical_gaps": [
+      {
+        "title": "Baixa Interatividade",
+        "description": "Conteúdo é informativo, mas pouco interativo."
+      },
+      {
+        "title": "Falta de Diversidade de Formatos",
+        "description": "Dependência excessiva de posts estáticos."
+      },
+      {
+        "title": "Estratégia de Engajamento Absorta",
+        "description": "Baixa exploração de recursos como Stories e Lives."
+      },
+      {
+        "title": "Comunicação Técnica",
+        "description": "Terminologia pode afastar usuários não especializados."
+      },
+      {
+        "title": "Segmentação do Público",
+        "description": "Falta de clareza na definição do público-alvo ideal."
+      }
+    ]
+  },
+  "icp": {
+    "primary_title": "Investidores Imobiliários",
+    "primary_demographics": "Adultos entre 30-55 anos, com renda média alta, localização em áreas urbanas.",
+    "primary_psychographics": "Interesse em inovações tecnológicas, propensão ao investimento e valorização da segurança.",
+    "secondary_title": "Profissionais do Setor Imobiliário",
+    "secondary_demographics": "Corretores, gestores e investidores que atuam no mercado imobiliário.",
+    "secondary_psychographics": "Busca por soluções práticas e modernas, com foco em eficiência e retorno.",
+    "pains": [
+      "Incertezas no mercado imobiliário",
+      "Complexidade de transações",
+      "Falta de informação acessível"
+    ],
+    "desires": [
+      "Investimentos mais seguros",
+      "Facilidade na compra e venda",
+      "Tecnologia que agregue valor"
+    ],
+    "objections": [
+      "Ceticismo sobre inovação → demonstrar resultados reais",
+      "Preocupação com burocracia",
+      "Desconhecimento sobre soluções oferecidas",
+      "Falta de casos de sucesso"
+    ],
+    "consumption_channels": "Instagram, YouTube, blogs sobre mercado imobiliário."
+  },
+  "strategy": {
+    "new_positioning": "Transformando o mercado imobiliário com tecnologia acessível e eficiente.",
+    "bio_versions": [
+      {
+        "title": "Versão 1 — Ribus",
+        "content": "🏠 Soluções imobiliárias de ponta a ponta\n🌟 Impulsionado pelo Token Rib 🚀\n📚 Conheça mais: @incorporacao.digital"
+      },
+      {
+        "title": "Versão 2 — Ribus Inovações",
+        "content": "🔑 Seu guia no mercado imobiliário\n⚙️ Experiências com @clubekey\n🌐 Acesse: ribus.io"
+      },
+      {
+        "title": "Versão 3 — Ribus Evolution",
+        "content": "🚀 Transformando a compra e venda de imóveis\n🤝 Conecte-se com nossa comunidade\n🔗 Link na bio!"
+      }
+    ],
+    "content_pillars": [
+      {
+        "name": "Soluções Imobiliárias",
+        "tag": "imoveis",
+        "pct": "30%",
+        "objective": "Mostrar produtos e serviços",
+        "examples": "Post de lançamento, vídeo explicativo, infográfico."
+      },
+      {
+        "name": "Educação Financeira",
+        "tag": "financas",
+        "pct": "25%",
+        "objective": "Informar sobre investimentos",
+        "examples": "Dicas de compra, guias, Q&A."
+      },
+      {
+        "name": "Casos de Sucesso",
+        "tag": "sucesso",
+        "pct": "15%",
+        "objective": "Construir credibilidade",
+        "examples": "Depoimentos, entrevistas, resultados."
+      },
+      {
+        "name": "Tendências do Mercado",
+        "tag": "tendencias",
+        "pct": "20%",
+        "objective": "Atualizar o público",
+        "examples": "Análises de mercado, estudos."
+      },
+      {
+        "name": "Engajamento com a Comunidade",
+        "tag": "comunidade",
+        "pct": "10%",
+        "objective": "Aumentar interação",
+        "examples": "Enquetes, perguntas, feedback."
+      }
+    ],
+    "format_mix": [
+      {
+        "format": "Reels",
+        "qty": "3-4 por semana",
+        "when": "Toda quarta e sexta"
+      },
+      {
+        "format": "Posts estáticos",
+        "qty": "2-3 por semana",
+        "when": "Segundas e quintas"
+      },
+      {
+        "format": "Stories",
+        "qty": "Diários",
+        "when": "Todos os dias"
+      },
+      {
+        "format": "Lives",
+        "qty": "1 por mês",
+        "when": "Última sexta do mês"
+      },
+      {
+        "format": "IGTV",
+        "qty": "1 por mês",
+        "when": "Primeira segunda do mês"
+      }
+    ],
+    "weekly_calendar": [
+      {
+        "day_label": "Segunda — Post Estático",
+        "title": "Dicas de Investimento",
+        "meta": "Formato: Post | Pilar: Educação Financeira",
+        "hook": "Você sabia que...?",
+        "cta": "Comente suas dúvidas!"
+      },
+      {
+        "day_label": "Terça — Story",
+        "title": "Curiosidades do Mercado",
+        "meta": "Formato: Story | Pilar: Tendências do Mercado",
+        "hook": "Top 3 tendências do setor!",
+        "cta": "Deslize para saber mais!"
+      },
+      {
+        "day_label": "Quarta — Reel",
+        "title": "Transformação Digital",
+        "meta": "Formato: Reel | Pilar: Soluções Imobiliárias",
+        "hook": "Vamos falar sobre inovação?",
+        "cta": "Acesse o link na bio!"
+      },
+      {
+        "day_label": "Quinta — Post Estático",
+        "title": "História de Sucesso",
+        "meta": "Formato: Post | Pilar: Casos de Sucesso",
+        "hook": "Veja como ajudamos...",
+        "cta": "Compartilhe sua história!"
+      },
+      {
+        "day_label": "Sexta — Live",
+        "title": "Tirando Dúvidas ao Vivo",
+        "meta": "Formato: Live | Pilar: Engajamento com a Comunidade",
+        "hook": "Vamos conversar sobre suas dúvidas?",
+        "cta": "Participe da nossa live!"
+      },
+      {
+        "day_label": "Sábado — Story",
+        "title": "Feedback do Público",
+        "meta": "Formato: Story | Pilar: Engajamento com a Comunidade",
+        "hook": "Queremos ouvir você!",
+        "cta": "Responda nossas enquetes!"
+      },
+      {
+        "day_label": "Domingo — IGTV",
+        "title": "O Futuro do Mercado Imobiliário",
+        "meta": "Formato: IGTV | Pilar: Tendências do Mercado",
+        "hook": "O que vem por aí?",
+        "cta": "Não perca essa análise!"
+      }
+    ],
+    "viral_hooks": [
+      "\"Você sabia?\" — Gatilho: Curiosidade",
+      "\"Descubra a verdade sobre...\" — Gatilho: Polêmica",
+      "\"Como você pode...\" — Gatilho: Solução prática",
+      "\"Os 5 erros que você deve evitar...\" — Gatilho: Exclusividade",
+      "\"Transforme sua visão sobre...\" — Gatilho: Inspiração"
+    ],
+    "funnel_top": "Criar consciência com conteúdo educacional sobre o mercado imobiliário.",
+    "funnel_middle": "Nutrir o público com dicas e experiências práticas.",
+    "funnel_bottom": "Conversão através de ofertas e casos de sucesso.",
+    "funnel_paths": [
+      {
+        "label": "Caminho A",
+        "text": "Conectar usuários ao conteúdo educativo e depois às ofertas."
+      },
+      {
+        "label": "Caminho B",
+        "text": "Engajamento através de comunidades para aumentar conversão."
+      },
+      {
+        "label": "Caminho C",
+        "text": "Atração de novos leads por meio de depoimentos e provas sociais."
+      }
+    ],
+    "funnel_post_conversion": "Manter o relacionamento com conteúdos exclusivos e feedback.",
+    "kpis": [
+      {
+        "kpi": "Taxa de Engajamento",
+        "target": "8%",
+        "reason": "Mede a interação e interesse do público."
+      },
+      {
+        "kpi": "Número de Leads Gerados",
+        "target": "100 por mês",
+        "reason": "Avaliar o sucesso na conversão."
+      },
+      {
+        "kpi": "Crescimento de Seguidores",
+        "target": "10% ao mês",
+        "reason": "Monitorar a atratividade do perfil."
+      }
+    ]
+  },
+  "quick_wins": [
+    {
+      "title": "Aprimorar Stories",
+      "description": "Começar uma série de perguntas interativas em 1 semana."
+    },
+    {
+      "title": "Criar Reels Engajadores",
+      "description": "Produzir 3 Reels até o final do mês."
+    },
+    {
+      "title": "Realizar uma Live",
+      "description": "Agendar uma live com um expert em 2 semanas."
+    },
+    {
+      "title": "Diversificar Conteúdo",
+      "description": "Implementar novos formatos de post em 2 semanas."
+    },
+    {
+      "title": "Melhorar a Bio",
+      "description": "Atualizar a bio para refletir o novo posicionamento em 1 semana."
+    }
+  ],
+  "generated_at": "Outubro 2023",
+  "next_steps": "Implementar quick wins e monitorar o engajamento e crescimento nos próximos meses."
+}

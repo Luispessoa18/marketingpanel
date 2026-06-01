@@ -1,0 +1,13 @@
+{
+  "stage": "profile_api_failed",
+  "target_username": "homeunity.oficial",
+  "current_url": "https://www.instagram.com/homeunity.oficial/",
+  "page_title": "Instagram",
+  "looks_like_login_page": false,
+  "looks_logged_in": true,
+  "html_excerpt": "<!DOCTYPE html><html class=\"_9dls _ar44 js-focus-visible _aa4d __fb-dark-mode\" lang=\"en\" dir=\"ltr\" data-js-focus-visible=\"\"><head><link data-default-icon=\"https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp\" rel=\"icon\" sizes=\"192x192\" href=\"https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp\"><meta name=\"bingbot\" content=\"noarchive\"><meta charset=\"utf-8\"><meta name=\"apple-mobile-web-app-status-bar-style\" content=\"default\"><meta name=\"mobile-web-app-capable\" content=\"yes\"><meta id=\"viewport\" name=\"viewport\" content=\"width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, viewport-fit=cover\"><link rel=\"preconnect\" href=\"https://scontent-gru2-2.cdninstagram.com\"><link rel=\"dns-prefetch\" href=\"https://scontent-gru2-2.cdninstagram.com\"><meta name=\"theme-color\" content=\"#242526\"><meta name=\"theme-color\" content=\"#000000\" media=\"(prefers-color-scheme: dark)\"><link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"https://static.cdninstagram.com/rsrc.php/yj/r/f01UdNyJjJj.webp\"><link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"https://static.cdninstagram.com/rsrc.php/yL/r/mMvhX4currF.webp\"><link rel=\"apple-touch-icon\" sizes=\"152x152\" href=\"https://static.cdninstagram.com/rsrc.php/yY/r/5OCV_xUyQ5h.webp\"><link rel=\"apple-touch-icon\" sizes=\"167x167\" href=\"https://static.cdninstagram.com/rsrc.php/y9/r/MptwNl-B2pS.webp\"><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"https://static.cdninstagram.com/rsrc.php/yw/r/icwX0xAk0pz.webp\"><link data-default-icon=\"h",
+  "body_excerpt": "Sorry, this page isn't available. The link you followed may be broken, or the page may have been removed. Go back to Instagram. Meta About Blog Jobs Help API Privacy Terms Locations Popular Instagram Lite Meta AI Threads Contact Uploading & Non-Users Meta Verified English © 2026 Instagram from Meta Messages",
+  "api_url": "https://www.instagram.com/api/v1/users/web_profile_info/?username=homeunity.oficial",
+  "screenshot_path": "/home/luispessoa/meta-connection-panel-edit/instascrapper/debug/debug_homeunity.oficial_profile_api_failed_20260504_200021.png",
+  "html_path": "/home/luispessoa/meta-connection-panel-edit/instascrapper/debug/debug_homeunity.oficial_profile_api_failed_20260504_200021.html"
+}

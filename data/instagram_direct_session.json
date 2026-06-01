@@ -1,0 +1,11 @@
+{
+  "access_token": "IGAAnNC4lvYHlBZAFpEYWVWRElnVm8tMjl0UDRSUzlYSWk2ZA3dPdDBRNk5tcmt1dGNpakVZARldGQzF6dTFSQjliZAllSdFJxbDdWOExmLThXUW9ScjZAQV2ZACRUJ0U2lmaFdPRTJ0bzMxcTZAJVDhlVDFSazdTMTNQaW50b3dsTFlXbTNUWlNIMFFVeEZAFZAnJSUldEWlF0a3h3",
+  "user_id": 25780129864999634,
+  "permissions": [
+    "instagram_business_basic",
+    "instagram_business_manage_messages",
+    "instagram_business_content_publish",
+    "instagram_business_manage_insights",
+    "instagram_business_manage_comments"
+  ]
+}

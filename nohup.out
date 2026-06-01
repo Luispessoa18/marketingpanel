@@ -1,0 +1,634 @@
+nohup: ignoring input
+INFO:     Started server process [1704813]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8400 (Press CTRL+C to quit)
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /static/panel.js HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /linkedin/session HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /x/session HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/page-picture?page_id=966290376572116 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/insights/overview?page_id=966290376572116 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/insights/overview?page_id=160303960500377 HTTP/1.1" 400 Bad Request
+INFO:     186.205.8.215:0 - "GET /panel/insights/overview?page_id=100278135680139 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/ad-campaigns?ad_account_id=act_370852788940181 HTTP/1.1" 400 Bad Request
+INFO:     186.205.8.215:0 - "GET /meta/ad-adsets?ad_account_id=act_370852788940181 HTTP/1.1" 400 Bad Request
+INFO:     186.205.8.215:0 - "GET /meta/ad-ads?ad_account_id=act_370852788940181 HTTP/1.1" 400 Bad Request
+INFO:     186.205.8.215:0 - "GET /meta/ad-performance-tree?ad_account_id=act_370852788940181&date_preset=last_month&limit=250 HTTP/1.1" 400 Bad Request
+INFO:     186.205.8.215:0 - "GET /panel/insights/overview?page_id=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/page-picture?page_id=100278135680139 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/instagram-picture?ig_user_id=17841448147453626&page_id=100278135680139 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "POST /panel/brand-profile/sync-meta HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/page-picture?page_id=100278135680139 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/instagram-picture?ig_user_id=17841448147453626&page_id=100278135680139 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "POST /panel/manus-analyze HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "POST /panel/brand-profile/analyze-ai HTTP/1.1" 400 Bad Request
+INFO:     54.173.72.8:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     158.51.125.243:0 - "GET / HTTP/1.1" 200 OK
+INFO:     195.178.110.241:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+INFO:     18.183.120.242:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/ad-performance-tree?ad_account_id=act_2626940840862779&date_preset=last_month&limit=250 HTTP/1.1" 400 Bad Request
+INFO:     186.205.8.215:0 - "GET /meta/ad-ads?ad_account_id=act_2626940840862779 HTTP/1.1" 400 Bad Request
+INFO:     186.205.8.215:0 - "GET /meta/ad-adsets?ad_account_id=act_2626940840862779 HTTP/1.1" 400 Bad Request
+INFO:     186.205.8.215:0 - "GET /meta/ad-campaigns?ad_account_id=act_2626940840862779 HTTP/1.1" 400 Bad Request
+INFO:     186.205.8.215:0 - "GET /meta/ad-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /schedule/posts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/ad-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /schedule/posts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /linkedin/session HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /x/session HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/page-picture?page_id=160303960500377 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/instagram-picture?ig_user_id=17841401892196086&page_id=160303960500377 HTTP/1.1" 200 OK
+INFO:     27.102.76.8:0 - "GET /admin/config.php HTTP/1.1" 404 Not Found
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     185.247.137.31:41777 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/users HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     176.65.149.253:0 - "GET /api/.env HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /dns-query?dns=9VsBAAABAAAAAAAAATEEb2RucwFtCmRuc21lYXN1cmUDdG9wAAABAAE HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "POST /dns-query HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /dns-query?name=1.odns.m.dnsmeasure.top&type=A HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /dns-query?dns=baABAAABAAAAAAAAATEEb2RucwFtCmRuc21lYXN1cmUDdG9wAAABAAE HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "POST /dns-query HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /dns-query?name=1.odns.m.dnsmeasure.top&type=A HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /query?dns=HbcBAAABAAAAAAAAATEEb2RucwFtCmRuc21lYXN1cmUDdG9wAAABAAE HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "POST /query HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /query?name=1.odns.m.dnsmeasure.top&type=A HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /query?dns=j8MBAAABAAAAAAAAATEEb2RucwFtCmRuc21lYXN1cmUDdG9wAAABAAE HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "POST /query HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /query?name=1.odns.m.dnsmeasure.top&type=A HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /resolve?dns=aj4BAAABAAAAAAAAATEEb2RucwFtCmRuc21lYXN1cmUDdG9wAAABAAE HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "POST /resolve HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /resolve?name=1.odns.m.dnsmeasure.top&type=A HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /resolve?dns=hLEBAAABAAAAAAAAATEEb2RucwFtCmRuc21lYXN1cmUDdG9wAAABAAE HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "POST /resolve HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /resolve?name=1.odns.m.dnsmeasure.top&type=A HTTP/1.1" 404 Not Found
+INFO:     8.209.96.179:0 - "GET /?dns=6RwBAAABAAAAAAAAATEEb2RucwFtCmRuc21lYXN1cmUDdG9wAAABAAE HTTP/1.1" 200 OK
+INFO:     8.209.96.179:0 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     8.209.96.179:0 - "GET /?name=1.odns.m.dnsmeasure.top&type=A HTTP/1.1" 200 OK
+INFO:     8.209.96.179:0 - "GET /?dns=qKIBAAABAAAAAAAAATEEb2RucwFtCmRuc21lYXN1cmUDdG9wAAABAAE HTTP/1.1" 200 OK
+INFO:     8.209.96.179:0 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     8.209.96.179:0 - "GET /?name=1.odns.m.dnsmeasure.top&type=A HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/ad-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /instagram/session HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /linkedin/session HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /x/session HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/ad-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /instagram/session HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /linkedin/session HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /x/session HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/page-picture?page_id=100278135680139 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/instagram-picture?ig_user_id=17841448147453626&page_id=100278135680139 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /static/panel.css HTTP/1.1" 304 Not Modified
+INFO:     186.205.8.215:0 - "GET /static/panel.js HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     87.236.176.148:0 - "GET / HTTP/1.1" 200 OK
+INFO:     40.80.200.216:0 - "GET /developmentserver/metadatauploader HTTP/1.1" 404 Not Found
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     146.190.166.168:0 - "GET / HTTP/1.1" 200 OK
+INFO:     66.132.172.38:0 - "GET / HTTP/1.1" 200 OK
+INFO:     66.132.172.38:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     66.132.172.38:0 - "GET /security.txt HTTP/1.1" 404 Not Found
+INFO:     162.216.149.91:0 - "GET / HTTP/1.1" 200 OK
+INFO:     38.92.26.36:0 - "GET / HTTP/1.1" 200 OK
+INFO:     176.112.176.103:0 - "GET /RDWeb/Pages/ HTTP/1.1" 404 Not Found
+INFO:     176.112.176.103:0 - "GET /RDWeb/webclient/ HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 405 Method Not Allowed
+INFO:     8.138.7.171:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     8.138.7.171:0 - "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     144.126.225.132:0 - "GET / HTTP/1.1" 200 OK
+INFO:     144.126.225.132:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     103.123.225.3:0 - "GET /admin/config.php HTTP/1.1" 404 Not Found
+INFO:     48.217.87.78:0 - "GET /owa/auth/logon.aspx HTTP/1.1" 404 Not Found
+INFO:     195.178.110.246:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     192.253.248.115:0 - "GET /auth1.js HTTP/1.1" 404 Not Found
+INFO:     196.234.20.218:0 - "GET / HTTP/1.1" 200 OK
+INFO:     196.234.20.218:0 - "GET /static/panel.css HTTP/1.1" 200 OK
+INFO:     196.234.20.218:0 - "GET /static/panel.js HTTP/1.1" 200 OK
+INFO:     196.234.20.218:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     196.234.20.218:0 - "GET / HTTP/1.1" 200 OK
+INFO:     196.234.20.218:0 - "GET / HTTP/1.1" 200 OK
+INFO:     196.234.20.218:0 - "GET / HTTP/1.1" 200 OK
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     178.214.77.72:0 - "GET /admin/config.php HTTP/1.1" 404 Not Found
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     47.253.116.19:0 - "GET /dns-query?dns=ILABAAABAAAAAAAABmdvb2dsZQNjb20AAAEAAQ HTTP/1.1" 404 Not Found
+INFO:     47.253.116.19:0 - "POST /dns-query HTTP/1.1" 404 Not Found
+INFO:     135.232.201.227:0 - "GET / HTTP/1.1" 200 OK
+INFO:     176.65.149.253:0 - "GET /config.json HTTP/1.1" 404 Not Found
+INFO:     66.240.236.116:0 - "GET / HTTP/1.1" 200 OK
+INFO:     27.102.76.8:0 - "GET /admin/config.php HTTP/1.1" 404 Not Found
+INFO:     152.32.234.39:0 - "GET / HTTP/1.1" 200 OK
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     77.83.39.42:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET / HTTP/1.1" 200 OK
+INFO:     216.81.248.11:0 - "GET /asdkjh2k3h4_nonexistent_path HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET / HTTP/1.1" 200 OK
+INFO:     216.81.248.11:0 - "GET /info.php.bak HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /php-info.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /newinfo.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /siteinfo.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /info.php.1 HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /admin/phpinfo.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /pageinfo.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /info.php.back HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /phpbb/phpinfo.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /release_info.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /test/info.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /info HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /info.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /phpinfo.php3 HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /phpinfo.php.txt HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /info.php.save.1 HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /info.php_ HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /_info.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /admin_phpinfo.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /dbinfo.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /admin_info.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.aws/credentials HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /config.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /phpinfo.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /phpinfo.php.bak HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /admin/admin_phpinfo.php4 HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /pinfo.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.bak HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.backup HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env_sample HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.old HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.www HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.docker/.env HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.dev HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.example HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env_1 HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.stage HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /config.env HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.pam_environment HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.environment HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.production HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.production.local HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /env.js HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.powenv HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.rbenv-gemsets HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.envs HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.docker HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.sample HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env_bak HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.php HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.development.local HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env-example HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.prod HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.docker.dev HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.test HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /env HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /env.list HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.ghc.environment HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /env.txt HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /printenv HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.hsenv HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /environment HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /env.json HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /envrc HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.dev.local HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /environment.ts HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env_old HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.zshenv HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.development.sample HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.rbenv-version HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env-sample HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.prod.local HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.travis HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.test.sample HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "GET /.env.2 HTTP/1.1" 404 Not Found
+INFO:     216.81.248.11:0 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     2.26.84.138:0 - "GET / HTTP/1.1" 200 OK
+INFO:     77.83.39.197:0 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     104.237.154.253:0 - "GET /sonicui/7/sslvpn-portal/ HTTP/1.1" 404 Not Found
+INFO:     104.237.154.253:0 - "GET /sslvpnLogin.html HTTP/1.1" 404 Not Found
+INFO:     104.237.154.253:0 - "GET / HTTP/1.1" 200 OK
+INFO:     104.237.154.253:0 - "GET /auth1.html HTTP/1.1" 404 Not Found
+INFO:     104.237.154.253:0 - "GET /auth.html HTTP/1.1" 404 Not Found
+INFO:     104.237.154.253:0 - "GET /api/sonicos/tfa HTTP/1.1" 404 Not Found
+INFO:     104.237.154.253:0 - "GET /api/sonicos/auth HTTP/1.1" 404 Not Found
+INFO:     165.22.132.178:0 - "GET /sonicui/7/sslvpn-portal/ HTTP/1.1" 404 Not Found
+INFO:     165.22.132.178:0 - "GET /sslvpnLogin.html HTTP/1.1" 404 Not Found
+INFO:     165.22.132.178:0 - "GET / HTTP/1.1" 200 OK
+INFO:     165.22.132.178:0 - "GET /auth1.html HTTP/1.1" 404 Not Found
+INFO:     165.22.132.178:0 - "GET /auth.html HTTP/1.1" 404 Not Found
+INFO:     165.22.132.178:0 - "GET /api/sonicos/tfa HTTP/1.1" 404 Not Found
+INFO:     165.22.132.178:0 - "GET /api/sonicos/auth HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 405 Method Not Allowed
+INFO:     101.47.8.187:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.1" 404 Not Found
+INFO:     101.47.8.187:0 - "GET /containers/json HTTP/1.1" 404 Not Found
+INFO:     185.12.59.118:0 - "GET /Dr0v HTTP/1.1" 404 Not Found
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     147.93.4.185:0 - "GET / HTTP/1.1" 200 OK
+INFO:     138.68.10.124:0 - "GET / HTTP/1.1" 200 OK
+INFO:     138.68.10.124:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     79.127.199.53:0 - "GET /remote/login HTTP/1.1" 404 Not Found
+INFO:     79.127.199.53:0 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 405 Method Not Allowed
+INFO:     185.38.148.2:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.1" 404 Not Found
+INFO:     185.38.148.2:0 - "GET /containers/json HTTP/1.1" 404 Not Found
+INFO:     20.46.225.117:0 - "GET /ReportServer HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     64.62.197.137:0 - "GET / HTTP/1.1" 200 OK
+INFO:     64.62.197.137:0 - "GET /webui/ HTTP/1.1" 404 Not Found
+INFO:     64.62.197.150:0 - "GET / HTTP/1.1" 200 OK
+INFO:     64.62.197.142:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     27.102.76.8:0 - "GET /admin/config.php HTTP/1.1" 404 Not Found
+INFO:     195.178.110.246:0 - "GET /.git/credentials HTTP/1.1" 404 Not Found
+INFO:     64.62.197.137:0 - "GET /geoserver/web/ HTTP/1.1" 404 Not Found
+INFO:     64.62.197.137:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     34.77.175.80:0 - "GET / HTTP/1.1" 200 OK
+INFO:     129.232.221.196:0 - "GET / HTTP/1.1" 200 OK
+INFO:     20.64.105.168:0 - "GET /actuator/health HTTP/1.1" 404 Not Found
+INFO:     5.61.209.107:0 - "GET /SDK/webLanguage HTTP/1.1" 404 Not Found
+INFO:     165.227.47.218:0 - "GET / HTTP/1.1" 200 OK
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     138.246.253.24:0 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     185.242.226.120:0 - "GET / HTTP/1.1" 200 OK
+INFO:     79.124.40.174:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 200 OK
+INFO:     5.61.209.107:0 - "GET /SDK/webLanguage HTTP/1.1" 404 Not Found
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     185.12.59.118:0 - "GET / HTTP/1.1" 200 OK
+INFO:     120.71.10.48:0 - "GET /dns-query?dns=7wABAAABAAAAAAAAIGRiNGI2NDBlMzhlZjExZjFhZTdjZmExNjNlYTE4NjJmDG9wZW5yZXNvbHZlcgZkbnNsYWICY24AABAAAQ HTTP/1.1" 404 Not Found
+INFO:     120.71.10.48:0 - "POST /dns-query HTTP/1.1" 404 Not Found
+INFO:     195.178.110.162:0 - "GET /.git/config HTTP/1.1" 404 Not Found
+INFO:     27.102.76.8:0 - "GET /admin/config.php HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /static/panel.css HTTP/1.1" 304 Not Modified
+INFO:     186.205.8.215:0 - "GET /static/panel.js HTTP/1.1" 304 Not Modified
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     81.29.142.100:0 - "GET / HTTP/1.1" 200 OK
+INFO:     81.29.142.100:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     81.29.142.100:0 - "GET /.well-known/security.txt HTTP/1.1" 404 Not Found
+INFO:     81.29.142.100:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     81.29.142.100:0 - "GET /security.txt HTTP/1.1" 404 Not Found
+INFO:     81.29.142.100:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     79.124.40.174:0 - "GET /actuator/gateway/routes HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /static/panel.css HTTP/1.1" 304 Not Modified
+INFO:     186.205.8.215:0 - "GET /static/panel.js HTTP/1.1" 304 Not Modified
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/users HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/page-picture?page_id=100278135680139 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/instagram-picture?ig_user_id=17841448147453626&page_id=100278135680139 HTTP/1.1" 200 OK
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     20.168.0.218:0 - "GET /owa/auth/x.js HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 405 Method Not Allowed
+INFO:     87.106.91.226:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.1" 404 Not Found
+INFO:     87.106.91.226:0 - "GET /containers/json HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     3.131.220.121:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 401 Unauthorized
+INFO:     186.205.8.215:0 - "GET /panel/pages HTTP/1.1" 401 Unauthorized
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /static/panel.js HTTP/1.1" 304 Not Modified
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     66.249.80.2:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     178.104.145.136:0 - "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 405 Method Not Allowed
+INFO:     178.104.145.136:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.1" 404 Not Found
+INFO:     178.104.145.136:0 - "GET /containers/json HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     34.34.225.166:0 - "GET /panel/pages HTTP/1.1" 401 Unauthorized
+INFO:     34.34.225.166:0 - "GET /panel/pages HTTP/1.1" 401 Unauthorized
+INFO:     186.205.8.215:0 - "GET /meta/connect/start HTTP/1.1" 302 Found
+INFO:     186.205.8.215:0 - "GET /meta/connect/callback?code=AQAZDDGmr43w5iZV6kSWTtKXp_tn8s8hZwoQH0463pUjgPnFI4dTYHlsZTeyCCeZmkVJISuHysABQBSPSPt96HdCHEWSxNKcNaRj4rtkY3mADGnbkm2IBGtvFgNGxcLU5GKYwCCBq1JhFAD8OZBXeR9Ebo1Qby0mdtrUzX6jFzctIGmTgh2kgp6q0_RgIlkooq-ksyhGbE-0xl07kDMOusxOBXUJshMvskWUMVscmgEJjQHFrEw_cxoBWmXq_2K9sJgAagZcgnySnBh4fddDHdVhVoO_t4DZmGGDuTaYImnjPPignqZAGX4MWnlKEB6WaQCurHsksdAwIoH9nyEJID6vLv1n0-1nfZCK6DqWysxnyRSnjlaJAWVI1k2vnzIelWsCLTYHHlHxfJ3s1gtXUOsCYo7m78dzwYzRoUeJ8fUdpwOCN470tgg0OqEmCTiVX7RbjRQTJg2UTO7U4fnSB8hd&state=%7B%22panel_user%22%3A+%22luispessoa18%40gmail.com%22%2C+%22ts%22%3A+1776286462%7D HTTP/1.1" 302 Found
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     2.26.61.107:0 - "POST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 404 Not Found
+INFO:     2.26.61.107:0 - "POST /?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.1" 405 Method Not Allowed
+INFO:     2.26.61.107:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/ad-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/ad-campaigns?ad_account_id=act_809396714231583 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/ad-adsets?ad_account_id=act_809396714231583 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/ad-ads?ad_account_id=act_809396714231583 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/ad-performance-tree?ad_account_id=act_809396714231583&date_preset=last_30d&limit=250 HTTP/1.1" 200 OK
+INFO:     46.151.178.13:0 - "PROPFIND / HTTP/1.1" 405 Method Not Allowed
+INFO:     66.249.80.3:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET / HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /meta/instagram-accounts HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/brand-profiles HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=964609183398328 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=627472960444363 HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /panel/profile-growth?profile_key=ribus.io HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /docs HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     186.205.8.215:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     149.154.161.230:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     129.121.51.193:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     129.121.51.193:0 - "GET /meta/examples HTTP/1.1" 200 OK
+INFO:     129.121.51.193:0 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     129.121.51.193:0 - "GET /api/v1/me HTTP/1.1" 200 OK
+INFO:     129.121.51.193:0 - "GET /meta/accounts HTTP/1.1" 200 OK
+INFO:     129.121.51.193:0 - "GET /meta/instagram-accounts HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "GET /panel/pages HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "POST /panel/login HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "GET /meta/instagram-accounts HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "GET /meta/instagram-accounts HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "GET /meta/instagram-accounts?api_key=mpk_L63uDA1i3tqHxZ0yh3U722mApJiwZjKD HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "GET /meta/page-posts?api_key=mpk_L63uDA1i3tqHxZ0yh3U722mApJiwZjKD&page_id=964609183398328 HTTP/1.1" 200 OK
+INFO:     129.121.51.193:0 - "GET /meta/instagram-accounts?api_key=mpk_L63uDA1i3tqHxZ0yh3U722mApJiwZjKD HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "GET /meta/instagram-insights?api_key=mpk_L63uDA1i3tqHxZ0yh3U722mApJiwZjKD&ig_user_id=17841445066879813 HTTP/1.1" 400 Bad Request
+INFO:     129.121.51.193:0 - "GET /panel/pages?api_key=mpk_L63uDA1i3tqHxZ0yh3U722mApJiwZjKD HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "POST /meta/instagram-insights HTTP/1.1" 405 Method Not Allowed
+INFO:     129.121.51.193:0 - "GET /meta/instagram-media-insights?api_key=mpk_L63uDA1i3tqHxZ0yh3U722mApJiwZjKD&ig_user_id=17841445066879813 HTTP/1.1" 400 Bad Request
+INFO:     129.121.51.193:0 - "GET /panel/pages HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "GET /panel/pages HTTP/1.1" 401 Unauthorized
+INFO:     129.121.51.193:0 - "GET /internal/panel-admin HTTP/1.1" 403 Forbidden
+INFO:     129.121.51.193:0 - "GET /meta/page-posts?api_key=mpk_L63uDA1i3tqHxZ0yh3U722mApJiwZjKD&page_id=964609183398328 HTTP/1.1" 200 OK
+INFO:     129.121.51.193:0 - "GET /meta/page-insights?api_key=mpk_L63uDA1i3tqHxZ0yh3U722mApJiwZjKD&page_id=964609183398328&metrics=page_impressions,page_engaged_users&period=day HTTP/1.1" 400 Bad Request
+INFO:     129.121.51.193:0 - "GET /meta/ad-accounts?api_key=mpk_L63uDA1i3tqHxZ0yh3U722mApJiwZjKD HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1704813]

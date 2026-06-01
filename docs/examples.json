@@ -1,0 +1,154 @@
+{
+  "base_url": "https://marketing.incorporacao.digital",
+  "notes": [
+    "Instagram geralmente funciona melhor no fluxo create media -> publish.",
+    "Caption deve ser enviado como form-urlencoded/--data-urlencode.",
+    "URLs de imagem com nomes simples e previsíveis funcionam melhor no Graph do Instagram.",
+    "Gerar nomes com um post_id simples ajuda a evitar erros de media type/download."
+  ],
+  "examples": {
+    "instagram_access_token_home_unity": {
+      "endpoint": "GET /meta/instagram-access-token?username=homeunity&refresh=true",
+      "output": {
+        "ok": true,
+        "page_id": "964609183398328",
+        "page_name": "Home Unity",
+        "instagram_business_account": {
+          "id": "17841400000000000",
+          "username": "homeunity"
+        },
+        "access_token": "EAAG...",
+        "source": "me/accounts",
+        "hint": "This token is the page-level token associated with the selected Instagram business account and can be used for Graph Instagram publishing flows."
+      }
+    },
+    "image_generate": {
+      "endpoint": "POST /meta/image/generate",
+      "input": {
+        "prompt": "Luxury residential social media image, premium architecture, clean composition, square format, no text",
+        "post_id": "homeunitypost001",
+        "prefix": "igpost"
+      },
+      "output": {
+        "ok": true,
+        "prompt": "Luxury residential social media image, premium architecture, clean composition, square format, no text",
+        "post_id": "homeunitypost001",
+        "image": {
+          "slide_number": 1,
+          "path": "/root/.openclaw/workspace/outputs/nano-banana/igpost_homeunitypost001.png",
+          "status": "ok",
+          "model": "nano-banana-pro-preview"
+        },
+        "local_path": "/root/.openclaw/workspace/outputs/nano-banana/igpost_homeunitypost001.png",
+        "public_url": "https://marketing.incorporacao.digital/media/generated/igpost_homeunitypost001.jpg",
+        "recommended_media_payload": {
+          "image_url": "https://marketing.incorporacao.digital/media/generated/igpost_homeunitypost001.jpg",
+          "caption": "Legenda aqui",
+          "post_type": "image"
+        }
+      }
+    },
+    "instagram_post_create_and_publish": {
+      "endpoint": "POST /meta/instagram/post",
+      "input": {
+        "page_id": "964609183398328",
+        "image_url": "https://marketing.incorporacao.digital/media/generated/igpost_homeunitypost001.jpg",
+        "caption": "Home Unity apresenta uma nova visão para automação residencial.\n\nMais conforto, integração e praticidade no dia a dia.",
+        "post_type": "image",
+        "publish_now": true
+      },
+      "output": {
+        "ok": true,
+        "post_type": "image",
+        "media": {
+          "image_url": "https://marketing.incorporacao.digital/media/generated/igpost_homeunitypost001.jpg",
+          "caption": "Home Unity apresenta uma nova visão para automação residencial.\n\nMais conforto, integração e praticidade no dia a dia.",
+          "create_endpoint": "https://graph.facebook.com/v23.0/17841400000000000/media",
+          "publish_endpoint": "https://graph.facebook.com/v23.0/17841400000000000/media_publish"
+        },
+        "creation": {
+          "id": "17900000000000000"
+        },
+        "publish_result": {
+          "id": "17910000000000000"
+        }
+      }
+    },
+    "instagram_post_create_only": {
+      "endpoint": "POST /meta/instagram/post",
+      "input": {
+        "page_id": "964609183398328",
+        "image_url": "https://marketing.incorporacao.digital/media/generated/igpost_homeunitypost001.jpg",
+        "caption": "Criar container primeiro",
+        "post_type": "image",
+        "publish_now": false
+      },
+      "output": {
+        "ok": true,
+        "post_type": "image",
+        "media": {
+          "image_url": "https://marketing.incorporacao.digital/media/generated/igpost_homeunitypost001.jpg",
+          "caption": "Criar container primeiro",
+          "create_endpoint": "https://graph.facebook.com/v23.0/17841400000000000/media",
+          "publish_endpoint": "https://graph.facebook.com/v23.0/17841400000000000/media_publish"
+        },
+        "creation": {
+          "id": "17900000000000001"
+        },
+        "publish_result": null,
+        "next_step": {
+          "action": "publish_container",
+          "creation_id": "17900000000000001",
+          "endpoint": "/meta/instagram/publish-container"
+        }
+      }
+    },
+    "instagram_publish_container": {
+      "endpoint": "POST /meta/instagram/publish-container",
+      "input": {
+        "page_id": "964609183398328",
+        "container_id": "17900000000000001"
+      },
+      "output": {
+        "ok": true,
+        "publish_result": {
+          "id": "17910000000000001"
+        }
+      }
+    },
+    "facebook_post": {
+      "endpoint": "POST /meta/facebook/post",
+      "input": {
+        "page_id": "642584102277878",
+        "message": "Conheça a nova solução da Incorporação Digital.",
+        "link": "https://incorporacao.digital",
+        "published": true,
+        "scheduled_publish_time": ""
+      },
+      "output": {
+        "ok": true,
+        "result": {
+          "id": "122161771856901904"
+        }
+      }
+    },
+    "page_insights": {
+      "endpoint": "GET /meta/page-insights?page_id=642584102277878&metrics=page_impressions,page_engagement&period=day",
+      "output": {
+        "ok": true,
+        "page_id": "642584102277878",
+        "metrics": "page_impressions,page_engagement",
+        "result": {
+          "data": []
+        }
+      }
+    }
+  },
+  "curl_patterns": {
+    "home_unity_get_token": "curl 'https://marketing.incorporacao.digital/meta/instagram-access-token?username=homeunity&refresh=true'",
+    "home_unity_generate_image": "curl -X POST 'https://marketing.incorporacao.digital/meta/image/generate' -H 'Content-Type: application/json' -d '{\"prompt\":\"Luxury residential social media image, premium architecture, clean composition, square format, no text\",\"post_id\":\"homeunitypost001\",\"prefix\":\"igpost\"}'",
+    "home_unity_create_and_publish_via_panel": "curl -X POST 'https://marketing.incorporacao.digital/meta/instagram/post' -H 'Content-Type: application/json' -d '{\"page_id\":\"964609183398328\",\"image_url\":\"https://marketing.incorporacao.digital/media/generated/igpost_homeunitypost001.jpg\",\"caption\":\"Home Unity apresenta uma nova visao para automacao residencial.\\n\\nMais conforto, integracao e praticidade no dia a dia.\",\"post_type\":\"image\",\"publish_now\":true}'",
+    "home_unity_graph_create_media_direct": "curl -X POST 'https://graph.facebook.com/v23.0/17841400000000000/media' -d 'image_url=https://marketing.incorporacao.digital/media/generated/igpost_homeunitypost001.jpg' --data-urlencode 'caption=Home Unity apresenta uma nova visao para automacao residencial.\n\nMais conforto, integracao e praticidade no dia a dia.' -d 'access_token=EAAG...'",
+    "home_unity_graph_publish_direct": "curl -X POST 'https://graph.facebook.com/v23.0/17841400000000000/media_publish' -d 'creation_id=17900000000000000' -d 'access_token=EAAG...'"
+  }
+}

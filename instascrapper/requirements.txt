@@ -1,0 +1,13 @@
+camoufox[geoip]
+rich
+requests
+python-dotenv
+Jinja2
+fastapi
+uvicorn
+# IA providers (instale conforme o provider que for usar)
+anthropic
+google-generativeai
+openai
+# PDF (opcional): após instalar, rode: playwright install chromium
+# playwright  ← já vem com camoufox; só rode: playwright install chromium

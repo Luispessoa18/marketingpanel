@@ -1,0 +1,822 @@
+{
+  "_info": {
+    "title": "Meta Connection Panel – API Spec para uso externo",
+    "version": "1.0",
+    "base_url": "https://SEU_SERVIDOR",
+    "auth_note": "Use o campo 'admin_token' no body dos POSTs que exigem auth. Para GETs protegidos use cookie de sessão (panel_auth). Para tráfego pago e performance use cookies ou passe ig_user_id + access_token no body.",
+    "status_legend": {
+      "EXISTS": "Rota já existe e funciona",
+      "MISSING": "Rota NÃO existe – precisa ser criada",
+      "PARTIAL": "Existe mas falta funcionalidade específica"
+    }
+  },
+
+  "auth": {
+    "admin_token": {
+      "description": "Token master do sistema. Configurado via env/secrets como META_PANEL_ADMIN_TOKEN.",
+      "how_to_use": "Inclua no body do POST: { \"admin_token\": \"SEU_TOKEN\", ... }",
+      "routes_that_accept": [
+        "POST /meta/instagram-media/create",
+        "POST /meta/instagram-media/publish",
+        "POST /schedule/post/add"
+      ]
+    },
+    "ig_user_id_plus_access_token": {
+      "description": "Para rotas que usam _resolve_ig_context, você pode passar ig_user_id + access_token diretamente no body e o sistema ignora a sessão interna.",
+      "how_to_use": "{ \"ig_user_id\": \"123456\", \"access_token\": \"TOKEN_DA_PAGINA\", ... }",
+      "routes_that_accept": [
+        "POST /meta/instagram/carousel",
+        "POST /meta/instagram/story",
+        "POST /meta/instagram/reel",
+        "POST /meta/instagram/publish-container"
+      ]
+    },
+    "page_id_lookup": {
+      "description": "Para rotas de Facebook e Instagram, basta passar o page_id. O sistema busca o access_token internamente na sessão salva.",
+      "how_to_use": "{ \"page_id\": \"ID_DA_PAGINA\", ... }",
+      "routes_that_accept": [
+        "POST /meta/facebook/post",
+        "POST /meta/facebook/photo",
+        "POST /meta/facebook/album"
+      ]
+    }
+  },
+
+  "oauth": {
+    "_note": "Fluxo OAuth Meta/Facebook para conectar páginas e contas de anúncio. Depois do callback, as páginas e ad_accounts ficam salvos no servidor e disponíveis pelos outros endpoints.",
+    "endpoints": [
+      {
+        "status": "EXISTS",
+        "method": "GET",
+        "path": "/meta/connect/start",
+        "description": "Redireciona o usuário para o dialog OAuth do Facebook/Instagram. Solicita todos os escopos de pages + ads + instagram.",
+        "auth": "Cookie de sessão do painel (panel_auth)",
+        "query_params": {},
+        "response": "302 redirect para Facebook OAuth dialog"
+      },
+      {
+        "status": "EXISTS",
+        "method": "GET",
+        "path": "/meta/connect/callback",
+        "description": "Callback OAuth – troca o code pelo access_token, busca páginas e ad_accounts, salva a sessão.",
+        "auth": "Nenhuma (chamado pelo Facebook)",
+        "query_params": {
+          "code": "string – código OAuth retornado pelo Facebook",
+          "state": "string – state passado no connect/start",
+          "error": "string – erro se o usuário negou permissão"
+        },
+        "response": "302 redirect para /"
+      },
+      {
+        "status": "EXISTS",
+        "method": "GET",
+        "path": "/meta/accounts",
+        "description": "Lista as páginas do Facebook e contas de anúncio do usuário logado.",
+        "auth": "Cookie panel_user",
+        "query_params": {},
+        "response": {
+          "ok": true,
+          "me": { "id": "string", "name": "string" },
+          "pages": [{ "id": "string", "name": "string", "access_token": "string", "instagram_business_account": { "id": "string", "username": "string" } }],
+          "ad_accounts": [{ "id": "string", "name": "string" }]
+        }
+      },
+      {
+        "status": "EXISTS",
+        "method": "GET",
+        "path": "/panel/pages",
+        "description": "Lista todas as páginas conectadas no servidor (todas as sessões).",
+        "auth": "Cookie panel_auth (usuário logado no painel)",
+        "query_params": {},
+        "response": {
+          "ok": true,
+          "pages": [{ "id": "string", "name": "string", "access_token": "string", "instagram_business_account": { "id": "string", "username": "string" } }]
+        }
+      }
+    ]
+  },
+
+  "instagram": {
+    "_note": "Fluxo Instagram Graph API via Meta Business. Imagem deve ser uma URL pública acessível pelo servidor do Facebook. Para imagens locais, use /panel/ad-builder-upload-image primeiro para obter uma URL pública.",
+
+    "upload_image": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/panel/ad-builder-upload-image",
+      "description": "Faz upload de uma imagem local e retorna uma URL pública (usada depois nos endpoints de post).",
+      "auth": "Cookie panel_auth",
+      "content_type": "multipart/form-data",
+      "form_fields": {
+        "file": "arquivo de imagem (jpg/png/webp)"
+      },
+      "response": {
+        "ok": true,
+        "public_url": "https://cdn.exemplo.com/imagem.jpg",
+        "path": "static/generated/arquivo.jpg"
+      }
+    },
+
+    "step1_create_container": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/instagram-media/create",
+      "description": "Passo 1 do fluxo Instagram: cria um container de mídia (imagem). Retorna creation_id. Para imagens simples, o status fica FINISHED em segundos. Para vídeos/reels, é assíncrono – faça poll do status antes de publicar.",
+      "auth": "admin_token no body",
+      "body": {
+        "admin_token": "string – TOKEN_MASTER",
+        "ig_user_id": "string – ID da conta Instagram Business",
+        "access_token": "string – page access token da página vinculada",
+        "image_url": "string – URL pública da imagem (mín 320x320, máx 8MB)",
+        "caption": "string – legenda do post (até 2200 chars)"
+      },
+      "response": {
+        "ok": true,
+        "result": { "id": "string – creation_id / container_id" }
+      }
+    },
+
+    "step2_check_container_status": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/meta/instagram/container-status",
+      "description": "Verifica o status do container. Espere status_code=FINISHED antes de publicar. Para imagens, geralmente já vem FINISHED imediatamente. Para vídeos, pode levar minutos.",
+      "auth": "Nenhuma (usa sessão interna do servidor)",
+      "query_params": {
+        "container_id": "string – creation_id retornado no passo 1",
+        "ig_user_id": "string – ID da conta Instagram (opcional se page_id passado)",
+        "access_token": "string – page access token (opcional se page_id passado)",
+        "page_id": "string – page_id (alternativa ao ig_user_id+access_token)",
+        "username": "string – username Instagram (alternativa)"
+      },
+      "response": {
+        "ok": true,
+        "container_id": "string",
+        "status_code": "FINISHED | IN_PROGRESS | EXPIRED | ERROR",
+        "status": "string"
+      }
+    },
+
+    "step3_publish": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/instagram-media/publish",
+      "description": "Passo 3: publica o container validado. Use somente após status_code=FINISHED.",
+      "auth": "admin_token no body",
+      "body": {
+        "admin_token": "string – TOKEN_MASTER",
+        "ig_user_id": "string – ID da conta Instagram Business",
+        "access_token": "string – page access token",
+        "creation_id": "string – container_id do passo 1"
+      },
+      "response": {
+        "ok": true,
+        "result": { "id": "string – ID do post publicado no Instagram" }
+      }
+    },
+
+    "step3_alternative_schedule": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/schedule/post/add",
+      "description": "Alternativa ao publish imediato: agenda o post para ser publicado em um horário específico. O servidor executa os posts agendados automaticamente.",
+      "auth": "admin_token no body",
+      "body": {
+        "admin_token": "string – TOKEN_MASTER",
+        "ig_user_id": "string – ID da conta Instagram Business",
+        "access_token": "string – page access token",
+        "image_url": "string – URL pública da imagem",
+        "caption": "string – legenda",
+        "scheduled_at": "number – Unix timestamp do momento de publicação",
+        "page_id": "string – opcional",
+        "ig_username": "string – opcional",
+        "page_name": "string – opcional"
+      },
+      "response": {
+        "ok": true,
+        "post": {
+          "id": "string",
+          "status": "scheduled",
+          "scheduled_at": "number",
+          "image_url": "string",
+          "caption": "string"
+        }
+      }
+    },
+
+    "publish_container_alt": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/instagram/publish-container",
+      "description": "Alternativa ao /meta/instagram-media/publish. Aceita ig_user_id+access_token OU page_id diretamente.",
+      "auth": "Nenhuma (usa sessão interna ou ig_user_id+access_token no body)",
+      "body": {
+        "container_id": "string – creation_id",
+        "ig_user_id": "string – opcional se page_id passado",
+        "access_token": "string – opcional se page_id passado",
+        "page_id": "string – alternativa a ig_user_id+access_token"
+      },
+      "response": {
+        "ok": true,
+        "publish_result": { "id": "string – ID do post publicado" }
+      }
+    },
+
+    "carousel": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/instagram/carousel",
+      "description": "Publica um carrossel com 2 a 10 imagens em uma única chamada (cria todos os containers + publica).",
+      "auth": "Nenhuma (usa sessão interna ou ig_user_id+access_token no body)",
+      "body": {
+        "image_urls": ["string", "string"],
+        "caption": "string",
+        "ig_user_id": "string – opcional",
+        "access_token": "string – opcional",
+        "page_id": "string – opcional"
+      },
+      "response": {
+        "ok": true,
+        "items": [{ "id": "string" }],
+        "container": { "id": "string" },
+        "publish_result": { "id": "string" }
+      }
+    },
+
+    "story": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/instagram/story",
+      "description": "Publica um Story no Instagram (imagem).",
+      "auth": "Nenhuma (usa sessão interna ou ig_user_id+access_token no body)",
+      "body": {
+        "image_url": "string",
+        "ig_user_id": "string – opcional",
+        "access_token": "string – opcional",
+        "page_id": "string – opcional"
+      },
+      "response": {
+        "ok": true,
+        "container": { "id": "string" },
+        "publish_result": { "id": "string" }
+      }
+    },
+
+    "reel": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/instagram/reel",
+      "description": "Cria um container de Reel (vídeo). Async – após criar, faça poll do container-status até FINISHED, depois chame publish-container.",
+      "auth": "Nenhuma (usa sessão interna ou ig_user_id+access_token no body)",
+      "body": {
+        "video_url": "string – URL pública do vídeo .mp4",
+        "caption": "string – opcional",
+        "share_to_feed": "boolean – opcional, default true",
+        "ig_user_id": "string – opcional",
+        "access_token": "string – opcional",
+        "page_id": "string – opcional"
+      },
+      "response": {
+        "ok": true,
+        "container": { "id": "string – use para poll e depois publicar" }
+      }
+    },
+
+    "list_scheduled": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/schedule/posts",
+      "description": "Lista posts agendados/publicados.",
+      "auth": "Nenhuma",
+      "query_params": {
+        "status": "string – 'scheduled' | 'published' | 'failed' (opcional)",
+        "page_id": "string – filtrar por página (opcional)",
+        "ig_user_id": "string – filtrar por conta IG (opcional)"
+      },
+      "response": {
+        "ok": true,
+        "posts": [{ "id": "string", "status": "string", "scheduled_at": "number", "image_url": "string", "caption": "string" }]
+      }
+    },
+
+    "publish_now_scheduled": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/schedule/post/publish-now",
+      "description": "Força a publicação imediata de um post agendado pelo ID.",
+      "auth": "Cookie panel_auth",
+      "body": { "post_id": "string" },
+      "response": { "ok": true }
+    },
+
+    "delete_scheduled": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/schedule/post/delete",
+      "description": "Remove um post agendado.",
+      "auth": "Cookie panel_auth",
+      "body": { "post_id": "string" },
+      "response": { "ok": true }
+    },
+
+    "insights": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/meta/instagram-insights",
+      "description": "Métricas da conta Instagram (alcance, impressões, etc).",
+      "auth": "Nenhuma (usa sessão interna)",
+      "query_params": {
+        "ig_user_id": "string – ID da conta IG",
+        "page_id": "string – alternativa",
+        "metrics": "string – ex: 'reach,impressions,profile_views' (opcional, usa padrão se vazio)",
+        "period": "string – 'day' | 'week' | 'days_28' | 'month' (opcional)",
+        "since": "string – Unix timestamp início (opcional)",
+        "until": "string – Unix timestamp fim (opcional)"
+      },
+      "response": {
+        "ok": true,
+        "data": { "reach": "number", "impressions": "number", "profile_views": "number" }
+      }
+    }
+  },
+
+  "facebook": {
+    "_note": "Posts no Facebook via Graph API. O page access_token é buscado internamente a partir do page_id.",
+
+    "text_post": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/facebook/post",
+      "description": "Cria um post de texto (com ou sem link) em uma Página do Facebook.",
+      "auth": "Nenhuma (token buscado internamente pelo page_id)",
+      "body": {
+        "page_id": "string – ID da Página do Facebook",
+        "message": "string – texto do post",
+        "link": "string – URL opcional",
+        "published": "boolean – true para publicar imediatamente, false para rascunho",
+        "scheduled_publish_time": "string – Unix timestamp para agendamento (requer published=false)"
+      },
+      "response": {
+        "ok": true,
+        "result": { "id": "string – ID do post criado" }
+      }
+    },
+
+    "photo_post": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/facebook/photo",
+      "description": "Publica uma foto em uma Página do Facebook.",
+      "auth": "Nenhuma (token buscado internamente pelo page_id)",
+      "body": {
+        "page_id": "string",
+        "image_url": "string – URL pública da imagem",
+        "caption": "string – opcional",
+        "published": "boolean – default true",
+        "scheduled_publish_time": "string – Unix timestamp para agendamento (opcional)"
+      },
+      "response": {
+        "ok": true,
+        "result": { "id": "string – ID do post criado" }
+      }
+    },
+
+    "album_post": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/facebook/album",
+      "description": "Publica múltiplas fotos como álbum em uma Página do Facebook.",
+      "auth": "Nenhuma (token buscado internamente pelo page_id)",
+      "body": {
+        "page_id": "string",
+        "image_urls": ["string", "string"],
+        "caption": "string – opcional",
+        "published": "boolean – default true"
+      },
+      "response": {
+        "ok": true,
+        "photo_ids": [{ "media_fbid": "string" }],
+        "result": { "id": "string" }
+      }
+    },
+
+    "page_insights": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/meta/page-insights",
+      "description": "Métricas da Página do Facebook (impressões, alcance, etc).",
+      "auth": "Nenhuma",
+      "query_params": {
+        "page_id": "string",
+        "metrics": "string – ex: 'page_impressions,page_reach' (opcional)",
+        "period": "string – 'day' | 'week' | 'days_28' | 'month' (opcional)",
+        "since": "string – Unix timestamp (opcional)",
+        "until": "string – Unix timestamp (opcional)"
+      },
+      "response": { "ok": true, "data": {} }
+    }
+  },
+
+  "ads_trafego_pago": {
+    "_note": "Tráfego pago via Meta Ads API. A maioria exige cookies de sessão (panel_auth). Para uso externo, o workaround é passar ig_user_id + access_token ou usar o admin_token onde disponível.",
+
+    "list_campaigns_with_kpis": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/meta/ad-performance-tree",
+      "description": "Retorna a árvore completa: Campanhas → Conjuntos → Anúncios, com KPIs de cada nível (spend, CTR, CPC, CPM, impressões, cliques, leads).",
+      "auth": "Cookie panel_auth OU panel_user",
+      "query_params": {
+        "ad_account_id": "string – ID da conta de anúncios (ex: 'act_123456')",
+        "date_preset": "string – 'last_7d' | 'last_14d' | 'last_30d' | 'last_90d' | 'this_month' | 'last_month'",
+        "since": "string – data ISO 'YYYY-MM-DD' (alternativa a date_preset)",
+        "until": "string – data ISO 'YYYY-MM-DD' (alternativa a date_preset)",
+        "limit": "string – máx de campanhas, default '250'"
+      },
+      "response": {
+        "ok": true,
+        "campaigns": [{
+          "campaign": { "id": "string", "name": "string", "objective": "string", "status": "string", "effective_status": "string" },
+          "metrics": { "spend": "string", "clicks": "string", "impressions": "string", "ctr": "string", "cpc": "string", "cpm": "string", "leads": "string" },
+          "adsets": [{
+            "adset": { "id": "string", "name": "string" },
+            "metrics": {},
+            "ads": [{ "ad": { "id": "string", "name": "string" }, "metrics": {} }]
+          }]
+        }],
+        "summary": { "spend": "string", "campaigns_count": "number", "active_count": "number" }
+      }
+    },
+
+    "ai_report": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/panel/ads/report",
+      "description": "Relatório completo de anúncios com análise IA (melhor campanha, público ideal, criativo vencedor, sugestões).",
+      "auth": "Cookie panel_auth",
+      "query_params": {
+        "ad_account_id": "string",
+        "date_preset": "string – mesmo formato de /meta/ad-performance-tree"
+      },
+      "response": {
+        "ok": true,
+        "report": {
+          "campaigns": [{}],
+          "adsets": [{}],
+          "ads": [{}]
+        },
+        "report_summary": { "active_campaigns": "number", "paused_campaigns": "number", "total_spend": "string" },
+        "ai_summary": "string – análise em texto gerada por IA"
+      }
+    },
+
+    "create_campaign": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/ad-drafts/create-campaign",
+      "description": "Cria uma campanha completa em modo PAUSED (rascunho): campanha + conjunto de anúncios + criativo + anúncio. Ative depois com /meta/ad-drafts/activate.",
+      "auth": "Cookie panel_auth",
+      "body": {
+        "ad_account_id": "string – ex: 'act_123456'",
+        "campaign_name": "string",
+        "adset_name": "string",
+        "daily_budget": "string – em centavos (ex: '5000' = R$50,00)",
+        "objective": "string – 'OUTCOME_LEADS' | 'OUTCOME_TRAFFIC' | 'OUTCOME_SALES' | 'OUTCOME_ENGAGEMENT'",
+        "page_id": "string – ID da Página Facebook",
+        "instagram_actor_id": "string – ID da conta Instagram (opcional)",
+        "targeting": {
+          "age_min": "number",
+          "age_max": "number",
+          "genders": [2],
+          "geo_locations": {
+            "countries": [{ "country_code": "BR" }],
+            "cities": [{ "name": "São Paulo" }]
+          },
+          "flexible_spec": [{ "interests": [{ "name": "string", "id": "string" }] }]
+        },
+        "message": "string – texto do anúncio (opcional)",
+        "headline": "string – título do anúncio (opcional)",
+        "link": "string – URL de destino (opcional)",
+        "image_url": "string – URL da imagem do criativo (opcional)",
+        "call_to_action_type": "string – 'SIGN_UP' | 'LEARN_MORE' | 'SHOP_NOW' | 'CONTACT_US' (opcional)",
+        "optimization_goal": "string – 'LEAD_GENERATION' | 'LINK_CLICKS' | 'OFFSITE_CONVERSIONS' (opcional)",
+        "billing_event": "string – 'IMPRESSIONS' (opcional)",
+        "promoted_object": {
+          "_note": "Usar para OUTCOME_LEADS com formulário",
+          "page_id": "string",
+          "lead_ads_custom_conversion": "string – form_id"
+        }
+      },
+      "response": {
+        "ok": true,
+        "campaign": { "id": "string", "name": "string" },
+        "adset": { "id": "string" },
+        "creative": { "id": "string" },
+        "ad": { "id": "string" }
+      }
+    },
+
+    "activate_campaign": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/ad-drafts/activate",
+      "description": "Ativa uma campanha (muda status de PAUSED para ACTIVE).",
+      "auth": "Nenhuma",
+      "body": { "campaign_id": "string" },
+      "response": { "ok": true, "result": {} }
+    },
+
+    "pause_campaign": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/ad-drafts/pause",
+      "description": "Pausa uma campanha.",
+      "auth": "Nenhuma",
+      "body": { "campaign_id": "string" },
+      "response": { "ok": true }
+    },
+
+    "update_budget": {
+      "status": "EXISTS",
+      "method": "POST",
+      "path": "/meta/ad-drafts/update-budget",
+      "description": "Atualiza o orçamento diário de um conjunto de anúncios.",
+      "auth": "Nenhuma",
+      "body": {
+        "adset_id": "string",
+        "daily_budget": "string – em centavos"
+      },
+      "response": { "ok": true }
+    },
+
+    "list_adsets": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/meta/ad-adsets",
+      "description": "Lista conjuntos de anúncios de uma conta ou campanha.",
+      "auth": "Nenhuma",
+      "query_params": {
+        "ad_account_id": "string – ID da conta de anúncios",
+        "campaign_id": "string – filtrar por campanha (opcional)",
+        "limit": "string – default '100'"
+      },
+      "response": {
+        "ok": true,
+        "adsets": [{ "id": "string", "name": "string", "status": "string", "daily_budget": "string", "targeting": {} }]
+      }
+    },
+
+    "list_ads": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/meta/ad-ads",
+      "description": "Lista anúncios de uma conta ou conjunto de anúncios.",
+      "auth": "Nenhuma",
+      "query_params": {
+        "ad_account_id": "string",
+        "adset_id": "string – filtrar por conjunto (opcional)",
+        "limit": "string – default '100'"
+      },
+      "response": {
+        "ok": true,
+        "ads": [{ "id": "string", "name": "string", "status": "string", "creative": {} }]
+      }
+    },
+
+    "search_interests": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/meta/interest-search",
+      "description": "Busca interesses para segmentação de anúncios.",
+      "auth": "Cookie panel_auth",
+      "query_params": {
+        "q": "string – termo de busca",
+        "ad_account_id": "string",
+        "limit": "string – default '20'"
+      },
+      "response": {
+        "ok": true,
+        "interests": [{ "id": "string", "name": "string", "audience_size_lower_bound": "number", "audience_size_upper_bound": "number" }]
+      }
+    },
+
+    "list_pixels": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/meta/ad-pixels",
+      "description": "Lista pixels da conta de anúncios.",
+      "auth": "Nenhuma",
+      "query_params": { "ad_account_id": "string" },
+      "response": {
+        "ok": true,
+        "pixels": [{ "id": "string", "name": "string", "pixel_id": "string" }]
+      }
+    },
+
+    "report_history": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/panel/ads-report-history",
+      "description": "Histórico de relatórios de anúncios gerados com IA.",
+      "auth": "Cookie panel_auth",
+      "query_params": { "ad_account_id": "string" },
+      "response": {
+        "ok": true,
+        "reports": [{ "ts": "number", "date_preset": "string", "totals": {}, "ai_summary": "string" }]
+      }
+    }
+  },
+
+  "lead_forms": {
+    "_note": "Formulários de leads (Lead Ads) do Facebook.",
+
+    "list_forms": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/meta/page-leadgen-forms",
+      "description": "Lista todos os formulários de lead criados na Página.",
+      "auth": "Nenhuma (usa sessão interna do servidor)",
+      "query_params": { "page_id": "string – ID da Página do Facebook" },
+      "response": {
+        "ok": true,
+        "page_id": "string",
+        "forms": [{ "id": "string", "name": "string", "status": "string", "created_time": "string" }]
+      }
+    },
+
+    "get_form_leads": {
+      "status": "EXISTS",
+      "method": "GET",
+      "path": "/meta/leadgen-form/{form_id}/leads",
+      "description": "PRECISA SER CRIADO. Retorna as submissões (respostas) de um formulário de lead. Chama diretamente a Graph API: GET /{form_id}/leads?fields=created_time,field_data&access_token=TOKEN",
+      "auth": "page_id no query param para buscar o token internamente",
+      "query_params": {
+        "form_id": "string – ID do formulário (no path)",
+        "page_id": "string – para buscar access_token internamente",
+        "limit": "number – máx de leads, default 100",
+        "after": "string – cursor de paginação (opcional)"
+      },
+      "meta_api_reference": "GET https://graph.facebook.com/v22.0/{form_id}/leads?fields=id,created_time,field_data&access_token={page_access_token}",
+      "expected_response": {
+        "ok": true,
+        "form_id": "string",
+        "leads": [{
+          "id": "string",
+          "created_time": "string",
+          "field_data": [{ "name": "string", "values": ["string"] }]
+        }],
+        "paging": { "cursors": { "after": "string", "before": "string" }, "next": "string" }
+      }
+    }
+  },
+
+  "missing_endpoints": {
+    "_note": "Endpoints que NÃO existem e precisam ser criados para uso externo completo.",
+
+    "1_api_key_auth": {
+      "status": "EXISTS",
+      "description": "Sistema de API Keys implementado. Use Authorization: Bearer mpk_... nas rotas /api/*.",
+      "endpoints": [
+        "POST /api/keys/create – gera nova API key (requer admin_token no body)",
+        "GET /api/keys – lista keys (requer X-Admin-Token header)",
+        "DELETE /api/keys/{prefix} – revoga pelo prefixo (requer X-Admin-Token header)"
+      ]
+    },
+
+    "2_lead_form_responses": {
+      "status": "EXISTS",
+      "description": "Buscar respostas dos formulários de lead.",
+      "endpoints": [
+        "GET /meta/leadgen-form/{form_id}/leads – lista com paginação",
+        "GET /meta/leadgen-form/{form_id}/leads/export – exporta tudo (JSON ou CSV)"
+      ]
+    },
+
+    "3_instagram_prepare_post": {
+      "status": "EXISTS",
+      "description": "Endpoint unificado: cria container + poll até FINISHED + retorna container_id pronto.",
+      "endpoint": "POST /api/instagram/prepare-post",
+      "auth": "Authorization: Bearer mpk_... OU admin_token no body"
+    },
+
+    "4_pages_with_admin_token": {
+      "status": "PARTIAL",
+      "priority": "MEDIA",
+      "description": "/panel/pages existe mas requer cookie de sessão. Para uso externo, use GET /meta/accounts com cookie após OAuth.",
+      "workaround": "Use GET /meta/accounts com cookie de sessão após OAuth"
+    }
+  },
+
+  "usage_examples": {
+    "instagram_post_flow": {
+      "_title": "Fluxo completo para postar no Instagram",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Criar container de mídia",
+          "call": "POST /meta/instagram-media/create",
+          "body": {
+            "admin_token": "SEU_TOKEN_MASTER",
+            "ig_user_id": "123456789",
+            "access_token": "EAABwzLixnjY...",
+            "image_url": "https://cdn.exemplo.com/imagem.jpg",
+            "caption": "Meu post #hashtag"
+          },
+          "save": "creation_id = response.result.id"
+        },
+        {
+          "step": 2,
+          "action": "Verificar status (aguardar FINISHED)",
+          "call": "GET /meta/instagram/container-status?container_id=CREATION_ID&ig_user_id=123456789&access_token=TOKEN",
+          "wait_for": "response.status_code === 'FINISHED'",
+          "poll_interval_ms": 2000
+        },
+        {
+          "step": 3,
+          "action": "Publicar",
+          "call": "POST /meta/instagram-media/publish",
+          "body": {
+            "admin_token": "SEU_TOKEN_MASTER",
+            "ig_user_id": "123456789",
+            "access_token": "EAABwzLixnjY...",
+            "creation_id": "CREATION_ID_DO_PASSO_1"
+          },
+          "result": "response.result.id = ID do post publicado"
+        }
+      ]
+    },
+
+    "instagram_schedule_flow": {
+      "_title": "Fluxo para agendar post no Instagram",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Agendar diretamente (sem precisar criar container antes)",
+          "call": "POST /schedule/post/add",
+          "body": {
+            "admin_token": "SEU_TOKEN_MASTER",
+            "ig_user_id": "123456789",
+            "access_token": "EAABwzLixnjY...",
+            "image_url": "https://cdn.exemplo.com/imagem.jpg",
+            "caption": "Post agendado #exemplo",
+            "scheduled_at": 1748822400,
+            "page_id": "PAGE_ID",
+            "ig_username": "minha_conta"
+          },
+          "note": "O servidor cria o container e publica automaticamente no horário agendado"
+        }
+      ]
+    },
+
+    "facebook_post_flow": {
+      "_title": "Postar no Facebook (mais simples – uma chamada só)",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Post com foto",
+          "call": "POST /meta/facebook/photo",
+          "body": {
+            "page_id": "ID_DA_PAGINA",
+            "image_url": "https://cdn.exemplo.com/imagem.jpg",
+            "caption": "Descrição do post",
+            "published": true
+          }
+        }
+      ]
+    },
+
+    "get_campaign_kpis": {
+      "_title": "Puxar KPIs de campanhas (Tráfego Pago)",
+      "call": "GET /meta/ad-performance-tree?ad_account_id=act_123456&date_preset=last_7d",
+      "auth": "Requer cookie de sessão panel_auth",
+      "note": "Retorna campanhas com spend, CTR, CPC, impressões, cliques e leads em cada nível"
+    },
+
+    "create_lead_campaign": {
+      "_title": "Criar campanha de captação de leads",
+      "call": "POST /meta/ad-drafts/create-campaign",
+      "body": {
+        "ad_account_id": "act_123456",
+        "campaign_name": "Captação Leads – Junho 2026",
+        "adset_name": "Público SP 25-45",
+        "daily_budget": "5000",
+        "objective": "OUTCOME_LEADS",
+        "page_id": "ID_DA_PAGINA",
+        "targeting": {
+          "age_min": 25,
+          "age_max": 45,
+          "geo_locations": { "cities": [{ "name": "São Paulo" }] },
+          "flexible_spec": [{ "interests": [{ "name": "Imóveis", "id": "6003263742899" }] }]
+        },
+        "message": "Garanta sua vaga! Preencha o formulário.",
+        "call_to_action_type": "SIGN_UP",
+        "optimization_goal": "LEAD_GENERATION",
+        "billing_event": "IMPRESSIONS",
+        "promoted_object": {
+          "page_id": "ID_DA_PAGINA",
+          "lead_ads_custom_conversion": "FORM_ID"
+        }
+      },
+      "then": "Chame POST /meta/ad-drafts/activate com campaign_id para ativar"
+    }
+  }
+}

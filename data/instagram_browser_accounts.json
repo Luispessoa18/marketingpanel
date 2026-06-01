@@ -1,0 +1,9 @@
+{
+  "accounts": [
+    {
+      "account_key": "homeunity_browser",
+      "username": "homeunity.oficial",
+      "note": "Fallback browser Home Unity"
+    }
+  ]
+}

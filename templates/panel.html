@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meta Connection Panel</title>
+  <link rel="stylesheet" href="/static/panel.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div id="login-screen" style="display:none">
+    <div class="login-wrap">
+      <div class="login-logo"><img src="https://dossie.incorporacao.digital/assets/logo-incorporacao-digital-mnNeBsZ9.png" alt="Incorporação Digital" /></div>
+      <div class="login-sub">Acesso ao painel</div>
+      <input id="login-email" class="form-input" type="email" placeholder="Email" autocomplete="email" />
+      <input id="login-pw" class="form-input" type="password" placeholder="Senha" autocomplete="current-password" />
+      <button class="btn-login" onclick="doLogin()">Entrar</button>
+      <div id="login-err" class="login-error"></div>
+    </div>
+  </div>
+
+  <div id="app" style="display:none">
+    <aside id="sidebar">
+      <div class="sb-brand"><img src="https://dossie.incorporacao.digital/assets/logo-incorporacao-digital-mnNeBsZ9.png" alt="Incorporação Digital" /></div>
+      <div id="sb-client" class="sb-client empty" onclick="openClientModal()">
+        <div id="sb-avatar" class="sb-client-avatar">?</div>
+        <div class="sb-client-info">
+          <div id="sb-name" class="sb-client-name">Selecionar cliente</div>
+          <div id="sb-label" class="sb-client-label">Nenhum selecionado</div>
+        </div>
+      </div>
+      <nav class="sidebar-nav sb-nav">
+        <a onclick="goto('performance')" data-sec="performance" class="active"><span class="nav-icon">⌂</span> Início</a>
+        <a onclick="goto('content')" data-sec="content"><span class="nav-icon">▣</span> Conteúdo</a>
+        <a onclick="goto('analysis')" data-sec="analysis"><span class="nav-icon">◐</span> Análise</a>
+        <a onclick="goto('campaigns')" data-sec="campaigns"><span class="nav-icon">◎</span> Campanhas</a>
+        <a onclick="goto('icp')" data-sec="icp"><span class="nav-icon">◌</span> ICP</a>
+        <a onclick="goto('agents')" data-sec="agents"><span class="nav-icon">◈</span> Agentes</a>
+        <a id="nav-admin" class="hidden" onclick="goto('admin')" data-sec="admin"><span class="nav-icon">☷</span> Admin</a>
+        <a onclick="goto('settings')" data-sec="settings"><span class="nav-icon">⚙</span> Configurações</a>
+      </nav>
+      <div class="sb-footer">
+        <a onclick="doLogout()">Sair</a>
+      </div>
+    </aside>
+
+    <main id="content">
+      <div id="sec-performance" class="section active">
+        <div id="home-no-client" class="card mb-16" style="display:none;border-left:4px solid var(--primary)">
+          <div class="card-title">Bem-vindo ao Meta Connection Panel</div>
+          <p class="muted" style="font-size:13px;margin:4px 0 16px">Selecione um cliente existente ou crie um novo para começar.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button class="btn btn-primary btn-sm" onclick="openClientModal()">Selecionar cliente</button>
+            <button class="btn btn-outline btn-sm" onclick="createNewClient()">+ Criar novo cliente</button>
+          </div>
+        </div>
+        <div id="home-onboarding" class="card mb-16 hidden" style="border-left:4px solid var(--primary)">
+          <div class="card-title">Configure sua marca para começar</div>
+          <p class="muted" style="font-size:13px;margin:4px 0 12px">Preencha os dados abaixo para que a IA gere conteúdo personalizado.</p>
+          <div id="home-onboarding-steps" style="display:flex;flex-direction:column;gap:6px"></div>
+          <div class="mt-12"><button class="btn btn-primary btn-sm" onclick="goto('settings')">Configurar marca →</button></div>
+        </div>
+        <div id="home-brand-bar" class="card mb-16 hidden" style="display:none">
+          <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+            <img id="home-brand-logo" style="display:none;height:40px;width:auto;object-fit:contain;border-radius:6px" />
+            <div style="flex:1">
+              <div id="home-brand-name" style="font-size:16px;font-weight:700"></div>
+              <div id="home-brand-tagline" class="muted" style="font-size:13px;margin-top:2px"></div>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button class="btn btn-primary btn-sm" onclick="goto('content');switchContentTab('plan',document.querySelector('.tab-btn'))">✦ Gerar conteúdo</button>
+              <button class="btn btn-outline btn-sm" onclick="openSinglePostModal()">+ Post avulso</button>
+              <button class="btn btn-outline btn-sm" onclick="goto('analysis')">◐ Análise IG</button>
+            </div>
+          </div>
+        </div>
+        <div class="page-header">
+          <h1 id="perf-title">Início</h1>
+          <div id="perf-sub" class="sub">Últimos 30 dias</div>
+        </div>
+        <div class="metrics-grid" id="perf-metrics">
+          <div class="metric-card"><div class="metric-label">Alcance</div><div id="m-reach" class="metric-value">—</div><div id="m-reach-d" class="metric-delta neutral"></div></div>
+          <div class="metric-card"><div class="metric-label">Engajamento</div><div id="m-eng" class="metric-value">—</div><div id="m-eng-d" class="metric-delta neutral"></div></div>
+          <div class="metric-card"><div class="metric-label">Seguidores</div><div id="m-follow" class="metric-value">—</div><div id="m-follow-d" class="metric-delta neutral"></div></div>
+          <div class="metric-card"><div class="metric-label">Posts publicados</div><div id="m-posts" class="metric-value">—</div><div id="m-posts-d" class="metric-delta neutral"></div></div>
+        </div>
+        <div class="grid2 mb-24">
+          <div class="card"><div class="card-title">Integrações ativas</div><div id="perf-integrations"></div></div>
+          <div class="card"><div class="card-title">Plano atual</div><div id="home-current-plan"></div></div>
+        </div>
+        <div class="grid2 mb-24">
+          <div class="card"><div class="card-title">Atividade recente</div><div id="perf-activity"></div></div>
+          <div class="card"><div class="card-title">Posts recentes</div><div id="perf-posts-list"></div></div>
+        </div>
+      </div>
+
+      <div id="sec-campaigns" class="section">
+        <div class="page-header">
+          <h1>Campanhas</h1>
+          <div class="sub">Dashboard de performance e Gestor de Tráfego IA</div>
+        </div>
+        <div id="campaigns-alert" class="mb-16"></div>
+
+        <!-- Account selector bar -->
+        <div class="card mb-16" style="padding:14px 18px">
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+            <div style="flex:1;min-width:200px">
+              <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px">Conta de anúncios</div>
+              <div id="campaigns-ad-accounts" style="display:flex;flex-wrap:wrap;gap:6px"></div>
+            </div>
+            <select id="campaigns-period" class="form-select" style="width:160px" onchange="refreshCampaignTree()">
+              <option value="today">Hoje</option>
+              <option value="yesterday">Ontem</option>
+              <option value="last_7d" selected>Últimos 7 dias</option>
+              <option value="last_14d">Últimos 14 dias</option>
+              <option value="last_30d">Últimos 30 dias</option>
+              <option value="this_month">Este mês</option>
+              <option value="last_month">Mês passado</option>
+            </select>
+            <button id="btn-campaigns-analyze" class="btn btn-outline btn-sm" onclick="analyzeTrafficAgent()" disabled>↻ Atualizar</button>
+            <button class="btn btn-primary btn-sm" onclick="openTrafficWizard()">✨ Gestor IA</button>
+          </div>
+          <div id="campaigns-selected-account" style="font-size:11px;color:var(--text-muted);margin-top:8px"></div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div id="campaigns-kpi-row" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin-bottom:16px"></div>
+
+        <!-- Charts row -->
+        <div id="campaigns-charts-row" style="display:none;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+          <div class="card">
+            <div class="card-title mb-12">Investimento por campanha</div>
+            <canvas id="chart-spend" height="220"></canvas>
+          </div>
+          <div class="card">
+            <div class="card-title mb-12">Distribuição por objetivo</div>
+            <canvas id="chart-objective" height="220"></canvas>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs-row mb-16">
+          <button class="tab-btn active" onclick="switchCampaignTab('tree', this)">Campanhas</button>
+          <button class="tab-btn" onclick="switchCampaignTab('intelligence', this)">Inteligência IA</button>
+          <button class="tab-btn" onclick="switchCampaignTab('drafts', this)">Rascunhos IA</button>
+          <button class="tab-btn" onclick="switchCampaignTab('history', this)">Histórico</button>
+        </div>
+
+        <div id="campaigns-tab-tree" class="campaigns-tab">
+          <div id="campaigns-summary"></div>
+          <div class="card mt-8"><div id="campaigns-list"><div class="empty-state"><div class="empty-icon">◈</div><h3>Selecione uma conta</h3></div></div></div>
+        </div>
+        <div id="campaigns-tab-intelligence" class="campaigns-tab" style="display:none">
+          <div id="campaigns-intelligence"></div>
+          <div id="campaigns-ai-summary" class="mt-16"></div>
+        </div>
+        <div id="campaigns-tab-drafts" class="campaigns-tab" style="display:none">
+          <div id="campaigns-drafts-list"></div>
+        </div>
+        <div id="campaigns-tab-history" class="campaigns-tab" style="display:none">
+          <div id="campaigns-history"></div>
+        </div>
+      </div>
+
+      <div id="sec-content" class="section">
+        <div class="page-header"><h1>Conteúdo</h1><div id="agents-sub" class="sub">Planejamento e publicações</div></div>
+        <div class="tabs-row mb-16">
+          <button class="tab-btn active" onclick="switchContentTab('plan', this)">✦ Planejar</button>
+          <button class="tab-btn" onclick="switchContentTab('scheduled', this)">Agendados</button>
+          <button class="tab-btn" onclick="switchContentTab('published', this)">Publicados</button>
+          <button class="tab-btn" onclick="switchContentTab('calendar', this)">Calendário</button>
+          <button class="tab-btn" onclick="switchContentTab('plans', this)">Planos salvos</button>
+          <button class="tab-btn" onclick="switchContentTab('scripts', this)">Roteiros</button>
+          <button class="tab-btn" onclick="switchContentTab('gallery', this)">Galeria</button>
+          <button class="tab-btn" onclick="switchContentTab('drafts', this)">Rascunhos</button>
+        </div>
+        <div id="content-tab-plan" class="tab-panel active">
+          <div class="card mb-24">
+            <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap">
+              <div>
+                <div class="card-title">Plano de conteúdo</div>
+                <div class="muted">Cliente: <span id="plan-client-display">—</span></div>
+              </div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <button class="btn btn-outline" onclick="openPlanModal()">Gerar plano</button>
+                <button id="btn-save-plan" class="btn btn-outline" onclick="saveCurrentPlan()" style="display:none">Salvar plano</button>
+                <button id="btn-start-plan-generation" class="btn btn-primary" onclick="startPlanGeneration()" style="display:none">Iniciar geração</button>
+                <button id="btn-reset-plan" class="btn btn-ghost" onclick="resetPlan()">Limpar</button>
+              </div>
+            </div>
+            <div id="agents-plan-alert" class="mt-16"></div>
+            <div id="agents-plan-summary" class="mt-16"></div>
+          </div>
+          <div id="bulk-action-bar" class="card mb-16 hidden">
+            <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap">
+              <div><strong id="bulk-count">0</strong> selecionados</div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <button class="btn btn-primary" onclick="bulkGenerate()">Gerar selecionados</button>
+                <button class="btn btn-outline" onclick="clearPlanSelection()">Limpar seleção</button>
+              </div>
+            </div>
+          </div>
+          <div id="agents-plan-empty" class="empty-state">
+            <div class="empty-icon">▣</div>
+            <h3>Nenhum plano carregado</h3>
+            <p>Gere um plano de conteúdo ou abra um plano salvo.</p>
+            <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px">
+              <button class="btn btn-primary" onclick="openPlanModal()">Gerar plano</button>
+              <button class="btn btn-outline" onclick="switchContentTab('plans', document.querySelectorAll('.tabs-row .tab-btn')[4])">Ver planos salvos</button>
+              <button class="btn btn-outline" onclick="openSinglePostModal()">Post avulso</button>
+            </div>
+          </div>
+          <div id="agents-plan-list"></div>
+          <div id="agents-review-bar"></div>
+          <div id="agents-review-count" class="hidden"></div>
+          <div id="sp-single-wrap" class="card mt-24">
+            <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap">
+              <div>
+                <div class="card-title">+ Post avulso</div>
+                <div class="muted">Gere legenda, arte e agende um post único sem precisar de um plano.</div>
+              </div>
+              <button class="btn btn-primary" onclick="openSinglePostModal()">Criar avulso</button>
+            </div>
+          </div>
+        </div>
+        <div id="content-tab-scheduled" class="tab-panel"><div id="content-scheduled-list"></div></div>
+        <div id="content-tab-published" class="tab-panel"><div id="content-published-list"></div></div>
+        <div id="content-tab-drafts" class="tab-panel"><div id="content-drafts-list"></div></div>
+        <div id="content-tab-gallery" class="tab-panel"><div id="content-gallery-list"></div></div>
+        <div id="content-tab-calendar" class="tab-panel"><div id="content-calendar-container"></div><div id="cal-day-detail"></div></div>
+        <div id="content-tab-plans" class="tab-panel"><div id="content-plans-list"></div></div>
+        <div id="content-tab-scripts" class="tab-panel"><div id="content-story-scripts-list"></div></div>
+      </div>
+
+      <div id="sec-analysis" class="section">
+        <div class="page-header"><h1>Análise de perfil</h1><div id="analysis-sub" class="sub"></div></div>
+        <div class="card mb-24">
+          <div class="grid2">
+            <div class="form-group">
+              <label class="form-label">Sessão do instascrapper</label>
+              <select id="analysis-session-select" class="form-select"></select>
+            </div>
+            <div style="display:flex;gap:8px;align-items:end;flex-wrap:wrap">
+              <button id="btn-fetch-profile" class="btn btn-outline" onclick="fetchOwnProfile()">Atualizar dados</button>
+              <button id="btn-analyze-own" class="btn btn-primary" onclick="analyzeOwnProfile()">Analisar com IA</button>
+              <button class="btn btn-outline" onclick="openAddCompetitorModal()">Adicionar concorrente</button>
+            </div>
+          </div>
+          <p id="analysis-login-hint" class="muted mt-16"></p>
+        </div>
+        <div class="grid2">
+          <div class="card"><div class="card-title">Seu perfil</div><div id="analysis-own-content"></div></div>
+          <div id="analysis-comparison-card" class="card" style="display:none"><div class="card-title">Comparativo</div><div id="analysis-comparison-content"></div></div>
+        </div>
+        <div class="card mt-24"><div class="card-title">Concorrentes</div><div id="analysis-competitors-list"></div></div>
+      </div>
+
+      <div id="sec-icp" class="section">
+        <div class="page-header"><h1>ICP</h1><div class="sub">Contexto, geração e ajustes do público ideal</div></div>
+        <div class="card mb-24">
+          <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap">
+            <div class="card-title">Diagnóstico guiado</div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button id="btn-icp-save-context" class="btn btn-outline" onclick="saveICPContext()">Salvar contexto</button>
+              <button id="btn-icp-refresh" class="btn btn-primary" onclick="generateICP('generate')">Gerar ICP</button>
+            </div>
+          </div>
+          <div id="icp-alert" class="mt-16"></div>
+          <div class="grid2 gap-16 mt-16">
+            <div class="form-group">
+              <label class="form-label">Seu ponto de vista do público ideal</label>
+              <textarea id="icp-onboarding-text" class="form-textarea" rows="6"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Comparação opcional</label>
+              <textarea id="icp-compare-notes" class="form-textarea" rows="6"></textarea>
+            </div>
+          </div>
+          <div class="form-group mt-16">
+            <label class="form-label">Sugestões para ajustar o ICP salvo</label>
+            <textarea id="icp-adjustment-notes" class="form-textarea" rows="4"></textarea>
+            <div class="mt-8"><button id="btn-icp-adjust" class="btn btn-secondary btn-sm" onclick="generateICP('adjust')">Ajustar ICP</button></div>
+          </div>
+          <div id="icp-content" class="mt-16"></div>
+        </div>
+      </div>
+
+      <div id="sec-settings" class="section">
+        <div class="page-header"><h1>Configurações</h1><div class="sub">Marca, integrações, IA e sistema</div></div>
+        <div class="tabs-row mb-16">
+          <button class="tab-btn active" onclick="switchSettingsTab('brand', this)">Marca</button>
+          <button class="tab-btn" onclick="switchSettingsTab('connections', this)">Conexões</button>
+          <button class="tab-btn" onclick="switchSettingsTab('ai', this)">IA</button>
+          <button id="settings-tab-system" class="tab-btn hidden" onclick="switchSettingsTab('system', this)">Sistema</button>
+        </div>
+
+        <div id="settings-brand" class="tab-panel active">
+          <div class="card">
+            <div id="brand-alert"></div>
+            <div style="display:flex;justify-content:flex-end;margin-bottom:16px">
+              <button class="btn btn-primary" onclick="openOnboarding()" style="gap:6px">✨ Configurar com IA</button>
+            </div>
+            <div class="grid2">
+              <div class="form-group"><label class="form-label">Nome da marca</label><input id="brand-name" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Tagline</label><input id="brand-tagline" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Tom</label><input id="brand-tone" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Público</label><input id="brand-audience" class="form-input" /></div>
+            </div>
+            <div class="form-group"><label class="form-label">Descrição</label><textarea id="brand-description" class="form-textarea" rows="4"></textarea></div>
+            <div class="grid2">
+              <div class="form-group"><label class="form-label">Produtos</label><input id="brand-products" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Oferta</label><input id="brand-offer" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Visual</label><input id="brand-visual" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Tipografia</label><input id="brand-font-preference" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Concorrentes</label><input id="brand-competitors" class="form-input" /></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Cores</label>
+              <div id="brand-colors-list"></div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+                <button class="btn btn-outline btn-sm" onclick="addColor()">Adicionar cor</button>
+                <select id="brand-palette-source" class="form-select" style="max-width:260px">
+                  <option value="logo">Pegar cores da logo</option>
+                  <option value="instagram_profile">Pegar cores da foto do Instagram</option>
+                  <option value="facebook_profile">Pegar cores da foto do Facebook</option>
+                  <option value="reference">Pegar cores da arte principal</option>
+                  <option value="visual_reference">Pegar cores da referência selecionada</option>
+                </select>
+                <button class="btn btn-outline btn-sm" onclick="extractBrandPalette()">Atualizar paleta</button>
+              </div>
+            </div>
+            <div class="grid2 mt-16">
+              <div class="card"><div class="card-title">Instagram</div><img id="brand-ig-pic" style="display:none;width:64px;height:64px;border-radius:50%;object-fit:cover" /><div id="brand-ig-bio" class="mt-8"></div><div id="brand-ig-followers" class="muted mt-8"></div><button id="btn-ig-as-logo" class="btn btn-outline btn-sm mt-8" style="display:none" onclick="useInstagramAsLogo()">Usar como logo</button></div>
+              <div class="card"><div class="card-title">Facebook</div><img id="brand-fb-pic" style="display:none;width:64px;height:64px;border-radius:50%;object-fit:cover" /></div>
+            </div>
+            <div class="form-group mt-16">
+              <label class="form-label">Logo</label>
+              <div class="grid2" style="gap:12px">
+                <div>
+                  <div class="muted mb-6" style="font-size:12px">Versão escura <span style="color:var(--text-muted)">(para fundos claros)</span></div>
+                  <input id="brand-logo-file" class="form-input" type="file" accept=".png,.jpg,.jpeg,.webp,.svg" />
+                  <div style="margin-top:8px;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-alt,#f7f7f8);display:flex;align-items:center;justify-content:center;min-height:100px">
+                    <img id="brand-logo-preview" style="display:none;max-width:100%;max-height:90px;width:auto;height:auto;object-fit:contain" />
+                  </div>
+                  <button class="btn btn-outline btn-sm mt-8" onclick="uploadLogo('dark')">Enviar versão escura</button>
+                </div>
+                <div>
+                  <div class="muted mb-6" style="font-size:12px">Versão clara <span style="color:var(--text-muted)">(para fundos escuros)</span></div>
+                  <input id="brand-logo-light-file" class="form-input" type="file" accept=".png,.jpg,.jpeg,.webp,.svg" />
+                  <div style="margin-top:8px;padding:12px;border:1px solid var(--border);border-radius:10px;background:#1a1a2e;display:flex;align-items:center;justify-content:center;min-height:100px">
+                    <img id="brand-logo-light-preview" style="display:none;max-width:100%;max-height:90px;width:auto;height:auto;object-fit:contain" />
+                  </div>
+                  <button class="btn btn-outline btn-sm mt-8" onclick="uploadLogo('light')">Enviar versão clara</button>
+                </div>
+              </div>
+            </div>
+            <div class="grid2 mt-16">
+              <div class="form-group">
+                <label class="form-label">Arte de referência principal</label>
+                <input id="brand-reference-file" class="form-input" type="file" />
+                <div style="margin-top:10px;padding:12px;border:1px solid var(--border);border-radius:12px;background:var(--surface-alt,#f7f7f8);display:flex;align-items:center;justify-content:center;min-height:180px">
+                  <img id="brand-reference-preview" style="display:none;max-width:100%;max-height:160px;width:auto;height:auto;object-fit:contain;border-radius:10px" />
+                </div>
+                <button id="btn-upload-reference" class="btn btn-outline btn-sm mt-8" onclick="uploadReferenceImage()">Enviar arte principal</button>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Referências visuais extras</label>
+                <input id="brand-visual-reference-file" class="form-input" type="file" multiple />
+                <div class="muted mt-8">Suba artes próprias, referências externas ou peças de concorrentes.</div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+                  <select id="brand-visual-reference-kind" class="form-select" style="max-width:240px">
+                    <option value="own_instagram">Arte do meu Instagram</option>
+                    <option value="brand_reference">Referência de estilo</option>
+                    <option value="competitor">Arte de concorrente</option>
+                  </select>
+                  <button id="btn-upload-visual-reference" class="btn btn-outline btn-sm" onclick="uploadVisualReferences()">Enviar referências</button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-16">
+              <label class="form-label">Estilo guiado por referências</label>
+              <label style="display:flex;gap:8px;align-items:center;font-size:14px">
+                <input id="brand-use-reference-style" type="checkbox" />
+                Fazer novas artes seguirem um padrão semelhante às referências marcadas
+              </label>
+              <textarea id="brand-reference-style-prompt" class="form-textarea mt-8" rows="4" placeholder="Resumo visual gerado a partir das referências: cores, estilo, tipografia, composição, clima visual..."></textarea>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+                <button class="btn btn-outline btn-sm" onclick="analyzeVisualReferences()">Analisar referências com IA</button>
+              </div>
+            </div>
+            <div class="form-group mt-16">
+              <label class="form-label">Referências salvas</label>
+              <div id="brand-visual-references-list" class="grid2"></div>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <button id="btn-sync-meta" class="btn btn-outline" onclick="syncBrandMeta()">Sincronizar com Meta</button>
+              <button class="btn btn-primary" onclick="saveBrandProfile()">Salvar perfil</button>
+              <button id="btn-brand-ai" class="btn btn-outline" onclick="analyzeBrandAI()">Analisar com IA</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="settings-connections" class="tab-panel">
+          <div class="grid2">
+            <div class="card"><div class="card-title">Meta</div><div id="conn-meta-status"></div><div id="conn-pages-list" class="mt-16"></div></div>
+            <div class="card"><div class="card-title">LinkedIn</div><div id="conn-linkedin-status"></div></div>
+            <div class="card"><div class="card-title">X</div><div id="conn-x-status"></div></div>
+          </div>
+          <div class="card mt-16" id="conn-instagram-card">
+            <div class="card-title">Instagram do cliente</div>
+            <div style="font-size:13px;color:var(--text-muted)">Carregando...</div>
+          </div>
+          <div class="card mt-16" id="conn-crm-card">
+            <div class="card-title">Leads Ads → CRM</div>
+            <div style="font-size:13px;color:var(--text-muted)">Carregando...</div>
+          </div>
+          <div class="card mt-24" id="conn-ad-account-card">
+            <div class="card-title">Conta de Anúncios padrão</div>
+            <div style="font-size:13px;color:var(--text-muted)">Carregando...</div>
+          </div>
+        </div>
+
+        <div id="settings-ai" class="tab-panel">
+          <div class="card">
+            <div id="cfg-alert"></div>
+            <div class="grid2">
+              <div class="form-group"><label class="form-label">Public Base URL</label><input id="cfg-url" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Meta App ID</label><input id="cfg-appid" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Meta App Secret</label><input id="cfg-secret" class="form-input" type="password" /></div>
+              <div class="form-group"><label class="form-label">Graph API Version</label><input id="cfg-apiver" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Gemini API Key</label><input id="cfg-gemini" class="form-input" type="password" /></div>
+              <div class="form-group"><label class="form-label">OpenAI API Key</label><input id="cfg-openai" class="form-input" type="password" /></div>
+              <div class="form-group"><label class="form-label">OpenAI Base URL</label><input id="cfg-openai-base" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Anthropic API Key</label><input id="cfg-anthropic" class="form-input" type="password" /></div>
+              <div class="form-group"><label class="form-label">Cloudinary Cloud Name</label><input id="cfg-cloudinary-cloud" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Cloudinary API Key</label><input id="cfg-cloudinary-key" class="form-input" type="password" /></div>
+              <div class="form-group"><label class="form-label">Cloudinary API Secret</label><input id="cfg-cloudinary-secret" class="form-input" type="password" /></div>
+            </div>
+            <div class="grid2 mt-16">
+              <div class="form-group"><label class="form-label">Copy</label><select id="cfg-ai-copy-provider" class="form-select" onchange="handleProviderChange('cfg-ai-copy-model', this.value)"><option value="gemini">Gemini</option><option value="openai">OpenAI</option><option value="claude">Claude</option></select><select id="cfg-ai-copy-model" class="form-select mt-8"></select></div>
+              <div class="form-group"><label class="form-label">Prompt visual</label><select id="cfg-ai-prompt-provider" class="form-select" onchange="handleProviderChange('cfg-ai-prompt-model', this.value)"><option value="gemini">Gemini</option><option value="openai">OpenAI</option><option value="claude">Claude</option></select><select id="cfg-ai-prompt-model" class="form-select mt-8"></select></div>
+              <div class="form-group"><label class="form-label">Planejamento</label><select id="cfg-ai-plan-provider" class="form-select" onchange="handleProviderChange('cfg-ai-plan-model', this.value)"><option value="gemini">Gemini</option><option value="openai">OpenAI</option><option value="claude">Claude</option></select><select id="cfg-ai-plan-model" class="form-select mt-8"></select></div>
+              <div class="form-group"><label class="form-label">Foco</label><select id="cfg-ai-focus-provider" class="form-select" onchange="handleProviderChange('cfg-ai-focus-model', this.value)"><option value="gemini">Gemini</option><option value="openai">OpenAI</option><option value="claude">Claude</option></select><select id="cfg-ai-focus-model" class="form-select mt-8"></select></div>
+              <div class="form-group"><label class="form-label">Marca</label><select id="cfg-ai-brand-provider" class="form-select" onchange="handleProviderChange('cfg-ai-brand-model', this.value)"><option value="gemini">Gemini</option><option value="openai">OpenAI</option><option value="claude">Claude</option></select><select id="cfg-ai-brand-model" class="form-select mt-8"></select></div>
+              <div class="form-group"><label class="form-label">Campanhas</label><select id="cfg-ai-campaign-provider" class="form-select" onchange="handleProviderChange('cfg-ai-campaign-model', this.value)"><option value="gemini">Gemini</option><option value="openai">OpenAI</option><option value="claude">Claude</option></select><select id="cfg-ai-campaign-model" class="form-select mt-8"></select></div>
+              <div class="form-group"><label class="form-label">Perfil</label><select id="cfg-ai-profile-provider" class="form-select" onchange="handleProviderChange('cfg-ai-profile-model', this.value)"><option value="gemini">Gemini</option><option value="openai">OpenAI</option><option value="claude">Claude</option></select><select id="cfg-ai-profile-model" class="form-select mt-8"></select></div>
+              <div class="form-group"><label class="form-label">ICP</label><select id="cfg-ai-icp-provider" class="form-select" onchange="handleProviderChange('cfg-ai-icp-model', this.value)"><option value="gemini">Gemini</option><option value="openai">OpenAI</option><option value="claude">Claude</option></select><select id="cfg-ai-icp-model" class="form-select mt-8"></select></div>
+              <div class="form-group"><label class="form-label">Imagem</label><select id="cfg-ai-image-provider" class="form-select" onchange="handleProviderChange('cfg-ai-image-model', this.value)"><option value="nano_banana">Nano Banana</option><option value="openai">OpenAI</option></select><select id="cfg-ai-image-model" class="form-select mt-8" onchange="normalizeImageQualityUI()"></select></div>
+            </div>
+            <div class="grid2 mt-16">
+              <div class="form-group"><label class="form-label">Tamanho</label><input id="cfg-ai-image-size" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Qualidade</label><input id="cfg-ai-image-quality" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Background</label><input id="cfg-ai-image-background" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Formato</label><input id="cfg-ai-image-output-format" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Moderação</label><input id="cfg-ai-image-moderation" class="form-input" /></div>
+            </div>
+            <div class="mt-16"><button class="btn btn-primary" onclick="saveConfig()">Salvar configurações</button></div>
+          </div>
+        </div>
+
+        <div id="settings-system" class="tab-panel">
+          <div class="card mb-24"><div class="card-title">Uso de IA</div><div id="ai-usage-summary"></div></div>
+          <div class="card mb-24"><div class="card-title">Usuários</div><div id="sys-users-list"></div></div>
+          <div class="card">
+            <div style="display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap">
+              <div>
+                <div class="card-title">Log de erros do sistema</div>
+                <div class="muted">Arquivo persistido em <span id="sys-error-log-path"></span></div>
+              </div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <button class="btn btn-outline" onclick="loadSystemErrorLogs()">Atualizar</button>
+                <button class="btn btn-ghost" onclick="clearSystemErrorLogs()">Limpar log</button>
+              </div>
+            </div>
+            <div id="sys-error-log-alert" class="mt-16"></div>
+            <div id="sys-error-log-list" class="mt-16"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="sec-admin" class="section">
+        <div class="page-header"><h1>Admin</h1><div class="sub">Usuários, permissões e onboarding de clientes</div></div>
+        <div id="admin-alert" class="mb-16"></div>
+        <div class="grid2 mb-24">
+          <div class="card"><div class="card-title">Resumo</div><div id="admin-summary"></div></div>
+          <div class="card">
+            <div class="card-title">Conexão Meta</div>
+            <div id="admin-meta-status"></div>
+            <div class="mt-12"><a href="/meta/connect/start" class="btn btn-outline btn-sm">Conectar conta Meta</a></div>
+          </div>
+        </div>
+        <div class="grid2 mb-24">
+          <div class="card">
+            <div class="card-title">Usuário</div>
+            <div class="grid2 mt-16">
+              <div class="form-group"><label class="form-label">Email</label><input id="admin-user-email" class="form-input" type="email" /></div>
+              <div class="form-group"><label class="form-label">Nome</label><input id="admin-user-name" class="form-input" /></div>
+              <div class="form-group"><label class="form-label">Senha</label><input id="admin-user-password" class="form-input" type="password" placeholder="Deixe em branco para manter" /></div>
+              <div class="form-group"><label class="form-label">Role</label><select id="admin-user-role" class="form-select"><option value="user">User</option><option value="admin">Admin</option></select></div>
+            </div>
+            <label class="mt-8" style="display:flex;gap:8px;align-items:center"><input id="admin-user-meta-enabled" type="checkbox" checked /> Permitir conectar própria conta Meta via OAuth</label>
+            <div class="form-group mt-16">
+              <label class="form-label">Páginas permitidas</label>
+              <div id="admin-user-pages" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px"></div>
+            </div>
+            <div class="form-group mt-16">
+              <label class="form-label">Contas de anúncios permitidas em Campanhas</label>
+              <div id="admin-user-ad-accounts" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px"></div>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap" class="mt-16">
+              <button class="btn btn-primary" onclick="saveAdminUser()">Salvar usuário</button>
+              <button class="btn btn-outline" onclick="resetAdminUserForm()">Novo usuário</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Usuários cadastrados</div>
+            <div id="admin-users-list" class="mt-16"></div>
+          </div>
+        </div>
+        <div class="card mb-24">
+          <div class="card-title">Páginas conectadas</div>
+          <div class="muted mt-8">Páginas trazidas do OAuth Meta. Você pode cadastrar um cliente a partir delas.</div>
+          <div id="admin-pages-list" class="mt-16"></div>
+        </div>
+      </div>
+
+      <div id="sec-agents" class="section">
+        <div class="page-header"><h1>Agentes</h1><div class="sub">Prompts, template de arte e referências visuais dos agentes de IA</div></div>
+        <div id="agents-alert" class="mb-16"></div>
+
+        <!-- Designer (arte) — destaque no topo -->
+        <div class="card mb-24">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap">
+            <div style="font-size:28px">🎨</div>
+            <div style="flex:1">
+              <div style="font-size:15px;font-weight:700;color:var(--text)">Designer</div>
+              <div class="muted" style="font-size:13px">Template de arte, referências visuais e ajuste fino do agente de imagem.</div>
+            </div>
+            <button class="btn btn-outline btn-sm" id="btn-agents-adjust-art" onclick="adjustArtWithAI()" title="Gera só o template e instruções do Diretor de Arte">🎨 Gerar só arte</button>
+            <button class="btn btn-primary btn-sm" id="btn-agents-adjust-ai" onclick="adjustAgentsWithAI()" title="Gera template e instruções do diretor de arte com base no perfil da empresa">✨ Ajustar todos com IA</button>
+          </div>
+
+          <div class="tabs-row mb-16">
+            <button class="tab-btn active" onclick="switchAgentsDesignerTab('template', this)">Template de arte</button>
+            <button class="tab-btn" onclick="switchAgentsDesignerTab('refs', this)">Referências visuais</button>
+            <button class="tab-btn" onclick="switchAgentsDesignerTab('director', this)">Diretor de arte</button>
+            <button class="tab-btn" onclick="switchAgentsDesignerTab('preview', this)">Prévia e teste</button>
+          </div>
+
+          <div id="agents-designer-template" class="agents-designer-tab">
+            <div class="form-group">
+              <label class="form-label">Template do prompt de imagem</label>
+              <div class="muted mb-8">Use as variáveis entre chaves: {NICHO}, {OBJETIVO_DA_MENSAGEM}, {CORES_PRINCIPAIS}, {CENARIO_REALISTA}, {DESCRICAO_PERSONAGEM}, {TITULO}, {SUBTITULO}, {ESTILO_VISUAL}, {TIPO_DE_RENDER}, {TIPO_ILUMINACAO}, {EMOCAO}, {PALAVRA_CHAVE_DESTACADA}, {COR_DESTAQUE}</div>
+              <textarea id="agents-image-template" class="form-textarea" rows="30" style="font-family:monospace;font-size:12px"></textarea>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+              <button class="btn btn-primary" onclick="saveAgentImageTemplate()">Salvar template</button>
+              <button class="btn btn-outline" onclick="resetAgentImageTemplate()">Restaurar padrão</button>
+            </div>
+          </div>
+
+          <div id="agents-designer-refs" class="agents-designer-tab hidden">
+            <div class="form-group">
+              <label class="form-label">Referências de estilo</label>
+              <div class="muted mb-8">Artes que o agente pode usar como inspiração de estilo, paleta e composição.</div>
+              <input id="agents-ref-file" class="form-input" type="file" multiple accept=".png,.jpg,.jpeg,.webp" />
+              <div class="grid2 mt-8">
+                <div>
+                  <input id="agents-instagram-source" class="form-input" placeholder="@instagram_da_marca_ou_referencia" />
+                  <div class="muted mt-8" style="font-size:12px">Importa posts recentes via instascrapper e salva como referências visuais desta empresa.</div>
+                </div>
+                <div style="display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap">
+                  <button class="btn btn-outline btn-sm" onclick="uploadAgentReferences()">Enviar referências de estilo</button>
+                  <button class="btn btn-outline btn-sm" onclick="importAgentReferencesFromInstagram()">Importar do Instagram</button>
+                </div>
+              </div>
+            </div>
+            <div id="agents-refs-grid" class="mt-16" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px"></div>
+
+            <hr style="margin:24px 0;border:none;border-top:1px solid var(--border)" />
+
+            <div class="form-group">
+              <label class="form-label">Galeria de produto / imóvel</label>
+              <div class="muted mb-8">Fotos reais do seu produto, imóvel ou espaço. A IA usará essas imagens como referência visual ao gerar artes — sem inventar ambientes.</div>
+              <input id="agents-gallery-file" class="form-input" type="file" multiple accept=".png,.jpg,.jpeg,.webp" />
+              <div class="mt-8"><button class="btn btn-outline btn-sm" onclick="uploadAgentGallery()">Enviar fotos</button></div>
+            </div>
+            <div id="agents-gallery-grid" class="mt-16" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px"></div>
+          </div>
+
+          <div id="agents-designer-director" class="agents-designer-tab hidden">
+            <div id="agents-brand-context" class="mb-16" style="display:none">
+              <div class="muted mb-6" style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em">Contexto da marca (Configurações)</div>
+              <div id="agents-brand-colors-row" class="mb-8" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap"></div>
+              <div id="agents-icp-summary-row" class="muted" style="font-size:12px;line-height:1.5"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Instruções do Diretor de Arte</label>
+              <div class="muted mb-8">Regras extras que o agente de variáveis deve seguir ao preencher o template (ex: "sempre usar cenário ao ar livre", "nunca incluir personagens").</div>
+              <textarea id="agents-prompt-generation-note" class="form-textarea" rows="8" placeholder="Ex: Sempre gerar cenas externas com luz natural. Priorizar estética lifestyle sobre corporativa..."></textarea>
+            </div>
+            <div class="mt-12"><button class="btn btn-primary" onclick="saveAgentNote('prompt_generation', 'agents-prompt-generation-note')">Salvar instruções</button></div>
+          </div>
+
+          <div id="agents-designer-preview" class="agents-designer-tab hidden">
+            <div class="form-group">
+              <label class="form-label">Briefing de teste</label>
+              <textarea id="agents-preview-briefing" class="form-textarea" rows="4" placeholder="Descreva um post de teste: produto, oferta, público, emoção desejada..."></textarea>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+              <button class="btn btn-outline" onclick="agentPreviewPrompt()">Gerar prévia do prompt</button>
+              <button class="btn btn-outline" onclick="agentTestImage()">Gerar imagem de teste</button>
+            </div>
+            <div id="agents-preview-alert" class="mt-16"></div>
+            <div id="agents-preview-result" class="mt-16 hidden">
+              <div class="grid2">
+                <div>
+                  <div class="form-label mb-8">Prompt gerado</div>
+                  <textarea id="agents-preview-prompt-text" class="form-textarea" rows="28" style="font-family:monospace;font-size:12px"></textarea>
+                  <div class="mt-8"><button class="btn btn-outline btn-sm" onclick="agentTestImageFromPreview()">Gerar imagem com este prompt</button></div>
+                </div>
+                <div>
+                  <div class="form-label mb-8">Imagem de teste</div>
+                  <div id="agents-preview-image-box" style="border:1px solid var(--border);border-radius:12px;background:var(--surface-alt,#f7f7f8);display:flex;justify-content:center;align-items:center;min-height:320px">
+                    <span class="muted">Sem imagem</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outros agentes -->
+        <div class="card-title mb-16" style="margin-top:8px">Outros agentes</div>
+        <div id="agents-others-list" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px"></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal-client" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header"><div class="modal-title">Selecionar cliente</div><button class="modal-close" onclick="closeModal('modal-client')">×</button></div>
+      <div class="modal-body">
+        <input id="client-search" class="client-search-input" placeholder="Buscar cliente..." oninput="filterClients(this.value)" />
+        <div id="client-list" class="client-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-plan" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header"><div class="modal-title">Gerar plano</div><button class="modal-close" onclick="closeModal('modal-plan')">×</button></div>
+      <div class="modal-body">
+      <div id="plan-modal-alert"></div>
+      <div class="grid2 mt-16">
+        <div class="form-group"><label class="form-label">Cliente</label><div id="plan-client-display-modal" class="form-input">—</div></div>
+        <div class="form-group"><label class="form-label">Modo</label><select id="plan-mode" class="form-select"><option value="monthly">Plano mensal</option><option value="single">Conteúdo avulso</option></select></div>
+        <div class="form-group"><label class="form-label">Semanas</label><input id="plan-weeks" class="form-input" type="number" value="4" min="1" max="12" /></div>
+        <div class="form-group"><label class="form-label">Posts por semana</label><input id="plan-ppw" class="form-input" type="number" value="3" min="1" max="14" /></div>
+      </div>
+      <div class="form-group mt-16"><label class="form-label">Foco do plano</label><textarea id="plan-focus" class="form-textarea" rows="4"></textarea></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button id="btn-plan-focus-suggestion" class="btn btn-outline" onclick="suggestPlanFocus()">Gerar sugestão com IA</button>
+        <button id="btn-gen-plan-confirm" class="btn btn-primary" onclick="generatePlan()">Gerar com IA</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-single-post" class="modal-overlay">
+    <div class="modal-box wide">
+      <div class="modal-header"><div class="modal-title">Conteúdo avulso</div><button class="modal-close" onclick="closeModal('modal-single-post')">×</button></div>
+      <div class="modal-body">
+        <div id="sp-alert" class="mb-16"></div>
+        <div class="grid2">
+          <div class="form-group"><label class="form-label">Tema</label><input id="sp-theme" class="form-input" placeholder="Tema do post" /></div>
+          <div class="form-group"><label class="form-label">Agendar para</label><input id="sp-schedule-dt" class="form-input" type="datetime-local" /></div>
+        </div>
+        <div class="grid2 mt-16">
+          <div class="form-group">
+            <label class="form-label">Fonte da imagem</label>
+            <select id="sp-image-source" class="form-select" onchange="handleSinglePostImageSourceChange()">
+              <option value="ai">IA gera a arte</option>
+              <option value="gallery">Usar da galeria</option>
+              <option value="upload">Subir imagem agora</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Logo da marca</label>
+            <div class="form-input" id="sp-logo-status">Usará a logo cadastrada da empresa</div>
+          </div>
+        </div>
+        <div class="form-group mt-16">
+          <label class="form-label">Publicar em</label>
+          <div style="display:flex;gap:16px;flex-wrap:wrap">
+            <label id="sp-channel-instagram-wrap" style="display:flex;align-items:center;gap:8px"><input id="sp-channel-instagram" type="checkbox" checked /> Instagram</label>
+            <label id="sp-channel-facebook-wrap" style="display:flex;align-items:center;gap:8px"><input id="sp-channel-facebook" type="checkbox" /> Facebook</label>
+          </div>
+        </div>
+        <div id="sp-gallery-wrap" class="card mt-16 hidden" style="background:var(--surface-2)">
+          <div class="card-title">Galeria</div>
+          <div id="sp-gallery-list"></div>
+        </div>
+        <div id="sp-upload-wrap" class="card mt-16 hidden" style="background:var(--surface-2)">
+          <div class="card-title">Upload de imagem</div>
+          <input id="sp-upload-file" class="form-input" type="file" accept=".png,.jpg,.jpeg,.webp" />
+          <div class="mt-8"><button class="btn btn-outline btn-sm" onclick="uploadSinglePostImage()">Enviar imagem</button></div>
+        </div>
+        <div class="form-group"><label class="form-label">Legenda</label><textarea id="sp-caption" class="form-textarea" rows="5" placeholder="Legenda gerada ou editada"></textarea></div>
+        <div class="form-group mt-16">
+          <label class="form-label">Briefing do conteúdo <span class="muted" style="font-weight:400;font-size:0.85em">(afeta legenda e imagem)</span></label>
+          <textarea id="sp-image-focus" class="form-textarea" rows="4" placeholder="Adicione contexto extra: produto em foco, preço, o que não pode aparecer, público, valores que quer transmitir, elementos específicos da cena, etc."></textarea>
+          <div style="margin-top:8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+            <button id="btn-sp-focus-suggestion" class="btn btn-outline btn-sm" onclick="suggestSinglePostFocus()">Sugerir com IA</button>
+            <span class="muted" style="font-size:0.8em">A IA sugere um briefing com base na marca e no tema preenchido acima.</span>
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="form-group"><label class="form-label">Título da arte</label><input id="sp-title" class="form-input" placeholder="Gerado pelo agente de arte" /></div>
+          <div class="form-group"><label class="form-label">Subtítulo da arte</label><input id="sp-subtitle" class="form-input" placeholder="Gerado pelo agente de arte" /></div>
+        </div>
+        <div class="form-group"><label class="form-label">Imagem URL</label><input id="sp-image-url" class="form-input" placeholder="https://..." /></div>
+        <div id="sp-preview-wrap" class="mt-16">
+          <div class="grid2">
+            <div class="card" style="background:var(--surface-2)">
+              <div class="card-title">Prompt da arte</div>
+              <div class="muted" style="margin-bottom:10px">Prompt visual gerado para a imagem.</div>
+              <textarea id="sp-image-prompt" class="form-textarea" rows="18" placeholder="O prompt da imagem vai aparecer aqui." style="white-space:pre-wrap"></textarea>
+            </div>
+            <div id="sp-preview-box" class="card" style="background:var(--surface-2)">
+              <div style="padding:12px;border:1px solid var(--border);border-radius:16px;background:var(--surface);display:flex;justify-content:center;align-items:center;min-height:420px">
+                <div style="color:var(--text-muted)">Sem imagem</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px">
+          <button class="btn btn-outline" onclick="singlePostTestGenerate()">Gerar teste</button>
+          <button class="btn btn-outline" onclick="saveSinglePostDraft()">Salvar rascunho</button>
+          <button class="btn btn-primary" onclick="singlePostSchedule()">Agendar</button>
+          <button class="btn btn-outline" onclick="singlePostPublishNow()">Postar agora</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-review" class="modal-overlay">
+    <div class="modal-box wide">
+      <div class="modal-header"><div class="modal-title">Revisar conteúdo</div><button class="modal-close" onclick="closeModal('modal-review')">×</button></div>
+      <div class="modal-body">
+      <div class="review-header">
+        <div id="review-counter" class="review-counter"></div>
+        <div class="platform-tabs">
+          <button class="ptab active" onclick="switchPlatform('instagram', this)">Instagram</button>
+          <button class="ptab" onclick="switchPlatform('facebook', this)">Facebook</button>
+          <button class="ptab" onclick="switchPlatform('linkedin', this)">LinkedIn</button>
+        </div>
+      </div>
+      <div id="review-gen-loading" class="hidden loading-state"><div class="spinner"></div>Gerando novamente...</div>
+      <div class="grid2">
+        <div>
+          <div id="review-theme" class="card-title"></div>
+          <div id="review-status-badge" class="mt-8"></div>
+          <div style="display:flex;gap:8px;align-items:center;margin-top:12px;flex-wrap:wrap">
+            <input id="review-date-input" type="date" class="form-input" style="flex:1;min-width:140px" />
+            <input id="review-time-input" type="time" class="form-input" style="width:110px" />
+          </div>
+          <textarea id="review-caption" class="review-caption-edit mt-16" rows="10"></textarea>
+        </div>
+        <div id="review-preview">
+          <div id="preview-instagram" class="ig-mockup">
+            <div class="ig-header-row"><div class="ig-av"></div><div id="ig-username" class="ig-un"></div><div class="ig-more">⋯</div></div>
+            <img id="ig-img" class="ig-img" alt="" />
+            <div class="ig-actions-row"><span>♡</span><span>💬</span><span>↗</span></div>
+            <div class="ig-cap"><b id="ig-cap-name"></b> <span id="ig-cap-text"></span></div>
+            <div id="ig-scheduled-at" style="font-size:11px;color:var(--text-muted);padding:4px 12px 8px;text-align:right"></div>
+          </div>
+          <div id="preview-facebook" class="fb-mockup" style="display:none">
+            <div class="fb-header-row"><div id="fb-av" class="fb-av"></div><div><div id="fb-name" class="fb-name"></div><div class="fb-date">Agora</div></div></div>
+            <div id="fb-cap" class="fb-cap"></div>
+            <img id="fb-img" class="fb-img" alt="" />
+          </div>
+          <div id="preview-linkedin" class="li-mockup" style="display:none">
+            <div class="li-header-row"><div id="li-av" class="li-av"></div><div><div id="li-name" class="li-name"></div><div class="li-title">Conteúdo patrocinado</div></div></div>
+            <div id="li-cap" class="li-cap"></div>
+            <img id="li-img" class="li-img" alt="" />
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center">
+        <button class="btn btn-outline" onclick="reviewNav(-1)">Anterior</button>
+        <button class="btn btn-outline" onclick="reviewNav(1)">Próximo</button>
+        <button class="btn btn-ghost" onclick="reviewRegen()">Regenerar</button>
+        <div style="flex:1"></div>
+        <button class="btn btn-outline" onclick="reviewAction('rejected')">Rejeitar</button>
+        <button class="btn btn-outline" onclick="reviewPostNow()">Postar agora</button>
+        <button class="btn btn-primary" onclick="reviewAction('approved')">Aprovar e agendar</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-add-competitor" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header"><div class="modal-title">Adicionar concorrente</div><button class="modal-close" onclick="closeModal('modal-add-competitor')">×</button></div>
+      <div class="modal-body">
+        <div id="add-competitor-alert"></div>
+        <div class="form-group mt-16"><label class="form-label">Username</label><input id="competitor-username" class="form-input" placeholder="@concorrente" /></div>
+        <div class="form-group"><label class="form-label">Rótulo</label><input id="competitor-label" class="form-input" placeholder="Nome interno" /></div>
+        <label class="mt-16" style="display:flex;gap:8px;align-items:center"><input id="competitor-analyze-now" type="checkbox" checked /> Analisar agora</label>
+        <div class="mt-16"><button id="btn-add-competitor-confirm" class="btn btn-primary" onclick="addCompetitor()">Adicionar</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-analysis" class="modal-overlay">
+    <div class="modal-box wide">
+      <div class="modal-header"><div id="analysis-modal-title" class="modal-title">Análise</div><button class="modal-close" onclick="closeModal('modal-analysis')">×</button></div>
+      <div id="analysis-modal-body" class="modal-body"></div>
+    </div>
+  </div>
+
+  <div id="modal-campaign-create" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header"><div class="modal-title">Criar campanha</div><button class="modal-close" onclick="closeModal('modal-campaign-create')">×</button></div>
+      <div class="modal-body">
+      <div id="campaign-create-alert"></div>
+      <div class="muted mt-8" id="campaign-create-account">—</div>
+      <div class="grid2 mt-16">
+        <div class="form-group"><label class="form-label">Nome da campanha</label><input id="campaign-create-name" class="form-input" /></div>
+        <div class="form-group"><label class="form-label">Objetivo</label><select id="campaign-create-objective" class="form-select"><option value="OUTCOME_LEADS">Leads</option><option value="OUTCOME_TRAFFIC">Tráfego</option><option value="OUTCOME_ENGAGEMENT">Engajamento</option></select></div>
+        <div class="form-group"><label class="form-label">Nome do conjunto</label><input id="campaign-create-adset-name" class="form-input" /></div>
+        <div class="form-group"><label class="form-label">Orçamento diário</label><input id="campaign-create-daily-budget" class="form-input" /></div>
+        <div class="form-group"><label class="form-label">Idade mínima</label><input id="campaign-create-age-min" class="form-input" type="number" /></div>
+        <div class="form-group"><label class="form-label">Idade máxima</label><input id="campaign-create-age-max" class="form-input" type="number" /></div>
+        <div class="form-group"><label class="form-label">Gênero</label><select id="campaign-create-gender" class="form-select"><option value="">Todos</option><option value="female">Feminino</option><option value="male">Masculino</option></select></div>
+        <div class="form-group"><label class="form-label">Localização</label><input id="campaign-create-location" class="form-input" /></div>
+      </div>
+      <div class="form-group"><label class="form-label">Interesses</label><textarea id="campaign-create-interests" class="form-textarea" rows="3"></textarea></div>
+      <div id="campaign-create-suggestion" class="muted mt-8"></div>
+      <div class="mt-16"><button id="btn-campaign-create-confirm" class="btn btn-primary" onclick="createTrafficCampaign()">Criar campanha</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Traffic Wizard Modal -->
+  <div id="modal-traffic-wizard" class="modal-overlay">
+    <div class="modal-box wide">
+      <div class="modal-header">
+        <div class="modal-title">✨ Gestor de Tráfego IA</div>
+        <button class="modal-close" onclick="closeModal('modal-traffic-wizard')">×</button>
+      </div>
+      <div class="modal-body">
+        <div id="tw-stepper" class="card mb-16" style="background:var(--surface-alt,#f7f7f8);padding:12px">
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <span id="tw-pill-1" class="badge badge-blue">1. Base</span>
+            <span id="tw-pill-2" class="badge badge-gray">2. Estrutura</span>
+            <span id="tw-pill-3" class="badge badge-gray">3. Destino</span>
+            <span id="tw-pill-4" class="badge badge-gray">4. Revisão</span>
+          </div>
+        </div>
+
+        <!-- Step 1: Brief -->
+        <div id="tw-step-1">
+          <div class="muted mb-16">Descreva o que você quer anunciar. A IA vai analisar sua conta, buscar interesses no Meta e criar uma campanha completa.</div>
+          <div id="tw-alert" class="mb-12"></div>
+          <div class="card mb-16" style="background:var(--surface-alt,#f7f7f8)">
+            <div class="card-title">Etapa 1 · Base da campanha</div>
+            <div id="tw-context-summary" class="muted mt-8"></div>
+          </div>
+          <div class="grid2">
+            <div class="form-group">
+              <label class="form-label">Produto / Serviço a anunciar</label>
+              <input id="tw-product" class="form-input" placeholder="Puxado do perfil da marca automaticamente" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Objetivo</label>
+              <select id="tw-objective" class="form-select">
+                <option value="OUTCOME_LEADS">Geração de Leads</option>
+                <option value="OUTCOME_TRAFFIC">Tráfego para site</option>
+                <option value="OUTCOME_SALES">Vendas / Conversões</option>
+                <option value="OUTCOME_ENGAGEMENT">Engajamento</option>
+                <option value="OUTCOME_AWARENESS">Reconhecimento</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Orçamento diário (R$)</label>
+              <input id="tw-budget" class="form-input" type="number" value="50" min="5" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Localização principal</label>
+              <input id="tw-location" class="form-input" placeholder="Ex: Brasil, São Paulo, Rio de Janeiro" />
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:16px">
+            <button class="btn btn-primary" onclick="runTrafficWizard()">✨ Analisar e sugerir campanha</button>
+            <button class="btn btn-outline" onclick="closeModal('modal-traffic-wizard')">Cancelar</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Loading -->
+        <div id="tw-step-2" style="display:none;text-align:center;padding:40px 0">
+          <div class="spinner" style="margin:0 auto 16px;width:36px;height:36px;border-width:4px"></div>
+          <div id="tw-loading-msg" style="color:var(--text-muted)">Analisando sua conta e buscando interesses no Meta...</div>
+        </div>
+
+        <!-- Step 3: Review & Configure -->
+        <div id="tw-step-3" style="display:none;max-height:75vh;overflow-y:auto;padding-right:4px">
+          <div id="tw-pane-structure">
+            <div id="tw-why-box" class="muted mb-16" style="padding:12px;background:var(--surface-alt,#f7f7f8);border-radius:8px;font-size:13px;border-left:3px solid var(--primary,#6366f1)"></div>
+            <div class="card mb-16" style="background:var(--surface-alt,#f7f7f8)">
+              <div class="card-title">Etapa 2 · Estrutura sugerida</div>
+              <div id="tw-structure-summary" class="muted mt-8"></div>
+            </div>
+            <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap">
+              <button class="btn btn-primary" type="button" onclick="twGoPane('destination')">Próximo: destino →</button>
+              <button class="btn btn-outline" type="button" onclick="twBack()">← Voltar</button>
+            </div>
+          </div>
+          <div id="tw-pane-destination" style="display:none">
+          <div class="grid2">
+            <div class="form-group">
+              <label class="form-label">Nome da campanha</label>
+              <input id="tw-camp-name" class="form-input" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Objetivo</label>
+              <select id="tw-camp-objective" class="form-select">
+                <option value="OUTCOME_LEADS">Leads</option>
+                <option value="OUTCOME_TRAFFIC">Tráfego</option>
+                <option value="OUTCOME_SALES">Vendas</option>
+                <option value="OUTCOME_ENGAGEMENT">Engajamento</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Orçamento diário (R$)</label>
+              <input id="tw-camp-budget" class="form-input" type="number" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Faixa etária</label>
+              <div style="display:flex;gap:8px;align-items:center">
+                <input id="tw-age-min" class="form-input" type="number" placeholder="18" style="width:80px" />
+                <span>—</span>
+                <input id="tw-age-max" class="form-input" type="number" placeholder="65" style="width:80px" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Copy -->
+          <div class="form-group">
+            <label class="form-label">Headline <span class="muted">(máx 40 chars)</span></label>
+            <input id="tw-headline" class="form-input" maxlength="40" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Texto principal</label>
+            <textarea id="tw-primary-text" class="form-textarea" rows="6"></textarea>
+          </div>
+
+          <!-- Locations -->
+          <div class="form-group">
+            <label class="form-label">Localização <span class="muted badge badge-gray" style="font-size:10px;vertical-align:middle">Já usadas na conta</span></label>
+            <div id="tw-locations-list" style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;margin-bottom:8px"></div>
+            <input id="tw-location-custom" class="form-input" placeholder="Ou digite outra localização..." style="width:100%" />
+          </div>
+
+          <!-- Interests -->
+          <div class="form-group">
+            <label class="form-label">Interesses</label>
+            <div style="font-size:11px;color:var(--text-muted);margin-bottom:6px">🔵 Azul = selecionado &nbsp;|&nbsp; ✅ Ícone = já usado na conta</div>
+            <div id="tw-interests-list" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px"></div>
+            <div style="display:flex;gap:8px">
+              <input id="tw-interest-search" class="form-input" placeholder="Buscar mais interesses..." style="flex:1" oninput="searchTWInterest(this.value)" />
+            </div>
+            <div id="tw-interest-search-results" style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px"></div>
+          </div>
+
+          <!-- Links já usados -->
+          <div class="form-group" id="tw-links-section" style="display:none">
+            <label class="form-label">Links já usados na conta <span class="muted">(clique para usar)</span></label>
+            <div id="tw-links-list" style="display:flex;flex-direction:column;gap:6px;margin-top:6px"></div>
+          </div>
+
+          <!-- Destino -->
+          <div class="form-group">
+            <label class="form-label">Etapa 3 · Destino</label>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:8px">
+              <label style="display:flex;gap:6px;align-items:center;font-size:13px"><input type="radio" name="tw-dest-type" value="url" id="tw-dest-url-radio" checked /> URL / Link</label>
+              <label style="display:flex;gap:6px;align-items:center;font-size:13px"><input type="radio" name="tw-dest-type" value="form" id="tw-dest-form-radio" /> Formulário de lead</label>
+              <label style="display:flex;gap:6px;align-items:center;font-size:13px"><input type="radio" name="tw-dest-type" value="pixel" id="tw-dest-pixel-radio" /> Pixel / Conversão</label>
+            </div>
+            <div id="tw-dest-url-wrap"><input id="tw-dest-url" class="form-input" placeholder="https://..." /></div>
+            <div id="tw-dest-form-wrap" style="display:none"><select id="tw-dest-form" class="form-select"><option value="">Selecione um formulário</option></select></div>
+            <div id="tw-dest-pixel-wrap" style="display:none" class="grid2 mt-8">
+              <div class="form-group"><label class="form-label">Pixel</label><select id="tw-dest-pixel" class="form-select"><option value="">Selecione um pixel</option></select></div>
+              <div class="form-group"><label class="form-label">URL de conversão</label><input id="tw-dest-sales-url" class="form-input" placeholder="https://..." /></div>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap">
+            <button class="btn btn-primary" type="button" onclick="twGoPane('review')">Próximo: revisão →</button>
+            <button class="btn btn-outline" type="button" onclick="twGoPane('structure')">← Estrutura</button>
+          </div>
+          </div>
+
+          <!-- Criativo -->
+          <div id="tw-pane-review" style="display:none">
+          <div class="form-group" style="background:var(--surface-alt,#f7f7f8);padding:12px;border-radius:10px">
+            <label class="form-label">Criativo <span class="muted">(opcional)</span></label>
+            <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px">Gere uma imagem no estilo da sua marca para usar no anúncio.</div>
+            <div style="display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap">
+              <button class="btn btn-outline btn-sm" onclick="generateTWCreative()" id="btn-tw-creative">🎨 Gerar criativo</button>
+              <div id="tw-creative-preview" style="display:none">
+                <img id="tw-creative-img" style="max-width:180px;max-height:180px;border-radius:8px;border:1px solid var(--border)" />
+              </div>
+              <input id="tw-creative-url" type="hidden" value="" />
+            </div>
+          </div>
+
+          <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap">
+            <button class="btn btn-primary" id="btn-tw-create" onclick="createTrafficWizardDraft()">Criar rascunho</button>
+            <button class="btn btn-outline" type="button" onclick="twGoPane('destination')">← Destino</button>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="insta-compare-flyout"></div>
+
+  <!-- Onboarding Modal -->
+  <div id="modal-onboarding" class="modal-overlay">
+    <div class="modal-box wide">
+      <div class="modal-header">
+        <div class="modal-title">✨ Configurar empresa com IA</div>
+        <button class="modal-close" onclick="closeModal('modal-onboarding')">×</button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Step 1: Input -->
+        <div id="onb-step-1">
+          <div class="muted mb-16">Informe os dados-base da marca. A IA vai analisar site, Instagram, logos e referências para preencher marca, ICP, cores, direção visual e agentes.</div>
+          <div id="onb-alert" class="mb-12"></div>
+          <div class="grid2">
+            <div class="form-group">
+              <label class="form-label">Site da empresa</label>
+              <input id="onb-website" class="form-input" placeholder="https://seusite.com.br" type="url" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Instagram</label>
+              <input id="onb-instagram" class="form-input" placeholder="@suaempresa" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Breve descrição (opcional)</label>
+            <textarea id="onb-description" class="form-textarea" rows="3" placeholder="Ex: SaaS de CRM com IA para pequenas empresas, foco em WhatsApp e automações..."></textarea>
+          </div>
+          <div class="grid2">
+            <div class="form-group">
+              <label class="form-label">Logo principal</label>
+              <input id="onb-logo-file" class="form-input" type="file" accept=".png,.jpg,.jpeg,.webp,.svg" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Logo para fundo escuro</label>
+              <input id="onb-logo-light-file" class="form-input" type="file" accept=".png,.jpg,.jpeg,.webp,.svg" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Referências visuais</label>
+            <input id="onb-visual-reference-file" class="form-input" type="file" multiple accept=".png,.jpg,.jpeg,.webp" />
+          </div>
+          <div class="grid2">
+            <div class="form-group">
+              <label class="form-label">Sites de referência</label>
+              <textarea id="onb-reference-websites" class="form-textarea" rows="4" placeholder="https://site1.com.br&#10;https://site2.com.br"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Instagrams de referência</label>
+              <textarea id="onb-reference-instagrams" class="form-textarea" rows="4" placeholder="@marca1&#10;@marca2"></textarea>
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:16px">
+            <button class="btn btn-primary" onclick="runOnboarding()">✨ Analisar e preencher</button>
+            <button class="btn btn-outline" onclick="closeModal('modal-onboarding')">Cancelar</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Loading -->
+        <div id="onb-step-2" style="display:none;text-align:center;padding:40px 0">
+          <div class="spinner" style="margin:0 auto 16px;width:36px;height:36px;border-width:4px"></div>
+          <div id="onb-loading-msg" style="color:var(--text-muted)">Analisando site e gerando perfil...</div>
+        </div>
+
+        <!-- Step 3: Review -->
+        <div id="onb-step-3" style="display:none">
+          <div class="muted mb-16">A IA preencheu os campos abaixo. Revise, edite e salve.</div>
+          <div class="grid2">
+            <div class="form-group"><label class="form-label">Nome da marca</label><input id="onb-brand-name" class="form-input" /></div>
+            <div class="form-group"><label class="form-label">Tagline</label><input id="onb-tagline" class="form-input" /></div>
+            <div class="form-group"><label class="form-label">Tom de voz</label><input id="onb-tone" class="form-input" /></div>
+            <div class="form-group"><label class="form-label">Público-alvo</label><input id="onb-audience" class="form-input" /></div>
+            <div class="form-group"><label class="form-label">Estilo visual</label><input id="onb-visual-style" class="form-input" /></div>
+            <div class="form-group"><label class="form-label">Proposta de valor / Oferta</label><input id="onb-best-offer" class="form-input" /></div>
+            <div class="form-group"><label class="form-label">Paleta de cores</label><input id="onb-colors" class="form-input" placeholder="#112233, #445566, #FFFFFF" /></div>
+            <div class="form-group"><label class="form-label">Tipografia sugerida</label><input id="onb-font-preference" class="form-input" /></div>
+          </div>
+          <div class="form-group"><label class="form-label">Descrição do negócio</label><textarea id="onb-desc-out" class="form-textarea" rows="3"></textarea></div>
+          <div class="form-group"><label class="form-label">Produtos / Serviços</label><input id="onb-products" class="form-input" /></div>
+          <div class="form-group"><label class="form-label">Direção visual da marca</label><textarea id="onb-reference-style-prompt" class="form-textarea" rows="4"></textarea></div>
+          <div class="form-group"><label class="form-label">Concorrentes sugeridos</label><input id="onb-competitors" class="form-input" placeholder="@handle1, @handle2..." /></div>
+          <hr style="margin:16px 0;border:none;border-top:1px solid var(--border)" />
+          <div class="card-title mb-8">ICP — Cliente ideal</div>
+          <div class="form-group"><label class="form-label">Resumo do ICP</label><textarea id="onb-icp-summary" class="form-textarea" rows="2"></textarea></div>
+          <div class="form-group"><label class="form-label">Principais dores</label><textarea id="onb-icp-pains" class="form-textarea" rows="2"></textarea></div>
+          <div class="form-group"><label class="form-label">Principais desejos</label><textarea id="onb-icp-desires" class="form-textarea" rows="2"></textarea></div>
+          <div class="form-group"><label class="form-label">Principais objeções</label><textarea id="onb-icp-objections" class="form-textarea" rows="2"></textarea></div>
+          <div style="display:flex;gap:8px;margin-top:16px">
+            <button class="btn btn-primary" onclick="saveOnboarding()">Salvar perfil</button>
+            <button class="btn btn-outline" onclick="onbBack()">← Voltar</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/panel.js?v=6"></script>
+</body>
+</html>

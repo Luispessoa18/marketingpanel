@@ -1,0 +1,714 @@
+{
+  "act_1576441520296786": {
+    "ad_account_id": "act_1576441520296786",
+    "updated_at": 1778099577,
+    "objective_labels": [
+      "Campanha de Cadastros"
+    ],
+    "objective_mix": {
+      "Campanha de Cadastros": 2
+    },
+    "top_campaign_names": [
+      "[CAD] Casas - 1/2/21 - 60$/dia - CBO - RJ - 02",
+      "[CAD] Cotas - 1/2/21 - 60$dia - Novos criativos e loc"
+    ],
+    "top_actions": {
+      "offsite_complete_registration_add_meta_leads": 180.0,
+      "link_click": 1523.0,
+      "offsite_search_add_meta_leads": 180.0,
+      "page_engagement": 1891.0,
+      "onsite_conversion.post_unlike": 5.0,
+      "post_engagement": 1891.0,
+      "post_interaction_gross": 211.0,
+      "comment": 18.0,
+      "post_interaction_net": 217.0,
+      "post": 33.0,
+      "onsite_conversion.post_save": 22.0,
+      "onsite_conversion.post_net_comment": 18.0,
+      "onsite_conversion.post_net_save": 21.0,
+      "onsite_conversion.post_net_like": 133.0,
+      "lead": 180.0,
+      "offsite_content_view_add_meta_leads": 180.0,
+      "onsite_conversion.lead_grouped": 180.0,
+      "video_view": 157.0,
+      "post_reaction": 138.0,
+      "onsite_conversion.total_messaging_connection": 27.0,
+      "onsite_conversion.messaging_user_depth_2_message_send": 4.0,
+      "onsite_conversion.messaging_user_depth_3_message_send": 1.0,
+      "onsite_conversion.messaging_first_reply": 23.0,
+      "onsite_conversion.post_unsave": 1.0,
+      "onsite_conversion.messaging_conversation_started_7d": 23.0
+    },
+    "top_demographics": [],
+    "best_known_results": {
+      "mensagens": 27.0,
+      "cadastros": 180.0,
+      "compras": "0",
+      "checkout": "0"
+    },
+    "history": [
+      {
+        "ts": 1775681253,
+        "spend": "29.27",
+        "ctr": "1.227679",
+        "cpc": "1.330455",
+        "objective_labels": [
+          "Campanha de Cadastros"
+        ],
+        "results": {
+          "mensagens": "2",
+          "cadastros": "4",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1775753787,
+        "spend": "30.96",
+        "ctr": "1.23789",
+        "cpc": "1.346087",
+        "objective_labels": [
+          "Campanha de Cadastros"
+        ],
+        "results": {
+          "mensagens": "2",
+          "cadastros": "4",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1775754104,
+        "spend": 3654.589999999999,
+        "ctr": 3.97,
+        "cpc": 0.76,
+        "objective_labels": [
+          "Campanha de Cadastros"
+        ],
+        "results": {
+          "mensagens": 104.0,
+          "cadastros": 429.0,
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1777251140,
+        "spend": 5399.689999999999,
+        "ctr": 3.96,
+        "cpc": 0.61,
+        "objective_labels": [
+          "Campanha de Cadastros"
+        ],
+        "results": {
+          "mensagens": 105.0,
+          "cadastros": 595.0,
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1777300593,
+        "spend": 1574.8999999999996,
+        "ctr": 3.91,
+        "cpc": 0.53,
+        "objective_labels": [
+          "Campanha de Cadastros"
+        ],
+        "results": {
+          "mensagens": 40.0,
+          "cadastros": 195.0,
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1777494936,
+        "spend": 5665.150000000001,
+        "ctr": 3.96,
+        "cpc": 0.57,
+        "objective_labels": [
+          "Campanha de Cadastros"
+        ],
+        "results": {
+          "mensagens": 115.0,
+          "cadastros": 651.0,
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1777559173,
+        "spend": 5779.66,
+        "ctr": 3.95,
+        "cpc": 0.57,
+        "objective_labels": [
+          "Campanha de Cadastros"
+        ],
+        "results": {
+          "mensagens": 117.0,
+          "cadastros": 660.0,
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1778099577,
+        "spend": 1598.2799999999997,
+        "ctr": 3.49,
+        "cpc": 0.6,
+        "objective_labels": [
+          "Campanha de Cadastros"
+        ],
+        "results": {
+          "mensagens": 27.0,
+          "cadastros": 180.0,
+          "compras": "0",
+          "checkout": "0"
+        }
+      }
+    ],
+    "totals": {
+      "spend": 1598.2799999999997,
+      "clicks": 2668,
+      "ctr": 3.49,
+      "cpc": 0.6,
+      "cpm": 20.89
+    }
+  },
+  "act_3841715986057513": {
+    "ad_account_id": "act_3841715986057513",
+    "updated_at": 1775701157,
+    "objective_labels": [
+      "Campanha de Engajamento",
+      "Campanha de Reconhecimento",
+      "Campanha de Vendas",
+      "MESSAGES"
+    ],
+    "objective_mix": {
+      "Campanha de Vendas": 18,
+      "Campanha de Engajamento": 12,
+      "MESSAGES": 1,
+      "Campanha de Reconhecimento": 1
+    },
+    "top_campaign_names": [
+      "06/04 Novo",
+      "Anotai Vendas 06/04",
+      "2026-04-03 Toscana Flag Test False",
+      "27/03 VD2",
+      "27/03",
+      "Anota ai 01/04/26",
+      "Anotai2 Atualizado 06/12 — Cópia",
+      "18/11",
+      "Nova campanha de Vendas",
+      "Anotai Vendas — Cópia",
+      "Anotai Vendas — Cópia",
+      "03/10"
+    ],
+    "top_actions": {
+      "onsite_conversion.total_messaging_connection": "10",
+      "onsite_conversion.messaging_block": "1",
+      "web_in_store_purchase": "22",
+      "omni_purchase": "22",
+      "link_click": "311",
+      "omni_initiated_checkout": "50",
+      "page_engagement": "7748",
+      "purchase": "22",
+      "landing_page_view": "153",
+      "add_to_cart": "41",
+      "omni_landing_page_view": "153",
+      "onsite_conversion.post_unlike": "11",
+      "post_engagement": "7748",
+      "post_interaction_gross": "107",
+      "onsite_web_app_purchase": "22",
+      "onsite_web_view_content": "102",
+      "onsite_web_add_to_cart": "41",
+      "post_interaction_net": "118",
+      "offsite_conversion.fb_pixel_purchase": "22",
+      "onsite_conversion.messaging_first_reply": "7",
+      "onsite_web_app_view_content": "102",
+      "post": "3",
+      "view_content": "102",
+      "onsite_conversion.post_save": "1",
+      "web_app_in_store_purchase": "22",
+      "onsite_web_app_add_to_cart": "41",
+      "onsite_conversion.post_net_save": "1",
+      "onsite_conversion.post_net_like": "92",
+      "onsite_web_initiate_checkout": "50",
+      "omni_add_to_cart": "41",
+      "offsite_content_view_add_meta_leads": "102",
+      "onsite_web_purchase": "22",
+      "onsite_conversion.messaging_conversation_started_7d": "10",
+      "onsite_conversion.messaging_conversation_replied_7d": "2",
+      "video_view": "7330",
+      "omni_view_content": "102",
+      "offsite_conversion.fb_pixel_view_content": "102",
+      "offsite_conversion.fb_pixel_add_to_cart": "41",
+      "post_reaction": "103",
+      "offsite_conversion.fb_pixel_initiate_checkout": "50",
+      "initiate_checkout": "50"
+    },
+    "top_demographics": [
+      {
+        "age": "25-34",
+        "gender": "female",
+        "spend": "590.1",
+        "impressions": "126299",
+        "reach": "24857",
+        "clicks": "1399",
+        "ctr": "1.107689"
+      },
+      {
+        "age": "35-44",
+        "gender": "female",
+        "spend": "463.55",
+        "impressions": "72366",
+        "reach": "17503",
+        "clicks": "1269",
+        "ctr": "1.753586"
+      },
+      {
+        "age": "25-34",
+        "gender": "male",
+        "spend": "380.7",
+        "impressions": "84024",
+        "reach": "20402",
+        "clicks": "1118",
+        "ctr": "1.330572"
+      },
+      {
+        "age": "45-54",
+        "gender": "female",
+        "spend": "350.13",
+        "impressions": "49329",
+        "reach": "12079",
+        "clicks": "1207",
+        "ctr": "2.446837"
+      },
+      {
+        "age": "35-44",
+        "gender": "male",
+        "spend": "268.63",
+        "impressions": "51075",
+        "reach": "12484",
+        "clicks": "765",
+        "ctr": "1.497797"
+      },
+      {
+        "age": "55-64",
+        "gender": "female",
+        "spend": "235.38",
+        "impressions": "33785",
+        "reach": "8238",
+        "clicks": "991",
+        "ctr": "2.933254"
+      },
+      {
+        "age": "18-24",
+        "gender": "female",
+        "spend": "230.05",
+        "impressions": "67691",
+        "reach": "16441",
+        "clicks": "536",
+        "ctr": "0.791833"
+      },
+      {
+        "age": "45-54",
+        "gender": "male",
+        "spend": "186.9",
+        "impressions": "31490",
+        "reach": "8100",
+        "clicks": "572",
+        "ctr": "1.81645"
+      }
+    ],
+    "best_known_results": {
+      "mensagens": "10",
+      "cadastros": "0",
+      "compras": "22",
+      "checkout": "50"
+    },
+    "history": [
+      {
+        "ts": 1775701157,
+        "spend": "230.05",
+        "ctr": "0.791833",
+        "cpc": "0.429198",
+        "objective_labels": [
+          "Campanha de Engajamento",
+          "Campanha de Reconhecimento",
+          "Campanha de Vendas",
+          "MESSAGES"
+        ],
+        "results": {
+          "mensagens": "10",
+          "cadastros": "0",
+          "compras": "22",
+          "checkout": "50"
+        }
+      }
+    ],
+    "totals": {
+      "spend": "230.05",
+      "clicks": "536",
+      "ctr": "0.791833",
+      "cpc": "0.429198",
+      "cpm": "3.398532"
+    }
+  },
+  "act_676386442065664": {
+    "ad_account_id": "act_676386442065664",
+    "updated_at": 1776718275,
+    "objective_labels": [],
+    "objective_mix": {},
+    "top_campaign_names": [],
+    "top_actions": {},
+    "top_demographics": [],
+    "best_known_results": {
+      "mensagens": "0",
+      "cadastros": "0",
+      "compras": "0",
+      "checkout": "0"
+    },
+    "history": [
+      {
+        "ts": 1776718107,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1776718126,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1776718127,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1776718139,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1776718167,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1776718168,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1776718172,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1776718183,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1776718251,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1776718255,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1776718275,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      }
+    ],
+    "totals": {
+      "spend": 0.0,
+      "clicks": 0,
+      "ctr": 0,
+      "cpc": 0,
+      "cpm": 0
+    }
+  },
+  "act_4106819286203036": {
+    "ad_account_id": "act_4106819286203036",
+    "updated_at": 1778016766,
+    "objective_labels": [
+      "Campanha de Reconhecimento",
+      "Campanha de Vendas"
+    ],
+    "objective_mix": {
+      "Campanha de Reconhecimento": 1,
+      "Campanha de Vendas": 1
+    },
+    "top_campaign_names": [
+      "[ALCANCE] ImobDay 2 edição - Frio - LP - 1/1/9 - 30$dia",
+      "[CONV] Imobday Flu - LP - Aberto - Volta Redonda - 30$/dia"
+    ],
+    "top_actions": {
+      "link_click": 297.0,
+      "page_engagement": 656.0,
+      "landing_page_view": 188.0,
+      "omni_landing_page_view": 188.0,
+      "onsite_conversion.post_unlike": 9.0,
+      "post_engagement": 656.0,
+      "post_interaction_gross": 45.0,
+      "post_interaction_net": 54.0,
+      "onsite_conversion.post_save": 4.0,
+      "onsite_conversion.post_net_save": 4.0,
+      "onsite_conversion.post_net_like": 28.0,
+      "video_view": 314.0,
+      "post_reaction": 37.0,
+      "onsite_conversion.total_messaging_connection": 1.0,
+      "initiate_checkout": 18.0,
+      "omni_initiated_checkout": 18.0,
+      "post": 4.0,
+      "onsite_web_initiate_checkout": 18.0,
+      "onsite_conversion.messaging_conversation_replied_7d": 1.0,
+      "offsite_conversion.fb_pixel_initiate_checkout": 18.0
+    },
+    "top_demographics": [],
+    "best_known_results": {
+      "mensagens": 1.0,
+      "cadastros": "0",
+      "compras": "0",
+      "checkout": 18.0
+    },
+    "history": [
+      {
+        "ts": 1777250947,
+        "spend": 100.54,
+        "ctr": 0.15,
+        "cpc": 0.82,
+        "objective_labels": [
+          "Campanha de Reconhecimento"
+        ],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1778016749,
+        "spend": 177.29,
+        "ctr": 0.33,
+        "cpc": 0.86,
+        "objective_labels": [
+          "Campanha de Reconhecimento",
+          "Campanha de Vendas"
+        ],
+        "results": {
+          "mensagens": 1.0,
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": 18.0
+        }
+      },
+      {
+        "ts": 1778016762,
+        "spend": 342.28,
+        "ctr": 0.2,
+        "cpc": 0.86,
+        "objective_labels": [
+          "Campanha de Reconhecimento",
+          "Campanha de Vendas"
+        ],
+        "results": {
+          "mensagens": 1.0,
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": 18.0
+        }
+      },
+      {
+        "ts": 1778016766,
+        "spend": 342.28,
+        "ctr": 0.2,
+        "cpc": 0.86,
+        "objective_labels": [
+          "Campanha de Reconhecimento",
+          "Campanha de Vendas"
+        ],
+        "results": {
+          "mensagens": 1.0,
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": 18.0
+        }
+      }
+    ],
+    "totals": {
+      "spend": 342.28,
+      "clicks": 399,
+      "ctr": 0.2,
+      "cpc": 0.86,
+      "cpm": 1.69
+    }
+  },
+  "act_809396714231583": {
+    "ad_account_id": "act_809396714231583",
+    "updated_at": 1779740795,
+    "objective_labels": [],
+    "objective_mix": {},
+    "top_campaign_names": [],
+    "top_actions": {},
+    "top_demographics": [],
+    "best_known_results": {
+      "mensagens": "0",
+      "cadastros": "0",
+      "compras": "0",
+      "checkout": "0"
+    },
+    "history": [
+      {
+        "ts": 1778012485,
+        "spend": 919.71,
+        "ctr": 1.8,
+        "cpc": 0.63,
+        "objective_labels": [
+          "Campanha de Cadastros",
+          "Campanha de Engajamento",
+          "Campanha de Vendas"
+        ],
+        "results": {
+          "mensagens": 1.0,
+          "cadastros": 141.0,
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1779738127,
+        "spend": 1790.1100000000001,
+        "ctr": 1.92,
+        "cpc": 0.61,
+        "objective_labels": [
+          "Campanha de Cadastros",
+          "Campanha de Engajamento",
+          "Campanha de Vendas"
+        ],
+        "results": {
+          "mensagens": 3.0,
+          "cadastros": 288.0,
+          "compras": "0",
+          "checkout": "0"
+        }
+      },
+      {
+        "ts": 1779740795,
+        "spend": 0.0,
+        "ctr": 0,
+        "cpc": 0,
+        "objective_labels": [],
+        "results": {
+          "mensagens": "0",
+          "cadastros": "0",
+          "compras": "0",
+          "checkout": "0"
+        }
+      }
+    ],
+    "totals": {
+      "spend": 0.0,
+      "clicks": 0,
+      "ctr": 0,
+      "cpc": 0,
+      "cpm": 0
+    }
+  }
+}

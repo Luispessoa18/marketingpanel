@@ -1,0 +1,79 @@
+{
+  "jobs": [
+    {
+      "job_id": "1775234835946",
+      "kind": "post",
+      "account_key": "homeunity_browser",
+      "command": [
+        "post",
+        "homeunity_browser",
+        "/root/.openclaw/workspace/outputs/nano-banana/homeunity_future_automation_post_v2.jpg",
+        "..."
+      ],
+      "pid": 496140,
+      "log_path": "/root/.openclaw/workspace/projects/instagram-browser-fallback/1775234835946.log",
+      "created_at": 1775234835,
+      "status": "running"
+    },
+    {
+      "job_id": "1775234838317",
+      "kind": "post",
+      "account_key": "homeunity_browser",
+      "command": [
+        "post",
+        "homeunity_browser",
+        "/root/.openclaw/workspace/outputs/nano-banana/homeunity_future_automation_post_v2.jpg",
+        "..."
+      ],
+      "pid": 496216,
+      "log_path": "/root/.openclaw/workspace/projects/instagram-browser-fallback/1775234838317.log",
+      "created_at": 1775234838,
+      "status": "running"
+    },
+    {
+      "job_id": "1775234843120",
+      "kind": "post",
+      "account_key": "homeunity_browser",
+      "command": [
+        "post",
+        "homeunity_browser",
+        "/root/.openclaw/workspace/outputs/nano-banana/homeunity_future_automation_post_v2.jpg",
+        "..."
+      ],
+      "pid": 496293,
+      "log_path": "/root/.openclaw/workspace/projects/instagram-browser-fallback/1775234843120.log",
+      "created_at": 1775234843,
+      "status": "running"
+    },
+    {
+      "job_id": "1775235940406",
+      "kind": "post",
+      "account_key": "homeunity_browser",
+      "command": [
+        "post",
+        "homeunity_browser",
+        "/root/.openclaw/workspace/outputs/nano-banana/homeunity_future_automation_post_v2.jpg",
+        "O futuro da automacao residencial ja comecou.\n\nCasas inteligentes trazem mais conforto, praticidade e controle para o dia a dia.\n\n#automacaoresidencial #smarthome #casainteligente #tecnologia"
+      ],
+      "pid": 496925,
+      "log_path": "/root/.openclaw/workspace/projects/instagram-browser-fallback/1775235940406.log",
+      "created_at": 1775235940,
+      "status": "running"
+    },
+    {
+      "job_id": "1775237376479",
+      "kind": "post",
+      "account_key": "homeunity_browser",
+      "command": [
+        "post",
+        "homeunity_browser",
+        "/root/.openclaw/workspace/outputs/nano-banana/homeunity_future_automation_post_v2.jpg",
+        "O futuro da automacao residencial ja comecou.\n\nCasas inteligentes trazem mais conforto, praticidade e controle para o dia a dia.\n\n#automacaoresidencial #smarthome #casainteligente #tecnologia"
+      ],
+      "pid": 497515,
+      "log_path": "/root/.openclaw/workspace/projects/instagram-browser-fallback/1775237376479.log",
+      "created_at": 1775237376,
+      "status": "running"
+    }
+  ]
+}

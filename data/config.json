@@ -1,0 +1,58 @@
+{
+  "public_base_url": "https://marketing.incorporacao.digital",
+  "app_id": "819007751242537",
+  "app_secret_name": "META_APP_SECRET",
+  "verify_token_name": "META_VERIFY_TOKEN",
+  "graph_api_version": "v23.0",
+  "default_scopes": "pages_show_list,pages_read_engagement,pages_manage_posts,instagram_basic,instagram_content_publish,instagram_manage_insights,ads_management,ads_read,business_management",
+  "webhook_path": "/meta/webhook",
+  "oauth_callback_path": "/meta/connect/callback",
+  "ai_settings": {
+    "copy_generation": {
+      "provider": "openai",
+      "model": "gpt-5.2"
+    },
+    "prompt_generation": {
+      "provider": "openai",
+      "model": "gpt-5.2"
+    },
+    "plan_generation": {
+      "provider": "openai",
+      "model": "gpt-5.2"
+    },
+    "focus_suggestion": {
+      "provider": "openai",
+      "model": "gpt-5.2"
+    },
+    "brand_analysis": {
+      "provider": "openai",
+      "model": "gpt-5-mini"
+    },
+    "campaign_analysis": {
+      "provider": "openai",
+      "model": "gpt-5-pro"
+    },
+    "profile_analysis": {
+      "provider": "openai",
+      "model": "gpt-5.4"
+    },
+    "competitor_analysis": {
+      "provider": "gemini",
+      "model": ""
+    },
+    "icp_analysis": {
+      "provider": "openai",
+      "model": "gpt-5-mini"
+    },
+    "image_generation": {
+      "provider": "openai",
+      "model": "gpt-image-1.5",
+      "size": "1024x1024",
+      "quality": "auto",
+      "background": "auto",
+      "output_format": "png",
+      "moderation": "auto"
+    }
+  },
+  "linkedin_client_id": "77tc3mtynlbyq6"
+}

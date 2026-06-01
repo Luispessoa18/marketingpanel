@@ -1,0 +1,75 @@
+{
+  "cookies": [
+    {
+      "name": "csrftoken",
+      "value": "CTrt0odrQzUqdAs7qYDgxy",
+      "domain": ".instagram.com",
+      "path": "/",
+      "expires": 1810838326,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "datr",
+      "value": "NtvfafZJI18ZZBQNLrc349ey",
+      "domain": ".instagram.com",
+      "path": "/",
+      "expires": 1810838326,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ig_did",
+      "value": "94902F0D-65F7-4B51-8863-A263567E5276",
+      "domain": ".instagram.com",
+      "path": "/",
+      "expires": 1807814326,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "mid",
+      "value": "ad_bNgAEAAFa-viiy_WGpO8vSolj",
+      "domain": ".instagram.com",
+      "path": "/",
+      "expires": 1810838326,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "wd",
+      "value": "1920x987",
+      "domain": ".instagram.com",
+      "path": "/",
+      "expires": 1776883129,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "ds_user_id",
+      "value": "44958510229",
+      "domain": ".instagram.com",
+      "path": "/",
+      "expires": 1784054332,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sessionid",
+      "value": "44958510229%3ATtKWMY6W8ffzOI%3A13%3AAYj-nsy0aqoCmZbJs_Felh-GBOtvBFzrWXUrhwU5Eg",
+      "domain": ".instagram.com",
+      "path": "/",
+      "expires": 1807814332,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "localStorage": "{\"banzai:last_storage_flush\":\"1776278328182\",\"hb_timestamp\":\"1776278328685\",\"bz:44za1w:uci3q5:n5oikl.1776278330094\":\"[[\\\"falco:ig_web_page_view\\\",{\\\"e\\\":\\\"{\\\\\\\"module\\\\\\\":\\\\\\\"CAAIGLoginHomepage\\\\\\\",\\\\\\\"nav_chain\\\\\\\":\\\\\\\"CAAIGLoginHomepageRoot:CAAIGLoginHomepage:1:via_cold_start\\\\\\\",\\\\\\\"referrer\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"url\\\\\\\":\\\\\\\"https://www.instagram.com/\\\\\\\",\\\\\\\"web_analytics_session_id\\\\\\\":\\\\\\\"k5ce98:eyyufh:6gv5gb\\\\\\\"}\\\",\\\"r\\\":1,\\\"d\\\":\\\"94902F0D-65F7-4B51-8863-A263567E5276\\\",\\\"s\\\":\\\"44za1w:uci3q5:n5oikl\\\",\\\"t\\\":1776278329097,\\\"a\\\":\\\"1.0.0\\\",\\\"b\\\":[1,128],\\\"id\\\":{\\\"claim\\\":\\\"\\\"}},1776278329097,2,367,{\\\"appID\\\":\\\"936619743392459\\\",\\\"retry\\\":true,\\\"status\\\":0,\\\"userID\\\":\\\"0\\\",\\\"webSessionId\\\":\\\"44za1w:uci3q5:n5oikl\\\",\\\"priority\\\":\\\"basic\\\"}]]\",\"caa_feta_onetap_users_migrated\":\"true\",\"Session\":\"44za1w:1776278367436\",\"chatd-deviceid\":\"5bbf6505-ed72-48b3-9a98-59e6c6ebba22\",\"falco_queue_immediately^$^#^#^#hmac_ttl.1776278328.AR1EddhMZOF25n-04O3F8bCvl3KeZnpPyhPQIzo3gZKVtdlh^$f3f71f41ee2233407\":\"{\\\"items\\\":[{\\\"name\\\":\\\"instagram_web_time_spent_navigation\\\",\\\"policy\\\":{\\\"r\\\":1},\\\"time\\\":1776278332436,\\\"extra\\\":\\\"{\\\\\\\"ig_userid\\\\\\\":\\\\\\\"0\\\\\\\",\\\\\\\"pk\\\\\\\":\\\\\\\"0\\\\\\\",\\\\\\\"rollout_hash\\\\\\\":\\\\\\\"1037391856\\\\\\\",\\\\\\\"original_referrer\\\\\\\":null,\\\\\\\"original_referrer_domain\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"referrer\\\\\\\":null,\\\\\\\"referrer_domain\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"referrer_url\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"url\\\\\\\":\\\\\\\"/\\\\\\\",\\\\\\\"nav_chain\\\\\\\":\\\\\\\"CAAIGLoginHomepageRoot:CAAIGLoginHomepage:1:via_cold_start\\\\\\\",\\\\\\\"app_id\\\\\\\":\\\\\\\"936619743392459\\\\\\\",\\\\\\\"frontend_env\\\\\\\":\\\\\\\"C3\\\\\\\",\\\\\\\"client_time\\\\\\\":1776278332436,\\\\\\\"event\\\\\\\":\\\\\\\"unload\\\\\\\",\\\\\\\"extra_data\\\\\\\":{\\\\\\\"source_page_id\\\\\\\":\\\\\\\"CAAIGLoginHomepage\\\\\\\"},\\\\\\\"ig_canonical_visitation_attribution\\\\\\\":\\\\\\\"{\\\\\\\\\\\\\\\"deeplink_url\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://www.instagram.com/\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"referrer_url\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\"}\\\\\\\",\\\\\\\"time_spent_id\\\\\\\":\\\\\\\"n5oikl\\\\\\\",\\\\\\\"source_endpoint\\\\\\\":\\\\\\\"CAAIGLoginHomepage\\\\\\\",\\\\\\\"sid_raw\\\\\\\":\\\\\\\"44za1w:uci3q5:n5oikl\\\\\\\"}\\\",\\\"tags\\\":[1,128],\\\"sessionId\\\":\\\"44za1w:uci3q5:n5oikl\\\",\\\"deviceId\\\":\\\"94902F0D-65F7-4B51-8863-A263567E5276\\\",\\\"appVersion\\\":\\\"1.0.0\\\"}],\\\"ts\\\":1776278332436}\",\"IGSession\":\"k5ce98:1776280132436\",\"signal_flush_timestamp\":\"1776278328714\",\"pigeon_state\":\"{\\\"lastDeviceInfoTime\\\":0}\"}"
+}

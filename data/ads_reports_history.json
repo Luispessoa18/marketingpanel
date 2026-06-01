@@ -1,0 +1,1131 @@
+{
+  "act_1576441520296786": [
+    {
+      "ts": 1775753832,
+      "date_preset": "last_30d",
+      "report_summary": {
+        "active_campaigns": 2,
+        "paused_campaigns": 3,
+        "objective_mix": {
+          "Campanha de Cadastros": 5
+        }
+      },
+      "totals": {
+        "spend": "30.96",
+        "impressions": "1858",
+        "reach": "823",
+        "clicks": "23",
+        "ctr": "1.23789",
+        "cpc": "1.346087",
+        "cpm": "16.663079",
+        "actions": {
+          "onsite_conversion.total_messaging_connection": "2",
+          "offsite_complete_registration_add_meta_leads": "4",
+          "link_click": "12",
+          "page_engagement": "16",
+          "post_engagement": "16",
+          "onsite_conversion.messaging_first_reply": "2",
+          "offsite_search_add_meta_leads": "4",
+          "lead": "4",
+          "offsite_content_view_add_meta_leads": "4",
+          "onsite_conversion.messaging_conversation_started_7d": "2",
+          "onsite_conversion.lead_grouped": "4",
+          "video_view": "4"
+        },
+        "action_values": {},
+        "cost_per_action_type": {
+          "onsite_conversion.total_messaging_connection": "15.48",
+          "offsite_submit_application_add_meta_leads": "7.74",
+          "offsite_search_add_meta_leads": "7.74",
+          "offsite_complete_registration_add_meta_leads": "7.74",
+          "video_view": "7.74",
+          "link_click": "2.58",
+          "onsite_conversion.lead_grouped": "7.74",
+          "lead": "7.74",
+          "post_engagement": "1.935",
+          "offsite_content_view_add_meta_leads": "7.74",
+          "offsite_contact_website_add_meta_leads": "7.74",
+          "page_engagement": "1.935",
+          "onsite_conversion.messaging_first_reply": "15.48",
+          "onsite_conversion.messaging_conversation_started_7d": "15.48"
+        },
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 5,
+        "adsets": 9,
+        "ads": 100
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nA conta apresentou um investimento total de R$30,96 nos últimos 30 dias. O foco principal das campanhas foi em Cadastros, com uma campanha ativa dedicada a este objetivo. A performance geral demonstra um bom custo por resultado para cadastros, mas com pouca atividade em vendas. É essencial otimizar campanhas ativas e explorar novos objetivos para maximizar o retorno.\n\nKPIS PRINCIPAIS\n\nInvestimento Total: R$30,96\nImpressões: 1.858\nAlcance: 823\nCliques: 23\nCTR: 1,24%\nCPC: R$1,35\nCPM: R$16,66\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nAtualmente, 2 campanhas estão ativas e 3 estão pausadas, totalizando 5 campanhas monitoradas. O mix de objetivos é 100% focado em Campanha de Cadastros. Os resultados que realmente importam são os de Cadastros, que demonstram um custo efetivo.\n\nRESULTADOS POR OBJETIVO\n\nMensagens:\nForam geradas 6 mensagens com um custo por resultado de R$5,16. Esta métrica indica uma oportunidade para otimizar o custo de aquisição de conversas iniciais.\n\nCadastros:\nRegistramos 20 cadastros com um custo por resultado de R$1,55. Este é o objetivo com maior volume e um custo bastante competitivo, indicando boa eficiência.\n\nVendas/Compras:\nNão há dados disponíveis sobre vendas ou compras neste resumo.\n\nDEMOGRAFIA\n\nNão há dados de breakdown demográfico (idade/gênero) disponíveis neste resumo.\n\nRISCOS\n\n1. Falta de diversificação de objetivos: A dependência exclusiva de campanhas de cadastro pode limitar o alcance de outras metas de negócio.\n2. Ausência de dados de vendas: A impossibilidade de mensurar o impacto direto em vendas impede a análise de ROAS e o retorno sobre o investimento real.\n3. Campanhas pausadas com potencial: Campanhas pausadas podem ter tido performance relevante no passado e necessitam de análise para reativação ou descarte definitivo.\n\nOPORTUNIDADES\n\n1. Otimização de mensagens: Melhorar a segmentação e criativos para reduzir o custo por mensagem e aumentar a qualificação.\n2. Escalar campanhas de cadastros: Ampliar o investimento em campanhas ativas de cadastros com bom desempenho.\n3. Explorar novos objetivos: Implementar campanhas focadas em vendas ou outras conversões de alto valor para obter um ROI mais robusto.\n4. Análise de campanhas pausadas: Investigar as campanhas pausadas para identificar padrões de sucesso ou falha e otimizar futuras estratégias.\n\nPRÓXIMOS PASSOS\n\n1. Monitorar e otimizar campanhas ativas de cadastros, buscando reduzir o custo por lead e aumentar o volume.\n2. Investigar as campanhas pausadas, analisar seus resultados e potencial para reativação ou para extrair aprendizados.\n3. Priorizar a configuração e teste de campanhas com objetivo de Vendas/Compras, definindo KPIs e metas claras.\n4. Buscar dados demográficos para refinar a segmentação e otimizar a comunicação com públicos específicos.\n5. Implementar o acompanhamento de métricas de vendas para calcular o ROAS e medir o retorno financeiro direto das campanhas.",
+      "ai_model": "gemini-2.5-flash-lite"
+    },
+    {
+      "ts": 1775754164,
+      "date_preset": "last_30d",
+      "report_summary": {
+        "active_campaigns": 2,
+        "paused_campaigns": 3,
+        "objective_mix": {
+          "Campanha de Cadastros": 5
+        }
+      },
+      "totals": {
+        "spend": 3654.589999999999,
+        "impressions": 121813,
+        "reach": 89514,
+        "clicks": 4838,
+        "ctr": 3.97,
+        "cpc": 0.76,
+        "cpm": 30.0,
+        "actions": {
+          "onsite_conversion.total_messaging_connection": 104.0,
+          "offsite_complete_registration_add_meta_leads": 429.0,
+          "link_click": 2581.0,
+          "page_engagement": 3934.0,
+          "post_engagement": 3929.0,
+          "like": 5.0,
+          "post_interaction_gross": 514.0,
+          "comment": 17.0,
+          "post_interaction_net": 525.0,
+          "onsite_conversion.messaging_user_depth_2_message_send": 53.0,
+          "onsite_conversion.messaging_first_reply": 92.0,
+          "post": 53.0,
+          "onsite_conversion.post_unsave": 5.0,
+          "onsite_conversion.post_save": 57.0,
+          "onsite_conversion.post_net_comment": 17.0,
+          "onsite_conversion.post_net_save": 52.0,
+          "offsite_search_add_meta_leads": 429.0,
+          "onsite_conversion.post_net_like": 381.0,
+          "lead": 429.0,
+          "offsite_content_view_add_meta_leads": 429.0,
+          "onsite_conversion.messaging_conversation_started_7d": 95.0,
+          "onsite_conversion.lead_grouped": 429.0,
+          "video_view": 834.0,
+          "post_reaction": 387.0,
+          "onsite_conversion.post_unlike": 6.0,
+          "onsite_conversion.messaging_user_depth_3_message_send": 27.0,
+          "onsite_conversion.messaging_user_depth_5_message_send": 1.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 5,
+        "adsets": 9,
+        "ads": 184
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO investimento total no período foi de R$ 3.654,59, gerando 121.813 impressões e 89.514 alcançados. O foco principal das campanhas no período foi na geração de cadastros. Duas campanhas estão ativas e três estão pausadas. As campanhas ativas são focadas em cadastros.\n\nKPIS PRINCIPAIS\n\nGasto Total: R$ 3.654,59\nImpressões: 121.813\nAlcance: 89.514\nCliques no Link: 2.581\nCTR: 3,97%\nCPC: R$ 0,76\nCPM: R$ 30,00\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nOito campanhas estão ativas e três estão pausadas, totalizando cinco campanhas observadas. Todas as campanhas ativas e pausadas têm o objetivo de \"Campanha de Cadastros\".\n\nRESULTADOS POR OBJETIVO\n\nMensagens: 291 mensagens geradas a um custo por mensagem de R$ 12,56. Estas métricas são derivadas de `onsite_conversion.total_messaging_connection`, `onsite_conversion.messaging_conversation_started_7d` e `onsite_conversion.messaging_first_reply`.\n\nCadastros: 2.145 cadastros gerados a um custo por cadastro de R$ 1,70. Estes resultados provêm de `lead`, `onsite_conversion.lead_grouped`, `offsite_complete_registration_add_meta_leads`, `offsite_search_add_meta_leads` e `offsite_content_view_add_meta_leads`. A maioria dos cadastros, 429, veio de `offsite_complete_registration_add_meta_leads`, `offsite_search_add_meta_leads`, `lead`, `offsite_content_view_add_meta_leads` e `onsite_conversion.lead_grouped`.\n\nVendas/Compras: Não foram identificados resultados diretos de vendas/compras nas métricas consolidadas ou nas campanhas de amostra fornecidas.\n\nDEMOGRAFIA\n\nNão foram fornecidos dados demográficos específicos para análise.\n\nRISCOS\n\nO principal risco identificado é a ausência de métricas de vendas/compras. Sem dados de conversão final, a mensuração do retorno sobre o investimento (ROAS) é impossível, limitando a avaliação da eficácia das campanhas em gerar valor de negócio tangível. A dependência exclusiva do objetivo de cadastros pode não refletir o objetivo final do negócio.\n\nOPORTUNIDADES\n\nA alta performance na geração de cadastros (2.145 com um CPL de R$ 1,70) representa uma forte base para futuras otimizações. Existe a oportunidade de integrar o rastreamento de vendas para compreender o impacto dos cadastros no funil completo e otimizar para ROAS.\n\nPRÓXIMOS PASSOS\n\n1. Implementar e monitorar métricas de vendas/compras para todas as campanhas ativas.\n2. Analisar o desempenho das campanhas ativas (`[CAD] Casas - 1/2/21 - 60$/dia - CBO - RJ - 02` e `[CAD] Cotas - 1/2/21 - 60$dia - Novos criativos e loc`) para identificar os drivers de sucesso e replicá-los.\n3. Revisar as campanhas pausadas (`[CAD] Cotas - 1/2/28 - 60$dia`, `[CAD] Cotas - 1/2/28 - 60$dia — Cópia`, `[CAD] Casas -`) para avaliar o potencial de reativação ou otimização, caso demonstrem viabilidade.\n4. Explorar testes A/B com diferentes criativos, públicos e ofertas focados na conversão final (vendas).",
+      "ai_model": "gemini-2.5-flash-lite"
+    },
+    {
+      "ts": 1777251162,
+      "date_preset": "last_30d",
+      "report_summary": {
+        "active_campaigns": 2,
+        "paused_campaigns": 0,
+        "objective_mix": {
+          "Campanha de Cadastros": 2
+        }
+      },
+      "totals": {
+        "spend": 5399.689999999999,
+        "impressions": 223875,
+        "reach": 142993,
+        "clicks": 8870,
+        "ctr": 3.96,
+        "cpc": 0.61,
+        "cpm": 24.12,
+        "actions": {
+          "onsite_conversion.total_messaging_connection": 105.0,
+          "offsite_complete_registration_add_meta_leads": 595.0,
+          "link_click": 4731.0,
+          "page_engagement": 6158.0,
+          "onsite_conversion.post_unlike": 18.0,
+          "post_engagement": 6150.0,
+          "like": 8.0,
+          "post_interaction_gross": 702.0,
+          "comment": 38.0,
+          "post_interaction_net": 727.0,
+          "onsite_conversion.messaging_user_depth_2_message_send": 40.0,
+          "onsite_conversion.messaging_first_reply": 101.0,
+          "post": 64.0,
+          "onsite_conversion.post_unsave": 7.0,
+          "onsite_conversion.post_save": 73.0,
+          "onsite_conversion.post_net_comment": 38.0,
+          "onsite_conversion.post_net_save": 66.0,
+          "offsite_search_add_meta_leads": 595.0,
+          "onsite_conversion.post_net_like": 509.0,
+          "lead": 595.0,
+          "offsite_content_view_add_meta_leads": 595.0,
+          "onsite_conversion.messaging_conversation_started_7d": 105.0,
+          "onsite_conversion.messaging_conversation_replied_7d": 3.0,
+          "onsite_conversion.lead_grouped": 595.0,
+          "video_view": 717.0,
+          "post_reaction": 527.0,
+          "onsite_conversion.messaging_user_depth_3_message_send": 1.0,
+          "onsite_conversion.messaging_user_depth_5_message_send": 1.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 2,
+        "adsets": 4,
+        "ads": 85
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO período dos últimos 30 dias foi marcado por um investimento total de 5399.69 em mídia paga, focado integralmente na geração de cadastros. A conta possui 2 campanhas ativas, ambas com o objetivo de aquisição de leads.\n\nOs resultados demonstram alta eficiência na obtenção de cadastros, com um custo por resultado significativamente baixo. Paralelamente, houve também uma geração expressiva de mensagens, indicando engajamento além do objetivo primário.\n\nKPIS PRINCIPAIS\n\nInvestimento Total: 5399.69\nImpressões: 223875\nAlcance: 142993\nCliques Totais: 8870\nTaxa de Cliques (CTR): 3.96%\nCusto por Clique (CPC): 0.61\nCusto por Mil Impressões (CPM): 24.12\n\nResultados por Objetivo:\nMensagens: 311\nCusto por Mensagem: 17.36\n\nCadastros: 2975\nCusto por Cadastro: 1.82\n\nCliques em Link: 4731\nCusto por Clique em Link: 1.14\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nA conta opera com 2 campanhas ativas, representando 100% das campanhas presentes neste período, e não possui campanhas pausadas. Todas as campanhas estão configuradas com o objetivo exclusivo de Campanha de Cadastros.\n\nAs campanhas ativas são:\n\n1.  \"[CAD] Casas - 1/2/21 - 60$/dia - CBO - RJ - 02\": Esta campanha investiu 2771.36, gerando 309 leads e 7 mensagens.\n2.  \"[CAD] Cotas - 1/2/21 - 60$dia - Novos criativos e loc\": Com um investimento de 2628.33, esta campanha gerou 286 leads e 98 mensagens.\n\nRESULTADOS POR OBJETIVO\n\nCadastros\n\nForam gerados um total de 2975 cadastros no período, com um custo por cadastro de 1.82. Este é o objetivo principal da conta, e o custo por resultado é altamente eficiente, indicando boa performance na aquisição de leads. As duas campanhas ativas contribuíram diretamente para este resultado, com a campanha de \"Casas\" gerando 309 leads e a campanha de \"Cotas\" gerando 286 leads.\n\nMensagens\n\nNo total, foram registradas 311 mensagens, com um custo por mensagem de 17.36. Embora não seja o objetivo primário das campanhas ativas, a geração de mensagens representa um canal de engajamento secundário. A campanha \"Casas\" contribuiu com 7 mensagens, e a campanha \"Cotas\" gerou 98 mensagens. O custo é mais elevado que o de cadastros, o que é comum para interações de maior qualidade ou profundidade.\n\nVendas/Compras\n\nNão há dados de vendas ou compras registrados para o período analisado.\n\nDEMOGRAFIA\n\nNão foram fornecidos dados demográficos para análise neste relatório.\n\nRISCOS\n\nA principal observação é a total concentração de 100% das campanhas ativas no objetivo de Cadastros. Embora eficiente, essa abordagem pode limitar a diversificação e a capacidade de testar e otimizar outros pontos do funil de conversão, como engajamento mais profundo ou vendas diretas.\n\nExiste uma divergência entre o total de cadastros e mensagens consolidados na conta (2975 cadastros, 311 mensagens) e a soma dos resultados reportados pelas campanhas individuais (595 leads, 105 mensagens). Essa disparidade aponta para a necessidade de investigar a agregação de dados ou fontes de atribuição para garantir uma visão unificada e completa da performance.\n\nA ausência de dados de vendas ou ROAS impede a avaliação direta do impacto financeiro do investimento em mídia, dificultando a análise do retorno final sobre o capital investido.\n\nOPORTUNIDADES\n\nO custo por cadastro de 1.82 é excelente e deve ser uma prioridade para escalonamento. Há uma clara oportunidade para aumentar o volume de investimento nas campanhas existentes, ou em novas similares, buscando manter essa eficiência.\n\nApesar de não ser o foco, as 311 mensagens representam um volume considerável de interações. Analisar a qualidade e a taxa de conversão dessas mensagens pode revelar uma oportunidade para desenvolver um fluxo mais estruturado para esse tipo de engajamento, potencialmente convertendo-as em leads qualificados ou vendas.\n\nA performance atual indica que há espaço para testes contínuos de criativos, públicos e segmentações para otimizar ainda mais o custo por resultado e explorar novas frentes de crescimento.\n\nPRÓXIMOS PASSOS\n\nMonitorar de perto as campanhas de cadastro para identificar os conjuntos de anúncios e criativos de melhor desempenho, visando expandir o orçamento e a escala de forma estratégica, mantendo a eficiência do custo por cadastro.\n\nEm um próximo período, investigar a discrepância entre os dados consolidados e os dados de campanha. O objetivo é compreender a origem dessa diferença para assegurar a integridade e a granularidade da análise.\n\nConsiderar a implementação de um sistema de rastreamento para vendas ou compras, caso seja um objetivo de negócio, para permitir o cálculo de ROAS e uma avaliação mais completa do valor gerado pela mídia paga.\n\nAvaliar a criação de uma campanha piloto com foco explícito no objetivo de Mensagens. Isso permitiria testar a eficiência e o custo de aquisição para este tipo de interação, capitalizando o volume já observado.",
+      "ai_model": "gemini-2.5-flash"
+    },
+    {
+      "ts": 1777300612,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 2,
+        "paused_campaigns": 0,
+        "objective_mix": {
+          "Campanha de Cadastros": 2
+        }
+      },
+      "totals": {
+        "spend": 1574.8999999999996,
+        "impressions": 76567,
+        "reach": 58757,
+        "clicks": 2992,
+        "ctr": 3.91,
+        "cpc": 0.53,
+        "cpm": 20.57,
+        "actions": {
+          "onsite_conversion.total_messaging_connection": 40.0,
+          "offsite_complete_registration_add_meta_leads": 195.0,
+          "link_click": 1520.0,
+          "page_engagement": 1903.0,
+          "onsite_conversion.post_unlike": 4.0,
+          "post_engagement": 1900.0,
+          "like": 3.0,
+          "post_interaction_gross": 219.0,
+          "comment": 14.0,
+          "post_interaction_net": 224.0,
+          "onsite_conversion.messaging_user_depth_2_message_send": 18.0,
+          "onsite_conversion.messaging_first_reply": 40.0,
+          "post": 21.0,
+          "onsite_conversion.post_save": 25.0,
+          "onsite_conversion.post_net_comment": 14.0,
+          "onsite_conversion.post_net_save": 24.0,
+          "offsite_search_add_meta_leads": 195.0,
+          "onsite_conversion.post_net_like": 155.0,
+          "lead": 195.0,
+          "offsite_content_view_add_meta_leads": 195.0,
+          "onsite_conversion.messaging_conversation_started_7d": 40.0,
+          "onsite_conversion.lead_grouped": 195.0,
+          "video_view": 161.0,
+          "post_reaction": 159.0,
+          "onsite_conversion.post_unsave": 1.0,
+          "onsite_conversion.messaging_conversation_replied_7d": 1.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 2,
+        "adsets": 4,
+        "ads": 78
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO desempenho geral da conta nos últimos 7 dias mostra um investimento de R$ 1.574,90, gerando 76.567 impressões e 2.992 cliques. O CTR de 3,91% e o CPC de R$ 0,53 indicam um tráfego qualificado. A conta possui 2 campanhas ativas, ambas com objetivo de Cadastros. Não há campanhas pausadas.\n\nKPIS PRINCIPAIS\n\nInvestimento Total: R$ 1.574,90\nImpressões Totais: 76.567\nCliques Totais: 2.992\nCTR: 3,91%\nCPC: R$ 0,53\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nNo período analisado, 2 campanhas estavam ativas. Ambas as campanhas possuem o objetivo de Cadastros. Não há campanhas pausadas. O mix de objetivos é exclusivamente focado em Cadastros. Os resultados que mais importam para a estratégia são os Cadastros, seguidos por Mensagens. Vendas não foram reportadas nos dados fornecidos.\n\nRESULTADOS POR OBJETIVO\n\nMensagens:\nForam registradas 120 mensagens, com um custo por resultado de R$ 13,12. As fontes de resultado incluem conexões de mensagens no site, conversas iniciadas e primeiras respostas.\n\nCadastros:\nO objetivo de Cadastros gerou 975 resultados, com um custo por resultado de R$ 1,62. As fontes incluem leads diretos, leads agrupados e leads de diferentes fontes offsite. Este objetivo representa o maior volume de resultados com um custo bastante eficiente.\n\nDEMOGRAFIA\n\nOs dados fornecidos não detalham o desempenho por demografia específica.\n\nRISCOS\n\nA concentração total em campanhas de cadastros pode limitar a expansão para outros objetivos, caso a estratégia necessite de diversificação. A ausência de dados sobre vendas impede uma análise completa do funil de conversão e do ROAS.\n\nOPORTUNIDADES\n\nMaximizar a eficiência das campanhas de cadastro, explorando criativos e segmentações que apresentem o menor custo por lead. Investigar a possibilidade de introduzir campanhas com objetivo de vendas, caso o negócio apresente um ciclo de compra que justifique.\n\nPRÓXIMOS PASSOS\n\n1. Monitorar o desempenho das campanhas de cadastros, buscando otimizações contínuas para manter ou reduzir o custo por lead.\n2. Analisar as métricas de mensagens para entender o potencial de conversão destas interações em leads ou vendas.\n3. Caso aplicável e com base na estratégia de negócio, planejar a criação e teste de campanhas com objetivo de Vendas, coletando dados de ROAS.",
+      "ai_model": "gemini-2.5-flash-lite"
+    },
+    {
+      "ts": 1777494989,
+      "date_preset": "last_30d",
+      "report_summary": {
+        "active_campaigns": 2,
+        "paused_campaigns": 0,
+        "objective_mix": {
+          "Campanha de Cadastros": 2
+        }
+      },
+      "totals": {
+        "spend": 5665.150000000001,
+        "impressions": 250283,
+        "reach": 155025,
+        "clicks": 9919,
+        "ctr": 3.96,
+        "cpc": 0.57,
+        "cpm": 22.63,
+        "actions": {
+          "onsite_conversion.total_messaging_connection": 115.0,
+          "offsite_complete_registration_add_meta_leads": 651.0,
+          "link_click": 5234.0,
+          "page_engagement": 6729.0,
+          "onsite_conversion.post_unlike": 23.0,
+          "post_engagement": 6717.0,
+          "like": 12.0,
+          "post_interaction_gross": 767.0,
+          "comment": 43.0,
+          "post_interaction_net": 797.0,
+          "onsite_conversion.messaging_user_depth_2_message_send": 46.0,
+          "onsite_conversion.messaging_first_reply": 111.0,
+          "post": 76.0,
+          "onsite_conversion.post_unsave": 7.0,
+          "onsite_conversion.post_save": 78.0,
+          "onsite_conversion.post_net_comment": 43.0,
+          "onsite_conversion.post_net_save": 71.0,
+          "offsite_search_add_meta_leads": 651.0,
+          "onsite_conversion.post_net_like": 547.0,
+          "lead": 651.0,
+          "offsite_content_view_add_meta_leads": 651.0,
+          "onsite_conversion.messaging_conversation_started_7d": 115.0,
+          "onsite_conversion.messaging_conversation_replied_7d": 3.0,
+          "onsite_conversion.lead_grouped": 651.0,
+          "video_view": 716.0,
+          "post_reaction": 570.0,
+          "onsite_conversion.messaging_user_depth_3_message_send": 2.0,
+          "onsite_conversion.messaging_user_depth_5_message_send": 1.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 2,
+        "adsets": 4,
+        "ads": 85
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nNos últimos 30 dias, a conta investiu R$ 5.665,15, gerando 250.283 impressões, 155.025 pessoas alcançadas e 9.919 cliques.\n\nA operação está 100% concentrada em Campanha de Cadastros. Foram identificadas 2 campanhas no período, ambas ativas, com 0 campanhas pausadas.\n\nO principal resultado consolidado foi cadastro: 3.255 cadastros, com custo por resultado de R$ 1,74. Também houve 341 mensagens, com custo por mensagem de R$ 16,61, e 5.234 cliques no link, com custo por clique no link de R$ 1,08.\n\nNão há compras registradas nas campanhas fornecidas e não há dado de receita. Portanto, não há ROAS disponível para análise.\n\nKPIS PRINCIPAIS\n\nInvestimento total: R$ 5.665,15\n\nImpressões: 250.283\n\nAlcance: 155.025\n\nCliques totais: 9.919\n\nCTR: 3,96%\n\nCPC médio: R$ 0,57\n\nCPM: R$ 22,63\n\nCadastros consolidados: 3.255\n\nCusto por cadastro consolidado: R$ 1,74\n\nMensagens consolidadas: 341\n\nCusto por mensagem: R$ 16,61\n\nCliques no link: 5.234\n\nCusto por clique no link: R$ 1,08\n\nCompras: 0\n\nROAS: não disponível\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nForam vistas 2 campanhas no período.\n\nCampanhas ativas: 2\n\nCampanhas pausadas: 0\n\nConjuntos de anúncios: 4\n\nAnúncios: 85\n\nMix de objetivo: 100% Campanha de Cadastros\n\nAs duas campanhas ativas são de cadastros, portanto todo o investimento analisado está concentrado nesse objetivo.\n\n[CAD] Casas - 1/2/21 - 60$/dia - CBO - RJ - 02\n\nStatus: ativa\n\nObjetivo: Campanha de Cadastros\n\nInvestimento em 30 dias: R$ 2.900,08\n\nParticipação no investimento: 51,19%\n\nLeads informados na campanha: 333\n\nMensagens informadas na campanha: 8\n\nCompras: 0\n\n[CAD] Cotas - 1/2/21 - 60$dia - Novos criativos e loc\n\nStatus: ativa\n\nObjetivo: Campanha de Cadastros\n\nInvestimento em 30 dias: R$ 2.765,07\n\nParticipação no investimento: 48,81%\n\nLeads informados na campanha: 318\n\nMensagens informadas na campanha: 107\n\nCompras: 0\n\nRESULTADOS POR OBJETIVO\n\nCadastros\n\nO resultado principal da conta é cadastro.\n\nO consolidado registra 3.255 cadastros, com custo por resultado de R$ 1,74.\n\nNo nível das campanhas fornecidas, o campo leads soma 651 leads, sendo 333 na campanha de Casas e 318 na campanha de Cotas. A leitura executiva deve considerar o número consolidado de 3.255 cadastros para o topo do relatório, pois ele vem do summary recebido.\n\nA campanha de Casas teve maior volume de leads informados por campanha, com 333 leads e R$ 2.900,08 investidos.\n\nA campanha de Cotas ficou muito próxima em volume, com 318 leads e R$ 2.765,07 investidos.\n\nA eficiência entre as duas campanhas, olhando apenas o campo leads por campanha, está equilibrada. A diferença de volume é pequena, e o investimento também está bem distribuído entre elas.\n\nMensagens\n\nO consolidado registra 341 mensagens, com custo por resultado de R$ 16,61.\n\nApesar de todas as campanhas terem objetivo de cadastro, houve geração de mensagens como resultado secundário. Esse dado é relevante porque pode indicar intenção comercial ou dúvidas antes da conversão.\n\nNo nível das campanhas fornecidas, a campanha de Cotas concentra mais mensagens, com 107 mensagens informadas, contra 8 mensagens na campanha de Casas.\n\nIsso sugere que a campanha de Cotas pode estar atraindo um público com maior necessidade de conversa antes do avanço no funil. Esse comportamento pode ser positivo se as mensagens forem qualificadas, mas também pode aumentar o esforço comercial se não houver conversão posterior.\n\nVendas\n\nAs campanhas fornecidas registram 0 compras.\n\nNão há dados de receita.\n\nNão há ROAS disponível.\n\nCom os dados atuais, não é possível avaliar retorno financeiro direto. A análise deve ficar concentrada em geração de cadastros, custo por cadastro, volume de mensagens e qualidade do tráfego.\n\nCliques e tráfego\n\nForam registrados 5.234 cliques no link, com custo por clique no link de R$ 1,08.\n\nA conta teve 9.919 cliques totais, CTR de 3,96% e CPC médio de R$ 0,57.\n\nA taxa de clique está em um patamar relevante para geração de tráfego e interesse inicial. O ponto central agora é entender quanto desse tráfego se transforma em cadastro qualificado e, posteriormente, oportunidade comercial.\n\nDEMOGRAFIA\n\nNão há dados demográficos na entrada recebida.\n\nNão é possível avaliar desempenho por idade, gênero, localização, posicionamento ou público com os dados disponíveis.\n\nRISCOS\n\nA operação está 100% concentrada em campanhas de cadastro. Isso facilita a otimização para volume de leads, mas aumenta a dependência de um único objetivo.\n\nNão há compras e não há receita informada. Sem esse dado, não é possível medir ROAS nem validar se o custo por cadastro está gerando retorno comercial.\n\nHá diferença entre o total consolidado de cadastros e o campo leads das campanhas fornecidas. O consolidado registra 3.255 cadastros, enquanto as campanhas somam 651 leads no campo específico. Isso indica necessidade de padronizar a leitura do evento principal para evitar interpretações diferentes entre eventos de cadastro, leads agrupados e eventos offsite.\n\nO volume de mensagens aparece como resultado secundário relevante, especialmente na campanha de Cotas. Se a equipe comercial não tiver processo de atendimento e qualificação, parte desse interesse pode não avançar.\n\nHá 85 anúncios para 2 campanhas e 4 conjuntos. Sem dados individuais de criativos, não é possível identificar quais anúncios estão sustentando a eficiência ou quais estão consumindo verba sem retorno.\n\nOPORTUNIDADES\n\nManter o foco em cadastros, pois é o principal resultado consolidado e apresenta custo por resultado de R$ 1,74.\n\nComparar a qualidade dos leads entre Casas e Cotas. As duas campanhas têm investimento e volume de leads informados muito próximos, então a decisão de escala deve depender da qualidade comercial, não apenas do volume.\n\nInvestigar a campanha de Cotas pela alta geração de mensagens no nível da campanha. Ela pode estar gerando mais conversas e intenção, mas precisa ser validada contra qualificação e fechamento.\n\nPadronizar o evento principal de análise. O ideal é definir se o KPI executivo será cadastro consolidado, lead nativo, lead agrupado ou outro evento específico. Isso melhora a confiabilidade da leitura de custo por resultado.\n\nCriar uma visão complementar de funil: clique no link, cadastro, mensagem, contato qualificado e venda. Hoje a conta mostra bom volume de topo e meio de funil, mas não há dado de conversão final.\n\nPRÓXIMOS PASSOS\n\nValidar qual evento deve ser considerado como cadastro oficial no dashboard executivo.\n\nSeparar a análise entre cadastro consolidado e leads por campanha, mantendo o número de 3.255 como resultado consolidado do período.\n\nAvaliar qualidade dos 333 leads da campanha de Casas e dos 318 leads da campanha de Cotas com base em retorno comercial, atendimento e avanço no funil.\n\nInvestigar as 341 mensagens consolidadas para entender se representam oportunidades reais ou dúvidas operacionais.\n\nIncluir dados de vendas, receita e ROAS nos próximos relatórios, caso existam fora da plataforma.\n\nRevisar anúncios dentro das 2 campanhas ativas para identificar criativos com maior contribuição para cadastros e mensagens.\n\nManter as duas campanhas ativas enquanto o custo por cadastro consolidado permanecer eficiente, mas condicionar aumento de verba à validação de qualidade dos leads e retorno comercial.",
+      "ai_model": "gpt-5.5",
+      "ai_provider": "openai",
+      "ai_cost_usd": 0.0
+    },
+    {
+      "ts": 1777559218,
+      "date_preset": "last_30d",
+      "report_summary": {
+        "active_campaigns": 2,
+        "paused_campaigns": 0,
+        "objective_mix": {
+          "Campanha de Cadastros": 2
+        }
+      },
+      "totals": {
+        "spend": 5779.66,
+        "impressions": 256599,
+        "reach": 157521,
+        "clicks": 10146,
+        "ctr": 3.95,
+        "cpc": 0.57,
+        "cpm": 22.52,
+        "actions": {
+          "onsite_conversion.total_messaging_connection": 117.0,
+          "offsite_complete_registration_add_meta_leads": 660.0,
+          "link_click": 5352.0,
+          "page_engagement": 6854.0,
+          "onsite_conversion.post_unlike": 24.0,
+          "post_engagement": 6842.0,
+          "like": 12.0,
+          "post_interaction_gross": 774.0,
+          "comment": 48.0,
+          "post_interaction_net": 805.0,
+          "onsite_conversion.messaging_user_depth_2_message_send": 46.0,
+          "onsite_conversion.messaging_first_reply": 112.0,
+          "post": 75.0,
+          "onsite_conversion.post_unsave": 7.0,
+          "onsite_conversion.post_save": 80.0,
+          "onsite_conversion.post_net_comment": 48.0,
+          "onsite_conversion.post_net_save": 73.0,
+          "offsite_search_add_meta_leads": 660.0,
+          "onsite_conversion.post_net_like": 547.0,
+          "lead": 660.0,
+          "offsite_content_view_add_meta_leads": 660.0,
+          "onsite_conversion.messaging_conversation_started_7d": 116.0,
+          "onsite_conversion.messaging_conversation_replied_7d": 3.0,
+          "onsite_conversion.lead_grouped": 660.0,
+          "video_view": 716.0,
+          "post_reaction": 571.0,
+          "onsite_conversion.messaging_user_depth_3_message_send": 2.0,
+          "onsite_conversion.messaging_user_depth_5_message_send": 1.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 2,
+        "adsets": 4,
+        "ads": 85
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nNos últimos 30 dias, a conta investiu R$ 5.779,66, gerando 256.599 impressões, 157.521 pessoas alcançadas e 10.146 cliques.\n\nO objetivo predominante foi cadastro. Foram 2 campanhas identificadas no período, ambas ativas, ambas com objetivo de Campanha de Cadastros. Não há campanhas pausadas no summary recebido.\n\nO resultado consolidado informa 3.300 eventos de cadastros, com custo por resultado de R$ 1,75. Também foram registrados 345 resultados de mensagens, com custo por resultado de R$ 16,75, e 5.352 cliques no link, com custo por resultado de R$ 1,08.\n\nNão há compras registradas nas campanhas fornecidas. Portanto, não há leitura de vendas, receita ou ROAS neste recorte.\n\nKPIS PRINCIPAIS\n\nInvestimento total: R$ 5.779,66\n\nImpressões: 256.599\n\nAlcance: 157.521\n\nCliques totais: 10.146\n\nCTR: 3,95%\n\nCPC médio: R$ 0,57\n\nCPM: R$ 22,52\n\nCliques no link: 5.352\n\nCusto por clique no link: R$ 1,08\n\nCadastros consolidados: 3.300\n\nCusto por cadastro consolidado: R$ 1,75\n\nMensagens consolidadas: 345\n\nCusto por mensagem consolidada: R$ 16,75\n\nCompras: 0 nas campanhas fornecidas\n\nROAS: não disponível, pois não há dados de receita ou compras no período informado\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nForam identificadas 2 campanhas no período.\n\nCampanhas ativas: 2\n\nCampanhas pausadas: 0\n\nTotal de campanhas vistas: 2\n\nMix de objetivo: 100% das campanhas são de Cadastros.\n\nA distribuição de investimento ficou equilibrada entre as duas campanhas.\n\n[CAD] Casas - 1/2/21 - 60$/dia - CBO - RJ - 02\n\nStatus: ativa\n\nObjetivo: Campanha de Cadastros\n\nInvestimento em 30 dias: R$ 2.961,58\n\nParticipação no investimento total: 51,24%\n\nLeads informados na campanha: 334\n\nMensagens informadas na campanha: 8\n\nCompras: 0\n\nCusto por lead na campanha, considerando o campo leads: R$ 8,87\n\n[CAD] Cotas - 1/2/21 - 60$dia - Novos criativos e loc\n\nStatus: ativa\n\nObjetivo: Campanha de Cadastros\n\nInvestimento em 30 dias: R$ 2.818,08\n\nParticipação no investimento total: 48,76%\n\nLeads informados na campanha: 326\n\nMensagens informadas na campanha: 108\n\nCompras: 0\n\nCusto por lead na campanha, considerando o campo leads: R$ 8,64\n\nRESULTADOS POR OBJETIVO\n\nCadastros\n\nO principal resultado do período foi cadastro.\n\nO consolidado informa 3.300 eventos de cadastro, com custo por resultado de R$ 1,75. Esse é o indicador central da conta, já que 100% das campanhas vistas estão classificadas como Campanha de Cadastros.\n\nNas campanhas fornecidas, o campo leads soma 660 leads, distribuídos de forma muito equilibrada entre as duas campanhas: 334 em Casas e 326 em Cotas.\n\nNa leitura por campanha, Cotas teve leve vantagem de eficiência em custo por lead, com R$ 8,64, contra R$ 8,87 em Casas. A diferença é pequena, indicando desempenho próximo entre as duas frentes.\n\nA campanha Casas concentrou um pouco mais de verba, com 51,24% do investimento, e também gerou ligeiramente mais leads no campo de campanha. A campanha Cotas consumiu 48,76% da verba e ficou muito próxima em volume de leads.\n\nMensagens\n\nO consolidado informa 345 mensagens, com custo por resultado de R$ 16,75.\n\nApesar de as campanhas terem objetivo de cadastro, há geração de mensagens no período. No campo de campanhas, Cotas aparece com 108 mensagens, enquanto Casas aparece com 8 mensagens.\n\nIsso indica que a campanha Cotas teve maior capacidade de gerar conversas dentro dos dados por campanha fornecidos. Mesmo assim, como o objetivo principal é cadastro, mensagens devem ser tratadas como resultado complementar, não como principal métrica de sucesso.\n\nCliques no link\n\nForam registrados 5.352 cliques no link, com custo por resultado de R$ 1,08.\n\nO volume de cliques é relevante e o CPC médio da conta está baixo, em R$ 0,57 para cliques totais. O CTR de 3,95% indica boa capacidade de atrair interação e tráfego.\n\nA leitura principal é que há interesse inicial nos anúncios. O ponto crítico é garantir que esse volume de cliques esteja se convertendo em cadastros qualificados, não apenas em tráfego barato.\n\nVendas e compras\n\nAs campanhas fornecidas registram 0 compras.\n\nNão há dados de receita e não há ROAS disponível. Portanto, não é possível avaliar retorno financeiro direto neste período.\n\nA conta deve ser avaliada, neste recorte, como operação de geração de cadastros e conversas, não como operação de vendas mensuradas.\n\nDEMOGRAFIA\n\nNão foram fornecidos dados demográficos de idade, gênero, região, posicionamento ou dispositivo.\n\nCom os dados recebidos, não é possível afirmar quais públicos, faixas etárias ou localizações entregaram melhor performance.\n\nA análise demográfica deve ser adicionada em uma próxima extração para identificar concentração de custo, volume e qualidade por perfil de público.\n\nRISCOS\n\nO principal risco é a leitura duplicada ou agregada de eventos de cadastro. O consolidado informa 3.300 eventos de cadastro a partir de múltiplas chaves de origem, enquanto o campo leads nas campanhas fornecidas soma 660 leads. A análise deve manter essa distinção para evitar interpretação incorreta do volume real de leads operacionais.\n\nOutro risco é a ausência de dados de qualidade dos cadastros. O custo por resultado consolidado é baixo, mas não há informação sobre qualificação, atendimento, avanço no funil ou venda.\n\nTambém há risco de otimização excessiva para volume. Como todas as campanhas estão concentradas em cadastro, a conta pode estar gerando muitos eventos sem necessariamente comprovar impacto comercial.\n\nNão há dados de compras, receita ou ROAS. Isso limita a capacidade de decisão sobre rentabilidade.\n\nA campanha Cotas gera muito mais mensagens no campo de campanha do que Casas, mas ambas estão com objetivo de cadastro. Se mensagens forem importantes para o time comercial, esse comportamento precisa ser acompanhado separadamente.\n\nOPORTUNIDADES\n\nA primeira oportunidade é separar a análise entre cadastro consolidado, leads por campanha e mensagens. Isso melhora a clareza executiva e evita decisões baseadas em métricas misturadas.\n\nA campanha Cotas apresenta leve melhor eficiência no custo por lead por campanha, com R$ 8,64, e também maior volume de mensagens informadas. Pode receber atenção para entender quais criativos, públicos ou locais estão favorecendo esse desempenho.\n\nA campanha Casas tem maior volume de leads no campo de campanha, com 334, e maior investimento. Como a diferença de eficiência é pequena, não há evidência suficiente para uma redistribuição agressiva de verba apenas com os dados atuais.\n\nO CTR de 3,95% e o CPC médio de R$ 0,57 indicam boa atratividade dos anúncios. A oportunidade está em qualificar a etapa pós-clique e medir melhor o que acontece depois do cadastro.\n\nComo não há compras registradas, a maior evolução analítica seria conectar leads a vendas ou ao CRM, permitindo avaliar custo por lead qualificado, custo por oportunidade e retorno real.\n\nPRÓXIMOS PASSOS\n\nManter a leitura principal em cadastros, pois 100% das campanhas ativas estão nesse objetivo.\n\nValidar a diferença entre os 3.300 eventos consolidados de cadastro e os 660 leads somados no campo das campanhas. Essa validação é essencial para definir qual número será usado como métrica executiva de lead operacional.\n\nAcompanhar separadamente mensagens e cadastros. Mensagens têm custo consolidado de R$ 16,75 e podem indicar intenção comercial, mas não devem substituir a métrica principal de cadastro sem validação de qualidade.\n\nComparar a qualidade dos leads das campanhas Casas e Cotas. Em custo por lead por campanha, Cotas está ligeiramente melhor, mas a decisão de orçamento deve considerar qualidade e conversão posterior.\n\nAdicionar mensuração de vendas, receita ou status no CRM. Sem isso, não há como calcular ROAS nem identificar quais campanhas geram retorno financeiro.\n\nPreservar o equilíbrio de verba no curto prazo, pois as duas campanhas têm participação de investimento e volume de leads próximos. A realocação deve ser feita apenas após análise de qualidade dos cadastros e avanço no funil comercial.",
+      "ai_model": "gpt-5.5",
+      "ai_provider": "openai",
+      "ai_cost_usd": 0.0
+    },
+    {
+      "ts": 1778099646,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 2,
+        "paused_campaigns": 0,
+        "objective_mix": {
+          "Campanha de Cadastros": 2
+        }
+      },
+      "totals": {
+        "spend": 1598.2799999999997,
+        "impressions": 76509,
+        "reach": 59664,
+        "clicks": 2668,
+        "ctr": 3.49,
+        "cpc": 0.6,
+        "cpm": 20.89,
+        "actions": {
+          "offsite_complete_registration_add_meta_leads": 180.0,
+          "link_click": 1523.0,
+          "offsite_search_add_meta_leads": 180.0,
+          "page_engagement": 1891.0,
+          "onsite_conversion.post_unlike": 5.0,
+          "post_engagement": 1891.0,
+          "post_interaction_gross": 211.0,
+          "comment": 18.0,
+          "post_interaction_net": 217.0,
+          "post": 33.0,
+          "onsite_conversion.post_save": 22.0,
+          "onsite_conversion.post_net_comment": 18.0,
+          "onsite_conversion.post_net_save": 21.0,
+          "onsite_conversion.post_net_like": 133.0,
+          "lead": 180.0,
+          "offsite_content_view_add_meta_leads": 180.0,
+          "onsite_conversion.lead_grouped": 180.0,
+          "video_view": 157.0,
+          "post_reaction": 138.0,
+          "onsite_conversion.total_messaging_connection": 27.0,
+          "onsite_conversion.messaging_user_depth_2_message_send": 4.0,
+          "onsite_conversion.messaging_user_depth_3_message_send": 1.0,
+          "onsite_conversion.messaging_first_reply": 23.0,
+          "onsite_conversion.post_unsave": 1.0,
+          "onsite_conversion.messaging_conversation_started_7d": 23.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 2,
+        "adsets": 4,
+        "ads": 74
+      },
+      "ai_summary": "RESUMO EXECUTIVO  \nNo período analisado, foram investidos R$ 1.598,28 em campanhas digitais, gerando 76.509 impressões e alcançando 59.664 pessoas. O total de cliques foi de 2.668, resultando em uma taxa de clique (CTR) de 3,49% e um custo por clique (CPC) de R$ 0,60. As campanhas estão divididas entre dois objetivos principais: cadastros e mensagens.\n\nKPIS PRINCIPAIS  \nO resultado final da campanha de cadastros totalizou 900 leads, com um custo por resultado de R$ 1,78. Em relação às mensagens, foram registradas 73 interações, com custo por resultado de R$ 21,89. Ambos os objetivos demonstram um desempenho satisfatório em termos de custo-benefício.\n\nCAMPANHAS ATIVAS NO PERÍODO  \nAtualmente, há duas campanhas ativas, ambas com o foco em cadastros. Não existem campanhas pausadas. Os objetivos em conjunto somam um total significativo de resultados, sendo a principal preocupação a captação de leads.\n\nRESULTADOS POR OBJETIVO  \nMensagens: A campanha gerou 73 interações com um custo de R$ 21,89 por cada mensagem recebida. Este valor pode ser considerado elevado em comparação ao custo por lead.  \nCadastros: Foram adquiridos 900 leads, com um custo de R$ 1,78 por lead, o que mostra uma boa eficiência na aquisição. O volume de leads representa um peso importante para a geração de novos negócios.\n\nDEMOGRAFIA  \nOs dados demográficos detalhados não estão disponíveis, mas a segmentação geográfica e comportamental das campanhas deve ser analisada para otimizar o direcionamento e potencializar os resultados.\n\nRISCOS  \nUm risco em potencial é o custo elevado por mensagem, que pode sugerir gastos desnecessários se não houver conversão proporcional em vendas. É essencial monitorar a qualidade dos leads adquiridos para garantir que sejam relevantes e efetivos.\n\nOPORTUNIDADES  \nA performance das campanhas de cadastros está positiva, sugerindo que otimizações adicionais no alcance e segmentação poderiam aumentar ainda mais os leads. Há também espaço para explorar estratégias que integrem mensagens e cadastros de forma mais eficaz.\n\nPRÓXIMOS PASSOS  \nRecomenda-se um aprofundamento na análise de segmentação para entender melhor a demografia dos leads. Simultaneamente, é importante avaliar e ajustar a estratégia de mensagens para reduzir o custo por conversação. Um teste A/B em criativos e chamada para ação pode revelar novas oportunidades de engajamento e conversão.",
+      "ai_model": "gpt-4o-mini",
+      "ai_provider": "openai",
+      "ai_cost_usd": 0.000533
+    }
+  ],
+  "act_676386442065664": [
+    {
+      "ts": 1776718125,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO presente relatório abrange o desempenho da conta de anúncios act_676386442065664 no período dos últimos 7 dias. Não foi registrada qualquer atividade de mídia paga neste intervalo. O investimento total foi de R$ 0,00, resultando em zero impressões, zero cliques e, consequentemente, zero resultados em todos os objetivos de campanha.\n\nKPIS PRINCIPAIS\n\nGasto: R$ 0,00\nImpressões: 0\nAlcance: 0\nCliques: 0\nCTR: 0%\nCPC: R$ 0,00\nCPM: R$ 0,00\n\nNenhuma métrica de resultado ou ação foi registrada neste período.\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nO total de campanhas vistas ou com status de ativo ou pausado é de 0. Não há campanhas ativas e nem campanhas pausadas. Isso indica que não houve veiculação de mídia paga na conta analisada durante o período reportado. Dessa forma, não existe um mix de objetivos ou distribuição de status a ser detalhado.\n\nRESULTADOS POR OBJETIVO\n\nMensagens: Não foram registrados resultados ou interações com campanhas de mensagens.\n\nCadastros/Leads: Não houve geração de leads ou cadastros, pois não houve atividade de campanha.\n\nVendas/Compras: Nenhuma venda ou compra foi atribuída à mídia paga neste período.\n\nDe forma geral, não há dados para análise de performance por objetivo, uma vez que não houve investimento ou veiculação.\n\nDEMOGRAFIA\n\nSem veiculação de campanhas, não há dados demográficos para análise de público ou segmentação.\n\nRISCOS\n\nA ausência de atividade de mídia paga representa a perda de visibilidade online e interrupção do fluxo contínuo de resultados, como leads e vendas. Há também o risco de estagnação do aprendizado das plataformas de anúncio e a potencial desaceleração do funil de marketing e vendas.\n\nOPORTUNIDADES\n\nEste período sem veiculação pode ser utilizado para uma revisão estratégica aprofundada. É uma oportunidade para auditar a configuração de tracking, otimizar criativos e segmentações, e planejar o lançamento de novas campanhas mais assertivas. A verificação do orçamento e das metas de negócio para os próximos ciclos também é crucial.\n\nPRÓXIMOS PASSOS\n\nO primeiro passo é investigar a razão exata da ausência de atividade e dados neste período. Em seguida, confirmar o status das campanhas, a disponibilidade de orçamento e as configurações de veiculação. Se a paralisação não foi intencional, é fundamental resolver quaisquer problemas técnicos que possam ter impedido a entrega dos anúncios e o registro dos dados. Caso contrário, deve-se planejar a reativação das campanhas com base na estratégia definida.",
+      "ai_model": "gemini-2.5-flash"
+    },
+    {
+      "ts": 1776718137,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO período analisado, compreendendo os últimos sete dias, não registrou qualquer atividade de mídia paga na conta act_676386442065664. Não houve investimento financeiro, impressões, cliques ou qualquer resultado associado a campanhas. Todas as métricas principais estão zeradas.\n\nKPIS PRINCIPAIS\n\nGasto (Spend): 0.0\nImpressões: 0\nAlcance (Reach): 0\nCliques (Clicks): 0\nTaxa de Cliques (CTR): 0\nCusto por Clique (CPC): 0\nCusto por Mil Impressões (CPM): 0\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nNão há campanhas ativas registradas neste período. O resumo indica zero campanhas ativas e zero campanhas pausadas, totalizando zero campanhas observadas.\n\nRESULTADOS POR OBJETIVO\n\nDevido à ausência total de gasto e atividade, não há resultados a serem reportados por objetivo. Nenhuma campanha de mensagens, cadastros ou vendas foi registrada como ativa ou gerando resultados no período.\n\nDEMOGRAFIA\n\nCom a ausência de impressões e cliques, não há dados demográficos disponíveis para análise neste relatório.\n\nRISCOS\n\nO principal risco identificado é a paralisação completa das atividades de mídia paga. A ausência de investimento e resultados nos últimos sete dias impede qualquer geração de leads, vendas ou engajamento, comprometendo o alcance de metas comerciais e a construção de dados para otimizações futuras.\n\nOPORTUNIDADES\n\nA inatividade atual representa uma oportunidade para revisão estratégica completa. É possível reavaliar os objetivos de marketing, revisar segmentações de público, auditar criativos e copy, e planejar novas campanhas com base em aprendizados anteriores ou benchmarks de mercado. Este é o momento ideal para garantir que as campanhas futuras estejam alinhadas com os objetivos macro da empresa antes de iniciar o investimento.\n\nPRÓXIMOS PASSOS\n\n1.  Investigar a causa da ausência total de atividade e gasto no período.\n2.  Confirmar o status do orçamento e a disponibilidade de verba para os próximos períodos.\n3.  Desenvolver ou revisar o plano de campanhas para o próximo ciclo, definindo claramente os objetivos (mensagens, cadastros, vendas) e as respectivas alhas de investimento.\n4.  Garantir a configuração e ativação das novas campanhas com os devidos controles de orçamento e acompanhamento.\n5.  Programar uma reunião de alinhamento com a equipe para discutir a estratégia e os objetivos futuros.",
+      "ai_model": "gemini-2.5-flash"
+    },
+    {
+      "ts": 1776718137,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO período analisado não registrou atividade de mídia paga. Não houve investimento em campanhas, resultando em zero impressões, alcance, cliques e qualquer tipo de resultado de performance. Todas as métricas principais, incluindo custo por resultado e ROAS, não puderam ser calculadas devido à ausência de dados. A conta não apresenta campanhas ativas ou pausadas neste intervalo.\n\nKPIS PRINCIPAIS\n\nGasto: R$ 0,00\nImpressões: 0\nAlcance: 0\nCliques: 0\nCTR: 0%\nCPC: R$ 0,00\nCPM: R$ 0,00\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nForam observadas 0 campanhas ativas e 0 campanhas pausadas no período. O total de campanhas na conta é 0.\n\nRESULTADOS POR OBJETIVO\n\nNão há resultados de mensagens, cadastros ou vendas a serem reportados, uma vez que não houve gasto ou veiculação de campanhas neste período. O peso de cada objetivo é nulo. Nenhum resultado foi obtido.\n\nDEMOGRAFIA\n\nNão há dados demográficos a serem analisados, pois não houve veiculação de anúncios e, consequentemente, nenhuma interação de público foi registrada.\n\nRISCOS\n\nO principal risco identificado é a estagnação completa das estratégias de mídia paga. A ausência de investimento e campanhas significa que nenhum objetivo de marketing está sendo alcançado através deste canal, impactando o crescimento e a visibilidade da marca.\n\nOPORTUNIDADES\n\nExiste uma oportunidade clara para iniciar ou retomar as atividades de mídia paga. A ativação de campanhas pode começar a gerar dados valiosos, permitindo otimizações e o alcance dos objetivos de negócio, seja para mensagens, geração de cadastros ou vendas diretas.\n\nPRÓXIMOS PASSOS\n\n1.  Definição de orçamento: Estabelecer e alocar o orçamento para campanhas de mídia paga.\n2.  Criação e ativação: Desenvolver e ativar as primeiras campanhas focadas nos objetivos prioritários da empresa.\n3.  Monitoramento inicial: Acompanhar de perto o desempenho inicial das campanhas para identificar padrões e oportunidades de otimização.",
+      "ai_model": "gemini-2.5-flash"
+    },
+    {
+      "ts": 1776718170,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO período analisado não apresentou movimentação financeira ou de resultados. Não há campanhas ativas ou pausadas registradas. A conta apresenta um saldo zero em todas as métricas de desempenho.\n\nKPIS PRINCIAIS\n\nSpend: R$ 0,00\nImpressões: 0\nCliques: 0\nCadastros (Leads): 0\nVendas (Compras): 0\nCusto por Cadastro (CPL): N/A\nROAS: N/A\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nNão há campanhas ativas ou pausadas registradas no período. O número total de campanhas visualizadas é 0.\n\nRESULTADOS POR OBJETIVO\n\nMensagens: 0\nCadastros: 0\nVendas: 0\n\nDEMOGRAFIA\n\nNão há dados demográficos disponíveis para análise, visto a ausência de resultados.\n\nRISCOS\n\nO principal risco é a inatividade da conta, que não gera qualquer tipo de retorno ou aprendizado. A ausência de investimento impede a mensuração de performance e o desenvolvimento de estratégias.\n\nOPORTUNIDADES\n\nA oportunidade reside em configurar e iniciar campanhas com objetivos claros, alinhados às metas de negócio. Isso permitirá a geração de leads, vendas e o aprendizado sobre o comportamento do público-alvo.\n\nPRÓXIMOS PASSOS\n\n1. Configurar campanhas com objetivos definidos (mensagens, cadastros, vendas).\n2. Iniciar campanhas com orçamento adequado para teste e aprendizado.\n3. Monitorar métricas de perto para otimização contínua.",
+      "ai_model": "gemini-2.5-flash-lite"
+    },
+    {
+      "ts": 1776718180,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO período de análise dos últimos sete dias não registrou qualquer atividade na conta de anúncios. Não houve investimento em mídia paga, resultando em zero impressões, alcance, cliques ou quaisquer resultados de campanha. Nenhuma campanha foi identificada como ativa ou pausada durante este intervalo.\n\nKPIS PRINCIPAIS\n\nGasto: 0.0\nImpressões: 0\nAlcance: 0\nCliques: 0\nCTR (Taxa de Cliques): 0\nCPC (Custo Por Clique): 0\nCPM (Custo Por Mil Impressões): 0\n\nNão há resultados de ações ou principais objetivos a reportar, pois a conta não apresentou movimentação.\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nNenhuma campanha foi registrada como ativa nos últimos sete dias. O summary indica zero campanhas ativas e zero campanhas pausadas. O total de campanhas vistas neste período é zero.\n\nRESULTADOS POR OBJETIVO\n\nDevido à ausência total de atividade e investimento, não há dados para analisar por objetivo. Não foram geradas mensagens, cadastros, leads ou vendas neste período.\n\nDEMOGRAFIA\n\nSem atividade de campanhas, não há dados demográficos a serem analisados ou interpretados.\n\nRISCOS\n\nO principal risco identificado é a completa estagnação das atividades de marketing pago. A ausência de investimento e campanhas ativas impede a geração de resultados e o alcance de potenciais clientes, impactando diretamente os objetivos de crescimento e visibilidade da empresa.\n\nOPORTUNIDADES\n\nA situação atual representa uma oportunidade clara para redefinir e lançar novas estratégias de mídia paga. Há um potencial inexplorado para iniciar campanhas focadas em objetivos específicos como geração de mensagens, cadastros ou vendas, construindo uma base de dados e performance desde o início.\n\nPRÓXIMOS PASSOS\n\n1.  Investigar a razão da ausência de atividade e investimento na conta nos últimos sete dias.\n2.  Revisar e definir os objetivos estratégicos para as campanhas de mídia paga.\n3.  Planejar e lançar campanhas prioritárias, focando em objetivos como geração de leads, vendas ou interações.\n4.  Garantir que a estrutura de monitoramento e atribuição de resultados esteja funcional antes do lançamento das novas campanhas.",
+      "ai_model": "gemini-2.5-flash"
+    },
+    {
+      "ts": 1776718181,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO período analisado, correspondente aos últimos 7 dias, não registrou nenhuma atividade na conta de anúncios. Não houve nenhum investimento em mídia paga, o que resultou em zero impressões, cliques ou quaisquer outras métricas de performance. Consequentemente, não foram observados resultados para nenhum objetivo de campanha, incluindo mensagens, cadastros ou vendas. A conta não apresenta campanhas ativas ou pausadas neste intervalo.\n\nKPIS PRINCIPAIS\n\nGasto: 0.0\nImpressões: 0\nCliques: 0\nCTR (Taxa de Cliques): 0\nCPC (Custo por Clique): 0\nCPM (Custo por Mil Impressões): 0\n\nNão foram registrados resultados principais ou ações destacadas no período, pois a conta não gerou tráfego ou conversões.\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nNenhuma campanha foi identificada como ativa ou pausada no período. O sumário de status de campanhas indica 0 campanhas ativas, 0 campanhas pausadas, totalizando 0 campanhas observadas. Devido à ausência de campanhas, não é possível analisar o mix de objetivos ou status por campanha.\n\nRESULTADOS POR OBJETIVO\n\nDada a inexistência de gasto e de qualquer atividade de campanha, não há resultados a serem reportados para os objetivos de mensagens, cadastros ou vendas. A análise de custo por resultado ou ROAS não é aplicável neste contexto de inatividade.\n\nDEMOGRAFIA\n\nNão há dados demográficos a serem analisados, pois não houve impressões ou engajamento com quaisquer anúncios no período.\n\nRISCOS\n\nO principal risco identificado é a completa inatividade da conta de anúncios. Isso pode indicar uma pausa intencional ou, alternativamente, um problema operacional que está impedindo o fluxo de investimento e a execução de campanhas. A ausência total de dados impede qualquer insight sobre a performance ou o público-alvo, inviabilizando decisões estratégicas baseadas em dados.\n\nOPORTUNIDADES\n\nA principal oportunidade reside na investigação imediata da causa da inatividade. Caso seja um problema técnico ou de configuração, a correção representa uma oportunidade de reativar rapidamente a performance. Se a pausa for intencional, há uma oportunidade de redefinir estratégias e objetivos para um lançamento otimizado.\n\nPRÓXIMOS PASSOS\n\n1. Verificar o status das campanhas e o orçamento disponível na conta de anúncios.\n2. Investigar se há algum bloqueio orçamentário ou problema técnico impedindo a veiculação de anúncios.\n3. Confirmar se a inatividade foi uma decisão estratégica e, se sim, entender os planos para reativação.\n4. Caso a inatividade não seja intencional, planejar a ativação urgente de campanhas, com objetivos claros para mensagens, cadastros e/ou vendas, e monitoramento rigoroso dos primeiros resultados.",
+      "ai_model": "gemini-2.5-flash"
+    },
+    {
+      "ts": 1776718182,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO período analisado, últimos 7 dias, não registrou qualquer atividade de mídia paga. Não houve gastos, impressões, cliques ou alcance. Consequentemente, não há dados de performance ou resultados a serem reportados. O total de campanhas ativas e pausadas é zero.\n\nKPIS PRINCIPAIS\n\nGasto: R$ 0,00\nImpressões: 0\nAlcance: 0\nCliques: 0\nCTR: 0\nCPC: 0\nCPM: 0\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nNenhuma campanha foi registrada como ativa ou pausada neste período. O total de campanhas visualizadas foi zero.\n\nRESULTADOS POR OBJETIVO\n\nNão há resultados de mensagens, cadastros ou vendas para analisar, pois não houve qualquer atividade de mídia paga ou gasto no período.\n\nDEMOGRAFIA\n\nNão há dados demográficos disponíveis para análise, uma vez que não foram registradas impressões ou alcance.\n\nRISCOS\n\nO principal risco é a completa ausência de atividade de mídia paga. Isso indica uma interrupção total das campanhas, o que pode impactar diretamente a geração de leads, vendas e a visibilidade da marca, caso não seja uma pausa intencional e planejada.\n\nOPORTUNIDADES\n\nA inatividade representa uma oportunidade imediata para uma revisão estratégica completa. É o momento ideal para planejar novas campanhas, reavaliar objetivos, otimizar orçamentos e garantir que toda a infraestrutura de tracking e execução esteja pronta para quando as campanhas forem reativadas ou lançadas.\n\nPRÓXIMOS PASSOS\n\n1.  Investigar o motivo da ausência total de atividade e gastos no período.\n2.  Verificar o status da conta e das campanhas nas plataformas de anúncios para identificar se houve uma pausa intencional ou um problema técnico.\n3.  Com base na investigação, planejar e executar a reativação de campanhas ou o lançamento de novas iniciativas.\n4.  Confirmar a correta configuração do tracking de resultados para garantir que os dados sejam coletados assim que a atividade for retomada.",
+      "ai_model": "gemini-2.5-flash"
+    },
+    {
+      "ts": 1776718193,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO período analisado, correspondente aos últimos sete dias, não registrou qualquer atividade na conta de anúncios. Não houve investimento em mídia paga, impressões, cliques ou resultados atribuíveis às campanhas. Consequentemente, não há métricas de performance ou resultados a serem reportados para este período.\n\nKPIS PRINCIPAIS\n\nGasto Total: 0,00\nImpressões: 0\nAlcance: 0\nCliques: 0\nCTR: 0\nCPC: 0\nCPM: 0\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nNenhuma campanha foi identificada como ativa ou pausada no período. O resumo indica um total de zero campanhas em operação ou pausadas, sem qualquer objetivo de campanha ou mix de status a ser reportado.\n\nRESULTADOS POR OBJETIVO\n\nDevido à ausência total de atividade e investimento, não foram registrados quaisquer resultados. Não há dados para segmentar por objetivos como mensagens, cadastros ou vendas, nem para calcular custos por resultado ou ROAS.\n\nDEMOGRAFIA\n\nNão há dados demográficos disponíveis para análise, uma vez que não houve veiculação de anúncios e, portanto, nenhuma interação com o público-alvo.\n\nRISCOS\n\nA ausência completa de atividade em mídia paga representa um risco de estagnação na aquisição de novos clientes e no engajamento com a audiência, caso a estratégia de marketing digital preveja a continuidade de campanhas neste canal. A falta de dados impede qualquer avaliação de desempenho e otimização.\n\nOPORTUNIDADES\n\nEste momento pode ser utilizado para reavaliar a estratégia de mídia paga, planejar novas campanhas com objetivos claros e garantir a correta configuração de tracking e atribuição antes de iniciar o investimento. Há uma oportunidade de estabelecer uma linha de base para futuras análises de performance.\n\nPRÓXIMOS PASSOS\n\n1.  Confirmar se a inatividade da conta no período foi intencional ou se há algum bloqueio/problema que impeça a veiculação de campanhas.\n2.  Caso a inatividade não seja intencional, verificar o status das campanhas e os motivos pelos quais não estão veiculando.\n3.  Planejar e ativar novas campanhas alinhadas aos objetivos de negócio, com foco em mensagens, cadastros ou vendas, garantindo o monitoramento adequado dos resultados.",
+      "ai_model": "gemini-2.5-flash"
+    },
+    {
+      "ts": 1776718281,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nA conta apresenta um saldo zero em investimento e resultados para o período analisado. Nenhuma campanha estava ativa durante os últimos 7 dias, resultando em zero impressões, alcance, cliques, CTR, CPC e CPM. O foco nos resultados por tipo de campanha, custo por resultado, ROAS, eficiência, riscos e oportunidades, bem como próximos passos, torna-se hipotético dada a ausência de dados de performance.\n\nKPIS PRINCIPAIS\n\nSem investimento ou atividade de campanha, os KPIs principais como Spend, Impressões, Alcance, Cliques, CTR, CPC e CPM registram o valor de zero.\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nO resumo indica que não há campanhas ativas no período analisado. O número total de campanhas ativas é zero.\n\nRESULTADOS POR OBJETIVO\n\nDada a inatividade das campanhas, não foram gerados resultados em nenhuma das categorias de objetivo, incluindo Mensagens, Cadastros/Leads e Vendas/Compras. O peso de cada objetivo e os resultados que realmente importam são indeterminados neste momento.\n\nDEMOGRAFIA\n\nNão há dados demográficos disponíveis para análise, pois nenhuma campanha gerou tráfego ou resultados.\n\nRISCOS\n\nO principal risco é a completa falta de performance e aprendizado. Sem investimento e campanhas ativas, não há visibilidade sobre o mercado, o público ou a eficácia das estratégias. Há um risco de estagnação e perda de oportunidade de crescimento.\n\nOPORTUNIDADES\n\nA oportunidade primária é reestruturar e iniciar novas campanhas. É um momento para planejar estrategicamente, definir objetivos claros e configurar campanhas otimizadas. Podemos explorar novos públicos, criativos e mensagens para gerar os resultados desejados.\n\nPRÓXIMOS PASSOS\n\n1. Definir e priorizar objetivos de campanha (Mensagens, Cadastros, Vendas).\n2. Planejar e configurar novas campanhas com orçamento e segmentação adequados.\n3. Desenvolver criativos e mensagens relevantes para cada objetivo.\n4. Monitorar ativamente a performance das novas campanhas e realizar otimizações contínuas.\n5. Estabelecer KPIs claros para cada objetivo e acompanhar o progresso em relação a eles.",
+      "ai_model": "gemini-2.5-flash-lite"
+    },
+    {
+      "ts": 1776718283,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nA conta de anúncios apresentou um período sem movimentação, com zero investimento e zero resultados em todas as métricas. Não há campanhas ativas ou pausadas registradas.\n\nKPIS PRINCIPAIS\n\nSpend: R$ 0,00\nImpressões: 0\nAlcance: 0\nCliques: 0\nCTR: 0%\nCPC: R$ 0,00\nCPM: R$ 0,00\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nNão há campanhas ativas ou pausadas registradas no período analisado. O número total de campanhas vistas é zero.\n\nRESULTADOS POR OBJETIVO\n\nMensagens: Sem dados.\nCadastros: Sem dados.\nVendas: Sem dados.\n\nDEMOGRAFIA\n\nNão há dados demográficos disponíveis devido à ausência de atividades e resultados.\n\nRISCOS\n\nO principal risco é a completa inatividade da conta, o que pode indicar uma interrupção estratégica ou problemas técnicos não reportados. A ausência de investimento e resultados compromete qualquer objetivo de negócio.\n\nOPORTUNIDADES\n\nA oportunidade reside em reiniciar as operações da conta. A criação de novas campanhas com objetivos claros e estratégias bem definidas pode reativar o desempenho e gerar resultados.\n\nPRÓXIMOS PASSOS\n\n1. Investigar a causa da inatividade da conta.\n2. Definir objetivos de negócio e métricas de sucesso.\n3. Planejar e configurar campanhas com orçamentos adequados.\n4. Monitorar e otimizar o desempenho das campanhas ativamente.",
+      "ai_model": "gemini-2.5-flash-lite"
+    },
+    {
+      "ts": 1776718309,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO período analisado, referente aos últimos sete dias, não registrou atividade na conta de anúncios. Não houve nenhum investimento em mídia paga, e consequentemente, não foram observadas impressões, cliques ou resultados de campanha. Nenhuma campanha foi identificada como ativa ou pausada durante este período.\n\nKPIS PRINCIPAIS\n\nGasto: 0.0\nImpressões: 0\nAlcance: 0\nCliques: 0\nCTR (Taxa de Cliques): 0\nCPC (Custo por Clique): 0\nCPM (Custo por Mil Impressões): 0\nROAS (Retorno sobre Investimento em Anúncios): Não aplicável\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nNenhuma campanha foi encontrada ativa no período analisado.\nNenhuma campanha foi encontrada pausada no período analisado.\nO número total de campanhas observadas foi zero.\nNão há peso de objetivos a reportar, pois nenhuma campanha foi identificada.\n\nRESULTADOS POR OBJETIVO\n\nMensagens: Não houve resultados de mensagens registrados devido à ausência de campanhas ativas.\nCadastros/Leads: Não houve resultados de cadastros ou leads registrados devido à ausência de campanhas ativas.\nVendas/Compras: Não houve resultados de vendas ou compras registrados devido à ausência de campanhas ativas.\n\nDEMOGRAFIA\n\nNão há dados demográficos a reportar, uma vez que não houve entrega de anúncios para qualquer audiência no período.\n\nRISCOS\n\nO principal risco é a completa inatividade da conta de anúncios, que pode resultar na perda de oportunidades para atingir objetivos de negócio através de canais de mídia paga. A ausência de dados impede qualquer aprendizado ou otimização.\n\nOPORTUNIDADES\n\nExiste a oportunidade de ativar campanhas para iniciar a geração de resultados.\nÉ possível definir e implementar uma estratégia de mídia paga focada em objetivos claros como mensagens, cadastros ou vendas.\nOportunidade para estabelecer um baseline de performance e iniciar o acúmulo de dados para futuras análises e otimizações.\n\nPRÓXIMOS PASSOS\n\n1. Investigar a razão da ausência de atividade na conta de anúncios.\n2. Planejar e lançar campanhas com objetivos bem definidos, sejam eles de mensagens, cadastros ou vendas, para iniciar a geração de resultados e dados de performance.\n3. Estabelecer métricas chave de desempenho e um cronograma de monitoramento para as campanhas recém-lançadas.",
+      "ai_model": "gemini-2.5-flash"
+    }
+  ],
+  "act_4106819286203036": [
+    {
+      "ts": 1777250965,
+      "date_preset": "last_30d",
+      "report_summary": {
+        "active_campaigns": 1,
+        "paused_campaigns": 0,
+        "objective_mix": {
+          "Campanha de Reconhecimento": 1
+        }
+      },
+      "totals": {
+        "spend": 100.54,
+        "impressions": 84356,
+        "reach": 76428,
+        "clicks": 123,
+        "ctr": 0.15,
+        "cpc": 0.82,
+        "cpm": 1.19,
+        "actions": {
+          "link_click": 90.0,
+          "page_engagement": 264.0,
+          "landing_page_view": 53.0,
+          "omni_landing_page_view": 53.0,
+          "onsite_conversion.post_unlike": 4.0,
+          "post_engagement": 264.0,
+          "post_interaction_gross": 13.0,
+          "post_interaction_net": 17.0,
+          "onsite_conversion.post_net_like": 9.0,
+          "video_view": 161.0,
+          "post_reaction": 13.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 1,
+        "adsets": 1,
+        "ads": 7
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nO período analisado, correspondente aos últimos 30 dias, demonstra uma atividade focada em reconhecimento de marca. O investimento total na conta foi de 100.54 reais, resultando em 84.356 impressões e um alcance de 76.428 usuários únicos. A estratégia foi executada através de uma única campanha ativa, direcionada exclusivamente ao objetivo de Reconhecimento.\n\nOs principais resultados diretos da campanha foram 106 visualizações de página de destino e 90 cliques em links. O custo por visualização de página de destino foi de 0.95 reais, enquanto o custo por clique em link foi de 1.12 reais. É importante notar a ausência de dados para métricas de conversão como mensagens, cadastros ou compras, indicando que o foco atual da conta não está nestes objetivos ou que o acompanhamento não está implementado.\n\nKPIS PRINCIPAIS\n\nGasto Total: 100.54 reais\nImpressões: 84.356\nAlcance: 76.428\nCliques: 123\nTaxa de Cliques (CTR): 0.15\nCusto Por Clique (CPC): 0.82 reais\nCusto Por Mil Impressões (CPM): 1.19 reais\n\nVisualizações de Página de Destino: 106\nCusto Por Visualização de Página de Destino: 0.95 reais\n\nCliques em Link: 90\nCusto Por Clique em Link: 1.12 reais\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nNeste período, foi observada uma campanha ativa e nenhuma campanha pausada, totalizando uma campanha gerenciada.\n\nA única campanha em veiculação é \"[ALCANCE] ImobDay 2 edição - Frio - LP - 1/1/9 - 30$dia\", com status ATIVO. O objetivo desta campanha é \"Campanha de Reconhecimento\", representando 100% dos objetivos da conta. O gasto desta campanha nos últimos 30 dias foi de 100.54 reais.\n\nRESULTADOS POR OBJETIVO\n\nMensagens:\nNão há dados de mensagens registrados para a campanha ativa neste período.\n\nCadastros (Leads):\nNão há dados de cadastros ou leads registrados para a campanha ativa neste período.\n\nVendas (Compras):\nNão há dados de vendas ou compras registrados para a campanha ativa neste período.\n\nA campanha em andamento, cujo objetivo é Reconhecimento, gerou 106 visualizações de página de destino a um custo de 0.95 reais por resultado e 90 cliques em links a um custo de 1.12 reais por resultado. Para este objetivo, os resultados de cliques e visualizações de página são indicadores de interesse inicial, mas não representam conversões diretas de negócio. A ausência de resultados de mensagens, cadastros ou vendas indica que estas métricas não são o foco atual da campanha ou não estão sendo devidamente rastreadas.\n\nDEMOGRAFIA\n\nNão foram fornecidos dados demográficos para análise neste período.\n\nRISCOS\n\nA estratégia de mídia paga está atualmente concentrada em uma única campanha com objetivo de Reconhecimento. Esta abordagem limita a capacidade de gerar resultados diretos de negócio, como leads e vendas, e aumenta a dependência de um único esforço de marketing. A ausência de dados de conversão essenciais impede uma avaliação completa da eficiência do investimento em relação aos objetivos comerciais. Há uma discrepância entre o CTR e CPC agregados da conta e os valores reportados individualmente pela campanha, o que pode indicar inconsistências na medição ou na agregação de dados.\n\nOPORTUNIDADES\n\nExistem oportunidades claras para expandir a estratégia de mídia paga. A implementação de campanhas com objetivos focados em Geração de Leads, Mensagens ou Vendas pode trazer resultados mais tangíveis para o negócio. É fundamental garantir que o rastreamento de todas as etapas do funil de conversão esteja configurado corretamente para medir o impacto direto das campanhas. Além disso, a diversificação dos públicos-alvo e criativos dentro da campanha de Reconhecimento atual pode otimizar seu desempenho e engajamento.\n\nPRÓXIMOS PASSOS\n\n1.  Validar e implementar o rastreamento completo de eventos de conversão, incluindo leads, mensagens e compras, para todos os ativos digitais.\n2.  Propor e lançar campanhas com objetivos de performance, como Geração de Leads ou Vendas, para complementar a estratégia de Reconhecimento.\n3.  Revisar a performance da campanha de Reconhecimento, avaliando a qualidade dos cliques e visualizações de página de destino, e otimizar criativos e segmentações para maximizar o engajamento relevante.\n4.  Estabelecer Key Performance Indicators (KPIs) claros para as novas campanhas, incluindo metas de Custo por Lead e, se aplicável, Retorno sobre o Investimento em Anúncios (ROAS).",
+      "ai_model": "gemini-2.5-flash"
+    },
+    {
+      "ts": 1778016771,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 2,
+        "objective_mix": {
+          "Campanha de Vendas": 1,
+          "Campanha de Reconhecimento": 1
+        }
+      },
+      "totals": {
+        "spend": 177.29,
+        "impressions": 62874,
+        "reach": 52160,
+        "clicks": 205,
+        "ctr": 0.33,
+        "cpc": 0.86,
+        "cpm": 2.82,
+        "actions": {
+          "onsite_conversion.total_messaging_connection": 1.0,
+          "link_click": 154.0,
+          "initiate_checkout": 18.0,
+          "omni_initiated_checkout": 18.0,
+          "page_engagement": 253.0,
+          "landing_page_view": 99.0,
+          "omni_landing_page_view": 99.0,
+          "post_engagement": 253.0,
+          "post_interaction_gross": 25.0,
+          "post_interaction_net": 28.0,
+          "post": 4.0,
+          "onsite_conversion.post_save": 3.0,
+          "onsite_conversion.post_net_save": 3.0,
+          "onsite_conversion.post_net_like": 15.0,
+          "onsite_web_initiate_checkout": 18.0,
+          "onsite_conversion.messaging_conversation_replied_7d": 1.0,
+          "post_reaction": 18.0,
+          "offsite_conversion.fb_pixel_initiate_checkout": 18.0,
+          "onsite_conversion.post_unlike": 3.0,
+          "video_view": 74.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 2,
+        "adsets": 2,
+        "ads": 11
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nNo período dos últimos 7 dias, a conta investiu R$ 177,29 e operou com 2 campanhas mapeadas, sendo 0 ativas e 2 pausadas. O mix de objetivos foi dividido entre 1 campanha de vendas e 1 campanha de reconhecimento.\n\nEm resultado final, a conta gerou 1 mensagem, 72 checkouts iniciados, 198 visualizações de página de destino e 154 cliques no link. Entre os resultados que mais importam para avaliação de performance, o principal sinal de fundo de funil disponível é checkout, com custo por resultado de R$ 2,46. Já mensagens teve volume muito baixo, com apenas 1 resultado e custo por resultado de R$ 177,29.\n\nA leitura geral indica boa capacidade de gerar tráfego qualificado e movimentação de meio para fundo de funil a baixo custo, especialmente em landing page view e checkout. Por outro lado, há um risco claro de continuidade, porque não existem campanhas ativas no momento.\n\nKPIS PRINCIPAIS\n\nInvestimento total: R$ 177,29\n\nImpressões: 62.874\n\nAlcance: 52.160\n\nCliques: 205\n\nCTR: 0,33%\n\nCPC: R$ 0,86\n\nCPM: R$ 2,82\n\nResultados consolidados:\nMensagens: 1, com custo por resultado de R$ 177,29\nCheckout: 72, com custo por resultado de R$ 2,46\nLanding page view: 198, com custo por resultado de R$ 0,90\nLink click: 154, com custo por resultado de R$ 1,15\n\nNão há dados de compras, leads/cadastros ou ROAS no consolidado informado.\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nA conta teve 2 campanhas identificadas no período e ambas estão pausadas. Não há campanhas ativas neste momento.\n\nDistribuição por objetivo:\nCampanha de Vendas: 1 campanha\nCampanha de Reconhecimento: 1 campanha\n\nCampanhas listadas:\n[CONV] Imobday Flu - LP - Aberto - Volta Redonda - 30$/dia\nObjetivo: Campanha de Vendas\nStatus: PAUSED\n\n[ALCANCE] ImobDay 2 edição - Frio - LP - 1/1/9 - 30$dia\nObjetivo: Campanha de Reconhecimento\nStatus: PAUSED\n\nRESULTADOS POR OBJETIVO\n\nMensagens\n\nA conta gerou 1 mensagem no período, com custo por resultado de R$ 177,29. Esse é um volume muito baixo para sustentar leitura positiva de campanha com foco em conversa. Mesmo havendo resultado, a eficiência está fraca, porque todo o investimento consolidado praticamente se traduz em apenas uma conversa.\n\nComo resultado de negócio, mensagens é hoje o ponto mais frágil do funil. O dado sugere baixa conversão para esse objetivo ou baixa aderência da operação atual para geração de contato direto.\n\nCadastros\n\nNão há registros de leads ou cadastros no consolidado. As campanhas fornecidas também não apresentam leads. Portanto, não existe base real para análise de eficiência em geração de cadastro neste período.\n\nVendas\n\nNão há compras no consolidado e não há ROAS informado. Portanto, a análise de vendas deve ser feita pelos sinais de intenção existentes, e o principal deles é checkout.\n\nForam 72 checkouts iniciados com custo por resultado de R$ 2,46. Esse é o melhor indicador de eficiência disponível no período, pois mostra avanço de usuários para uma etapa relevante do funil a custo baixo. Além disso, a conta entregou 198 landing page views a R$ 0,90 e 154 link clicks a R$ 1,15, reforçando boa eficiência na geração de tráfego e intenção.\n\nA leitura executiva é positiva para captação de demanda e progresso até checkout, mas inconclusiva para venda final, já que não existem compras reportadas.\n\nDEMOGRAFIA\n\nNão foram fornecidos dados demográficos no resumo consolidado. Não há base real para análise por idade, gênero, região ou posicionamento.\n\nRISCOS\n\nO principal risco é operacional: a conta está sem campanhas ativas. Isso interrompe aprendizado, entrega e geração de novos resultados.\n\nHá também risco de leitura incompleta de performance final, porque não existem dados de compras nem ROAS. Assim, embora checkout esteja eficiente, não é possível confirmar conversão em receita.\n\nA geração de mensagens está muito abaixo do esperado em relação ao investimento, o que indica baixa eficiência desse objetivo no período.\n\nO CTR de 0,33% mostra que, apesar do baixo CPM e CPC controlado, a taxa de resposta ao anúncio está modesta. Isso pode limitar escala qualificada se a conta voltar a rodar sem ajustes criativos e de segmentação.\n\nOPORTUNIDADES\n\nA principal oportunidade está em retomar investimento nas frentes que geraram sinais claros de intenção, especialmente o objetivo de vendas, já que o volume de checkout foi relevante e com custo eficiente.\n\nLanding page view e link click também mostram boa capacidade de atrair tráfego a custo competitivo. Isso indica espaço para otimização de conversão da página e da etapa seguinte do funil, antes de aumentar escala.\n\nComo não houve geração de leads e o volume de mensagens foi muito baixo, existe oportunidade de redefinir o papel desses objetivos na conta. Hoje, o dado real aponta mais eficiência em tráfego qualificado e checkout do que em conversa direta ou cadastro.\n\nPRÓXIMOS PASSOS\n\nReativar a operação com prioridade para campanhas orientadas a vendas, já que o melhor sinal de eficiência do período foi checkout a R$ 2,46.\n\nRevisar a jornada pós-clique, porque a conta conseguiu gerar 198 landing page views e 72 checkouts iniciados. O ponto crítico é entender por que esse avanço de funil não está aparecendo em compras.\n\nTratar mensagens como objetivo secundário até haver evidência real de eficiência, pois 1 mensagem a R$ 177,29 não sustenta escala.\n\nValidar mensuração de compras e receita. Sem esse dado, a conta fica limitada a análise de intenção e não de resultado final de negócio.\n\nAo retomar campanhas, concentrar avaliação nos resultados que realmente importam: checkout como sinal de intenção de compra, mensagens apenas se houver melhoria clara de custo, e eventual cadastro somente se passar a existir no consolidado.",
+      "ai_model": "gpt-5.4",
+      "ai_provider": "openai",
+      "ai_cost_usd": 0.0
+    },
+    {
+      "ts": 1778016786,
+      "date_preset": "last_14d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 2,
+        "objective_mix": {
+          "Campanha de Reconhecimento": 1,
+          "Campanha de Vendas": 1
+        }
+      },
+      "totals": {
+        "spend": 342.28,
+        "impressions": 202594,
+        "reach": 166850,
+        "clicks": 399,
+        "ctr": 0.2,
+        "cpc": 0.86,
+        "cpm": 1.69,
+        "actions": {
+          "link_click": 297.0,
+          "page_engagement": 656.0,
+          "landing_page_view": 188.0,
+          "omni_landing_page_view": 188.0,
+          "onsite_conversion.post_unlike": 9.0,
+          "post_engagement": 656.0,
+          "post_interaction_gross": 45.0,
+          "post_interaction_net": 54.0,
+          "onsite_conversion.post_save": 4.0,
+          "onsite_conversion.post_net_save": 4.0,
+          "onsite_conversion.post_net_like": 28.0,
+          "video_view": 314.0,
+          "post_reaction": 37.0,
+          "onsite_conversion.total_messaging_connection": 1.0,
+          "initiate_checkout": 18.0,
+          "omni_initiated_checkout": 18.0,
+          "post": 4.0,
+          "onsite_web_initiate_checkout": 18.0,
+          "onsite_conversion.messaging_conversation_replied_7d": 1.0,
+          "offsite_conversion.fb_pixel_initiate_checkout": 18.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 2,
+        "adsets": 2,
+        "ads": 11
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nNo período dos últimos 14 dias, a conta investiu 342,28 e gerou 202.594 impressões, 166.850 de alcance e 399 cliques, com CTR de 0,20%, CPC de 0,86 e CPM de 1,69.\n\nForam identificadas 2 campanhas no período, com 0 ativas e 2 pausadas. O mix de objetivos ficou dividido entre 1 campanha de Reconhecimento e 1 campanha de Vendas. Isso indica que, no momento da leitura, não há entrega ativa em andamento.\n\nEm resultado final consolidado, o principal volume está em tráfego qualificado e avanço no funil, com 376 landing page views a 0,91 por resultado e 72 checkouts iniciados a 4,75 por resultado. Em mensagens, houve 1 resultado, com custo por resultado de 342,28. Não há registro consolidado de compras, leads/cadastros ou ROAS no resumo recebido.\n\nA leitura de eficiência mostra mídia muito barata em alcance e entrega, com CPM baixo, mas com baixa taxa de clique. Ainda assim, o volume de landing page views e checkouts indica capacidade de mover usuários para etapas intermediárias do funil. O ponto crítico é a ausência de campanhas ativas e a falta de conversão final reportada no consolidado.\n\nKPIS PRINCIPAIS\n\nInvestimento total: 342,28\n\nImpressões: 202.594\n\nAlcance: 166.850\n\nCliques: 399\n\nCTR: 0,20%\n\nCPC: 0,86\n\nCPM: 1,69\n\nResultados consolidados mais relevantes:\nMensagens: 1, com custo por resultado de 342,28\nCheckout: 72, com custo por resultado de 4,75\nLanding page view: 376, com custo por resultado de 0,91\nLink click: 297, com custo por resultado de 1,15\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nA conta teve 2 campanhas mapeadas no período e ambas estão pausadas. Não há campanhas ativas no summary consolidado.\n\nDistribuição por objetivo:\n1 campanha de Reconhecimento\n1 campanha de Vendas\n\nPeso do mix de objetivos:\nReconhecimento representa 50% das campanhas vistas\nVendas representa 50% das campanhas vistas\n\nCampanhas listadas no período:\n[ALCANCE] ImobDay 2 edição - Frio - LP - 1/1/9 - 30$dia\nObjetivo: Campanha de Reconhecimento\nStatus: PAUSED\n\n[CONV] Imobday Flu - LP - Aberto - Volta Redonda - 30$/dia\nObjetivo: Campanha de Vendas\nStatus: PAUSED\n\nRESULTADOS POR OBJETIVO\n\nMensagens\n\nHouve 1 resultado de mensagens no consolidado, com custo por resultado de 342,28. Esse é o pior indicador de eficiência entre os resultados principais, porque consumiu todo o investimento do período para gerar apenas 1 conversa.\n\nComo resultado de negócio, mensagens importam quando há estrutura comercial rápida para resposta e qualificação. Neste caso, o volume é insuficiente para sustentar previsibilidade. A eficiência está muito fraca e não justifica escala no formato atual.\n\nCadastros\n\nNão há resultados de leads ou cadastros no resumo consolidado. Também não há campanhas destacadas por leads. Portanto, não existe base real para análise de eficiência de geração de cadastro neste período.\n\nVendas\n\nNão há compras reportadas no consolidado e não há ROAS informado. Portanto, a análise de vendas precisa se apoiar apenas nos sinais intermediários reais do funil.\n\nOs sinais mais relevantes são:\n376 landing page views com custo de 0,91\n72 checkouts com custo de 4,75\n297 link clicks com custo de 1,15\n\nA leitura é que a mídia conseguiu gerar tráfego para a página e levou parte dos usuários até o início de checkout, o que é um bom sinal de intenção. O problema está na ausência de conversão final reportada. Isso pode indicar gargalo de página, oferta, processo de checkout, mensuração de compra ou baixa qualidade do tráfego apesar do custo barato.\n\nReconhecimento\n\nEmbora não exista um bloco de headline específico para reconhecimento, o objetivo aparece no mix de campanhas e faz sentido pela escala de entrega. Os números de alcance e impressões são altos para o investimento, com CPM de 1,69, o que mostra forte eficiência de distribuição. O ponto de atenção é que essa eficiência de mídia não se converteu em resultado final de negócio reportado.\n\nDEMOGRAFIA\n\nNão há dados demográficos no resumo recebido. Não é possível analisar idade, gênero, localização ou distribuição por audiência sem inventar informação.\n\nRISCOS\n\nO principal risco é operacional: a conta está com 0 campanhas ativas e 2 pausadas. Sem entrega ativa, não há continuidade de aprendizado nem geração de resultados novos.\n\nO segundo risco é de funil: há avanço até landing page view e checkout, mas sem compra consolidada reportada. Isso sugere perda na etapa final ou falha de mensuração.\n\nO terceiro risco é de eficiência em mensagens: 1 mensagem a 342,28 é um custo incompatível com escala saudável.\n\nO quarto risco é de tráfego pouco responsivo: CTR de 0,20% mostra baixa taxa de clique frente ao volume de impressão. A entrega está barata, mas a capacidade de atrair ação ainda é limitada.\n\nOPORTUNIDADES\n\nExiste oportunidade clara em campanhas orientadas a vendas, porque o funil apresentou 72 checkouts iniciados com custo de 4,75. Esse é o sinal mais promissor do período e merece prioridade sobre mensagens.\n\nHá oportunidade de revisar a jornada entre clique, página e checkout para entender por que o volume intermediário não virou compra reportada. Se a mensuração estiver correta, o ganho potencial está em otimização de conversão final.\n\nTambém há espaço para melhorar a qualidade do tráfego sem perder eficiência de mídia. O CPM está muito bom, então uma evolução de CTR e de taxa pós-clique pode gerar ganho relevante sem exigir grande aumento de investimento.\n\nPRÓXIMOS PASSOS\n\nReativar a operação com foco no objetivo de vendas, já que os melhores sinais reais do período estão em landing page views e checkouts, não em mensagens.\n\nAuditar mensuração de compra e eventos finais do funil, porque há 72 checkouts iniciados e nenhuma compra consolidada informada. Essa checagem é prioritária antes de qualquer decisão de escala.\n\nRevisar criativos, proposta de valor e chamada para ação para elevar o CTR acima do nível atual de 0,20%, mantendo o CPM competitivo.\n\nReduzir prioridade de campanhas com foco em mensagens no formato atual, pois o custo por resultado de 342,28 é muito alto para sustentar performance.\n\nConcentrar análise futura nos resultados que realmente importam para o negócio neste caso: checkouts, conversão final e custo por etapa do funil. Sem compra e sem ROAS reportados, a otimização deve partir dos sinais intermediários já confirmados no consolidado.",
+      "ai_model": "gpt-5.4",
+      "ai_provider": "openai",
+      "ai_cost_usd": 0.0
+    },
+    {
+      "ts": 1778016796,
+      "date_preset": "last_14d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 2,
+        "objective_mix": {
+          "Campanha de Reconhecimento": 1,
+          "Campanha de Vendas": 1
+        }
+      },
+      "totals": {
+        "spend": 342.28,
+        "impressions": 202594,
+        "reach": 166850,
+        "clicks": 399,
+        "ctr": 0.2,
+        "cpc": 0.86,
+        "cpm": 1.69,
+        "actions": {
+          "link_click": 297.0,
+          "page_engagement": 656.0,
+          "landing_page_view": 188.0,
+          "omni_landing_page_view": 188.0,
+          "onsite_conversion.post_unlike": 9.0,
+          "post_engagement": 656.0,
+          "post_interaction_gross": 45.0,
+          "post_interaction_net": 54.0,
+          "onsite_conversion.post_save": 4.0,
+          "onsite_conversion.post_net_save": 4.0,
+          "onsite_conversion.post_net_like": 28.0,
+          "video_view": 314.0,
+          "post_reaction": 37.0,
+          "onsite_conversion.total_messaging_connection": 1.0,
+          "initiate_checkout": 18.0,
+          "omni_initiated_checkout": 18.0,
+          "post": 4.0,
+          "onsite_web_initiate_checkout": 18.0,
+          "onsite_conversion.messaging_conversation_replied_7d": 1.0,
+          "offsite_conversion.fb_pixel_initiate_checkout": 18.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 2,
+        "adsets": 2,
+        "ads": 11
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nNo período dos últimos 14 dias, a conta investiu R$ 342,28 e gerou 202.594 impressões, 166.850 de alcance e 399 cliques, com CTR de 0,20%, CPC médio de R$ 0,86 e CPM de R$ 1,69.\n\nForam identificadas 2 campanhas no período, com 0 ativas e 2 pausadas. O mix de objetivos está dividido entre 1 campanha de Reconhecimento e 1 campanha de Vendas. Isso mostra uma operação sem entrega ativa neste momento e com concentração em topo e fundo de funil, sem campanhas específicas de cadastro/leads.\n\nEm resultados finais consolidados, o destaque está em 72 checkouts iniciados com custo por resultado de R$ 4,75, além de 376 visualizações de página de destino a R$ 0,91. Houve 297 cliques no link a R$ 1,15 e apenas 1 resultado de mensagem, com custo de R$ 342,28. Na prática, o melhor sinal de intenção no período está em checkout, enquanto mensagens teve baixa escala e baixa eficiência.\n\nKPIS PRINCIPAIS\n\nInvestimento total: R$ 342,28\n\nImpressões: 202.594\n\nAlcance: 166.850\n\nCliques: 399\n\nCTR: 0,20%\n\nCPC: R$ 0,86\n\nCPM: R$ 1,69\n\nResultados consolidados que mais importam:\nMensagens: 1, custo por resultado de R$ 342,28\nCheckout: 72, custo por resultado de R$ 4,75\nLanding page view: 376, custo por resultado de R$ 0,91\nLink click: 297, custo por resultado de R$ 1,15\n\nLeitura executiva dos KPIs:\nO custo de mídia está baixo em alcance e exposição, refletido no CPM de R$ 1,69. Porém, a taxa de clique de 0,20% é fraca, indicando baixa capacidade criativa ou baixa aderência da mensagem ao público. Mesmo com CTR baixo, o volume de landing page views e principalmente de checkouts mostra que houve geração de intenção em parte do tráfego.\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nA conta teve 2 campanhas no período analisado.\n\nCampanhas ativas: 0\nCampanhas pausadas: 2\n\nDistribuição por objetivo:\n1 campanha de Reconhecimento\n1 campanha de Vendas\n\nCampanhas identificadas:\n[ALCANCE] ImobDay 2 edição - Frio - LP - 1/1/9 - 30$dia\nObjetivo: Campanha de Reconhecimento\nStatus: PAUSED\nInvestimento em 30 dias: R$ 236,42\n\n[CONV] Imobday Flu - LP - Aberto - Volta Redonda - 30$/dia\nObjetivo: Campanha de Vendas\nStatus: PAUSED\nInvestimento em 30 dias: R$ 105,86\nMensagens: 1\n\nLeitura de peso por objetivo:\nEm quantidade, o mix está equilibrado entre Reconhecimento e Vendas. Em relevância de negócio, Vendas é o objetivo mais importante porque concentra o sinal de intenção mais próximo de conversão, enquanto Reconhecimento contribui mais para distribuição e alcance.\n\nRESULTADOS POR OBJETIVO\n\nMensagens\n\nO período gerou 1 mensagem, com custo por resultado de R$ 342,28.\n\nLeitura de eficiência:\nA eficiência de mensagens está muito baixa. O custo por conversa ficou integralmente pressionado pelo baixo volume de resultados. Com apenas 1 mensagem no consolidado, esse objetivo não sustenta escala nem eficiência no recorte analisado.\n\nO que realmente importa:\nHoje, mensagens não é o motor de resultado da conta. O número é insuficiente para orientar expansão de verba ou leitura positiva de performance.\n\nCadastros\n\nNão há resultados consolidados de cadastros/leads informados no resumo. Também não há campanhas listadas com leads gerados no período fornecido.\n\nLeitura de eficiência:\nSem volume real de cadastros no consolidado, não há base para avaliar custo por lead ou qualidade de geração de cadastro.\n\nO que realmente importa:\nNeste recorte, cadastros não aparecem como resultado relevante da conta.\n\nVendas\n\nO principal sinal de fundo de funil disponível é checkout iniciado. Foram 72 checkouts, com custo por resultado de R$ 4,75.\n\nLeitura de eficiência:\nEsse é o melhor resultado do período. O custo por checkout está competitivo dentro do consolidado apresentado e representa o indicador mais próximo de conversão efetiva disponível nos dados. Como não há compras nem ROAS informados, checkout passa a ser o principal proxy de intenção de compra.\n\nO que realmente importa:\nEntre todos os objetivos, vendas é o bloco mais relevante porque concentra o sinal de maior valor no período. Mesmo sem compras confirmadas, os 72 checkouts mostram capacidade de levar o usuário para uma etapa decisiva do funil.\n\nTráfego de apoio ao funil\n\nAlém do fundo de funil, houve 376 landing page views a R$ 0,91 e 297 link clicks a R$ 1,15.\n\nLeitura de eficiência:\nO volume de landing page views é superior ao de link clicks no consolidado por conta da composição de chaves de resultado informadas. Em termos executivos, o dado reforça que houve tráfego qualificado chegando à página. O custo por LPV está saudável e ajuda a sustentar o volume de checkouts.\n\nO que realmente importa:\nO funil mostra geração de visita e avanço para checkout. O gargalo principal não está apenas em custo de tráfego, mas possivelmente em taxa de resposta criativa, qualificação de audiência ou etapa final de conversão, já que não há compras reportadas.\n\nDEMOGRAFIA\n\nNão há dados demográficos fornecidos no resumo compacto. Não é possível analisar idade, gênero, região ou posicionamento com base na entrada recebida.\n\nRISCOS\n\nA conta está com 0 campanhas ativas e 2 pausadas. O principal risco imediato é interrupção total de geração de novos resultados.\n\nA CTR de 0,20% está baixa. Isso sugere baixa atratividade de criativo, oferta ou aderência de segmentação, o que limita eficiência de escala mesmo com CPM baixo.\n\nMensagens apresentou apenas 1 resultado e custo por resultado de R$ 342,28. Se esse objetivo for estratégico para o negócio, a operação atual não está eficiente.\n\nNão há compras nem ROAS reportados. Isso impede leitura completa de retorno financeiro final e cria risco de otimização excessiva em indicadores intermediários.\n\nNão há dados de leads/cadastros no consolidado. Se cadastro for uma meta de negócio relevante, hoje esse objetivo está ausente ou sem mensuração útil no recorte.\n\nOPORTUNIDADES\n\nO custo por checkout de R$ 4,75 é o melhor sinal de eficiência do período. Existe oportunidade de reorganizar a conta priorizando campanhas orientadas a fundo de funil e eventos de maior intenção.\n\nAs 376 visualizações de página de destino a R$ 0,91 mostram capacidade de gerar tráfego para a página com custo controlado. Há oportunidade de melhorar a taxa de clique e a transição entre impressão, clique e visita com ajuste criativo e de mensagem.\n\nComo o CPM está baixo, existe espaço para testar novas abordagens criativas sem pressão forte de custo de entrega. O problema central parece mais ligado a resposta e conversão do que a custo de mídia.\n\nCom uma campanha de Reconhecimento e uma de Vendas no mix, há oportunidade de clarificar melhor o papel de cada objetivo: reconhecimento para alimentar alcance qualificado e vendas para capturar intenção com foco em checkout.\n\nPRÓXIMOS PASSOS\n\nRetomar a veiculação, já que atualmente não há campanhas ativas. Sem entrega ativa, a conta não sustenta aprendizado nem geração de resultado.\n\nPriorizar o objetivo de Vendas, usando checkout como principal métrica operacional enquanto não houver compras consolidadas no relatório.\n\nRevisar criativos e proposta de valor para elevar a CTR, hoje em 0,20%. Esse é o principal sinal de que o anúncio não está convertendo atenção em tráfego de forma eficiente.\n\nReduzir ou reavaliar esforços em mensagens até haver estrutura para melhorar volume e custo, já que o resultado atual é de 1 mensagem a R$ 342,28.\n\nManter foco em indicadores realmente úteis para decisão no momento: checkouts, visualizações de página de destino e cliques qualificados. São os sinais com volume e capacidade de orientar otimização no recorte atual.\n\nSe o objetivo de negócio incluir geração de cadastro ou venda final, ajustar a mensuração para capturar esses eventos de forma clara no próximo ciclo de análise. Hoje, a leitura mais confiável de performance está concentrada em checkout e tráfego de página.",
+      "ai_model": "gpt-5.4",
+      "ai_provider": "openai",
+      "ai_cost_usd": 0.0
+    }
+  ],
+  "act_809396714231583": [
+    {
+      "ts": 1778012512,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 4,
+        "paused_campaigns": 0,
+        "objective_mix": {
+          "Campanha de Cadastros": 2,
+          "Campanha de Vendas": 1,
+          "Campanha de Engajamento": 1
+        }
+      },
+      "totals": {
+        "spend": 919.71,
+        "impressions": 80520,
+        "reach": 64394,
+        "clicks": 1452,
+        "ctr": 1.8,
+        "cpc": 0.63,
+        "cpm": 11.42,
+        "actions": {
+          "offsite_complete_registration_add_meta_leads": 141.0,
+          "link_click": 606.0,
+          "offsite_search_add_meta_leads": 141.0,
+          "page_engagement": 15137.0,
+          "post_engagement": 15137.0,
+          "post_interaction_gross": 610.0,
+          "comment": 12.0,
+          "post_interaction_net": 627.0,
+          "post": 12.0,
+          "onsite_conversion.post_save": 16.0,
+          "onsite_conversion.post_net_comment": 12.0,
+          "onsite_conversion.post_net_save": 16.0,
+          "onsite_conversion.post_net_like": 553.0,
+          "lead": 141.0,
+          "offsite_content_view_add_meta_leads": 141.0,
+          "onsite_conversion.lead_grouped": 141.0,
+          "post_reaction": 570.0,
+          "landing_page_view": 93.0,
+          "omni_landing_page_view": 93.0,
+          "onsite_conversion.messaging_conversation_started_7d": 1.0,
+          "onsite_conversion.post_unlike": 17.0,
+          "video_view": 13921.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 4,
+        "adsets": 5,
+        "ads": 24
+      },
+      "ai_summary": "RESUMO EXECUTIVO\n\nNos últimos 7 dias, a conta investiu R$ 919,71 e gerou 80.520 impressões, 64.394 de alcance e 1.452 cliques. O CTR foi de 1,8%, com CPC médio de R$ 0,63 e CPM de R$ 11,42.\n\nA operação esteve 100% ativa no período, com 4 campanhas ativas e 0 pausadas. O mix de objetivos ficou concentrado em cadastros, com 2 campanhas de cadastros, 1 campanha de vendas e 1 campanha de engajamento.\n\nO principal resultado de negócio do período foi geração de cadastros. O consolidado mostra 705 cadastros, com custo por resultado de R$ 1,30, desempenho muito eficiente no topo da operação. Em contrapartida, vendas não aparecem como resultado consolidado e mensagens tiveram apenas 1 resultado, com custo por resultado de R$ 919,71, o que indica ausência de tração nesse objetivo.\n\nA leitura executiva é clara: a conta está eficiente para captação de leads, mas ainda sem evidência de eficiência em fundo de funil. O volume existe, porém concentrado em cadastros e engajamento, não em conversão final de vendas.\n\nKPIS PRINCIPAIS\n\nInvestimento: R$ 919,71\n\nImpressões: 80.520\n\nAlcance: 64.394\n\nCliques: 1.452\n\nCTR: 1,8%\n\nCPC: R$ 0,63\n\nCPM: R$ 11,42\n\nMensagens: 1, com custo por resultado de R$ 919,71\n\nCadastros: 705, com custo por resultado de R$ 1,30\n\nVisualizações de página de destino: 186, com custo por resultado de R$ 4,94\n\nCliques no link: 606, com custo por resultado de R$ 1,52\n\nCAMPANHAS ATIVAS NO PERÍODO\n\nA conta teve 4 campanhas ativas e nenhuma pausada no período analisado.\n\nDistribuição por objetivo:\n2 campanhas de cadastros\n1 campanha de vendas\n1 campanha de engajamento\n\nPeso do mix de objetivos:\nCadastros representam 50% das campanhas ativas\nVendas representam 25%\nEngajamento representa 25%\n\nCampanhas com resultados explícitos de leads no período:\n[CAD] Dossiê - Form>LP - 1/1/6 - Br - 30$/dia\nGerou 108 leads e 1 mensagem\n\n[CADASTROS] Form - Incorporadores - 1/2/10 - 14/01 - 25$/dia — Cópia\nGerou 33 leads\n\nCampanha de vendas ativa no período:\n[CONV] Clube Key - Aberto/Br - 1/1/10 - 29,90 - Br\nSem compras reportadas nos dados fornecidos\n\nCampanha de engajamento ativa no período:\n[ENGJ] Somente engj com pub existente - 1/1/3 - 10$dia\nSem resultado de conversão final reportado\n\nRESULTADOS POR OBJETIVO\n\nMensagens\n\nO consolidado mostra 1 mensagem no período, com custo por resultado de R$ 919,71. Na prática, esse objetivo não apresentou escala nem eficiência. O volume é insuficiente para sustentar otimização ou qualquer leitura positiva de desempenho.\n\nEntre as campanhas listadas, a única com registro de mensagem foi [CAD] Dossiê - Form>LP - 1/1/6 - Br - 30$/dia, com 1 mensagem. Isso reforça que mensagens não foram o motor da conta nesta janela.\n\nLeitura de eficiência:\nObjetivo irrelevante no período em volume e muito ineficiente em custo.\n\nCadastros\n\nCadastros foram o principal resultado da operação. O consolidado aponta 705 cadastros, com custo por resultado de R$ 1,30. Esse é o indicador mais importante da conta no período e também o melhor sinal de eficiência.\n\nAs campanhas de cadastros concentraram os resultados visíveis na amostra:\n[CAD] Dossiê - Form>LP - 1/1/6 - Br - 30$/dia com 108 leads\n[CADASTROS] Form - Incorporadores - 1/2/10 - 14/01 - 25$/dia — Cópia com 33 leads\n\nAlém do volume de cadastro, o funil apresenta 186 visualizações de página de destino a R$ 4,94 e 606 cliques no link a R$ 1,52. Isso mostra boa capacidade de geração de tráfego qualificado para captura, sustentando o desempenho do objetivo principal.\n\nLeitura de eficiência:\nExcelente performance de aquisição em custo por cadastro. O principal valor da conta hoje está em gerar volume de leads com custo baixo.\n\nVendas\n\nExiste 1 campanha de vendas ativa no período, mas não há compras reportadas no consolidado nem nas campanhas fornecidas. Também não há ROAS informado.\n\nLeitura de eficiência:\nSem resultado final de vendas comprovado nos dados recebidos. A operação de fundo de funil está ativa, mas ainda sem evidência de conversão.\n\nDEMOGRAFIA\n\nNão há dados demográficos fornecidos na entrada para segmentação por idade, gênero, região ou posicionamento. Portanto, não é possível concluir quais perfis concentraram melhor performance no período.\n\nRISCOS\n\nA operação está excessivamente concentrada em cadastros, sem comprovação de conversão em vendas. Isso cria risco de volume sem monetização, caso a qualidade dos leads não sustente o funil comercial.\n\nA campanha de vendas está ativa, mas sem compras registradas. Isso indica possível desalinhamento entre captação e etapa final de conversão, ou baixa maturidade do fundo de funil.\n\nMensagens praticamente não performaram. Se esse objetivo for estratégico para a operação, o resultado atual é insuficiente e financeiramente inviável.\n\nO volume alto de engajamento e video views é positivo para distribuição, mas não substitui resultado final. Foram 15.137 engajamentos de página/post e 13.921 visualizações de vídeo, porém sem reflexo claro em vendas.\n\nOPORTUNIDADES\n\nA principal oportunidade está em ampliar o que já funciona em cadastros, preservando controle de qualidade. O custo por cadastro de R$ 1,30 é competitivo e indica espaço para ganho de escala, desde que o pós-lead sustente conversão.\n\nA campanha [CAD] Dossiê - Form>LP - 1/1/6 - Br - 30$/dia é a principal referência operacional entre as campanhas listadas, com 108 leads e 1 mensagem. Ela deve ser o ponto de partida para análise de criativos, audiência e jornada.\n\nA campanha [CADASTROS] Form - Incorporadores - 1/2/10 - 14/01 - 25$/dia — Cópia também contribui com 33 leads e pode ser comparada à principal para identificar diferenças de eficiência estrutural.\n\nHá oportunidade de revisar a ponte entre captação e venda, porque a conta já gera volume relevante no topo, mas ainda sem comprovação de compras. O maior potencial está em transformar o bom desempenho de aquisição em resultado de receita.\n\nPRÓXIMOS PASSOS\n\nManter cadastros como foco principal de investimento, pois é o único objetivo com escala e eficiência comprovadas no período.\n\nAuditar a qualidade dos 705 cadastros gerados, verificando taxa de contato, qualificação e avanço comercial. O indicador de mídia está forte, mas o próximo nível de decisão depende da qualidade real do lead.\n\nRevisar a campanha de vendas ativa para entender por que não há compras registradas. O ajuste deve priorizar oferta, página, evento de conversão e aderência entre público captado e público de fechamento.\n\nTratar mensagens como objetivo secundário neste momento, já que houve apenas 1 resultado com custo inviável.\n\nUsar as campanhas de cadastros com resultado explícito como base de replicação e otimização, especialmente [CAD] Dossiê - Form>LP - 1/1/6 - Br - 30$/dia, por ser a principal geradora de leads entre as campanhas informadas.\n\nSeparar a leitura operacional em dois níveis: eficiência de mídia para captação, que está validada, e eficiência comercial de fundo de funil, que ainda precisa ser comprovada.",
+      "ai_model": "gpt-5.4",
+      "ai_provider": "openai",
+      "ai_cost_usd": 0.0
+    },
+    {
+      "ts": 1779738202,
+      "date_preset": "last_30d",
+      "report_summary": {
+        "active_campaigns": 4,
+        "paused_campaigns": 0,
+        "objective_mix": {
+          "Campanha de Cadastros": 2,
+          "Campanha de Vendas": 1,
+          "Campanha de Engajamento": 1
+        }
+      },
+      "totals": {
+        "spend": 1790.1100000000001,
+        "impressions": 153247,
+        "reach": 109240,
+        "clicks": 2941,
+        "ctr": 1.92,
+        "cpc": 0.61,
+        "cpm": 11.68,
+        "actions": {
+          "offsite_complete_registration_add_meta_leads": 288.0,
+          "link_click": 1135.0,
+          "offsite_search_add_meta_leads": 288.0,
+          "page_engagement": 29952.0,
+          "landing_page_view": 151.0,
+          "omni_landing_page_view": 151.0,
+          "onsite_conversion.total_messaging_connection": 3.0,
+          "onsite_conversion.post_unlike": 30.0,
+          "post_engagement": 29952.0,
+          "post_interaction_gross": 1399.0,
+          "comment": 21.0,
+          "post_interaction_net": 1429.0,
+          "onsite_conversion.messaging_first_reply": 3.0,
+          "post": 21.0,
+          "onsite_conversion.post_save": 37.0,
+          "onsite_conversion.post_net_comment": 21.0,
+          "onsite_conversion.post_net_save": 37.0,
+          "onsite_conversion.post_net_like": 1290.0,
+          "lead": 288.0,
+          "offsite_content_view_add_meta_leads": 288.0,
+          "onsite_conversion.messaging_conversation_started_7d": 5.0,
+          "onsite_conversion.messaging_conversation_replied_7d": 1.0,
+          "onsite_conversion.lead_grouped": 288.0,
+          "post_reaction": 1320.0,
+          "video_view": 27418.0
+        },
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 4,
+        "adsets": 5,
+        "ads": 24
+      },
+      "ai_summary": "RESUMO EXECUTIVO  \nNo último período de 30 dias, a conta de anúncios gerou um total de gastos de R$ 1.790,11. Quatro campanhas estão ativas, com foco em cadastros, mensagens e vendas. A performance geral demonstra um custo razoável por resultado, mas com oportunidades identificadas para otimização.\n\nKPIS PRINCIPAIS  \n- Gasto total: R$ 1.790,11  \n- Impressões: 153.247  \n- Alcance: 109.240  \n- Cliques: 2.941  \n- CTR: 1,92%  \n- Custo por clique (CPC): R$ 0,61  \n- Custo por mil impressões (CPM): R$ 11,68  \n\nRESULTADOS POR OBJETIVO  \nMensagens:  \n- Resultados: 11  \n- Custo por resultado: R$ 162,74  \n\nCadastros:  \n- Resultados: 1.440  \n- Custo por resultado: R$ 1,24  \n\nVendas:  \n- Resultados: 0  \n- Custo por resultado: Não aplicável, pois não houve vendas.  \n\nÉ evidente que a campanha de Cadastros é a que traz o maior volume de resultados, enquanto as campanhas de mensagens e vendas estão com performance abaixo do esperado.\n\nCAMPANHAS ATIVAS NO PERÍODO  \nAtualmente, há quatro campanhas ativas: duas focadas em cadastros, uma em vendas e uma em engajamento. Todas estão em operação, o que apresenta um bom potencial para exploração adicional desses públicos.\n\nDEMOGRAFIA  \nNão foram fornecidos dados demográficos específicos, mas o alto número de leads sugere uma segmentação relativamente eficaz.\n\nRISCOS  \n- Baixo número de vendas (0) sugere que a campanha de vendas não está performando como esperado, o que pode afetar o ROI.  \n- Os custos elevados por mensagens podem impactar o desempenho financeiro a longo prazo se nothing for feito para otimizar.\n\nOPORTUNIDADES  \n- Explorar optimizações nas campanhas de mensagens e vendas.  \n- Reavaliar a copy e o direcionamento da campanha voltada para vendas com o objetivo de gerar pelo menos algum retorno em compras.  \n- Aumentar o investimento nas campanhas de cadastros que estão gerando resultados positivos a um custo baixo por resultado.\n\nPRÓXIMOS PASSOS  \n- Monitorar de perto o desempenho das campanhas de vendas e mensagens para identificar parâmetros que possam ser ajustados.  \n- Considerar a possibilidade de redistribuir orçamento para as campanhas de cadastros, que demonstram maior eficiência.  \n- Realizar testes A/B em anúncios da campanha de vendas para verificar quais criativos podem melhorar a taxa de conversão.",
+      "ai_model": "gpt-4o-mini",
+      "ai_provider": "openai",
+      "ai_cost_usd": 0.000593
+    },
+    {
+      "ts": 1779740862,
+      "date_preset": "last_7d",
+      "report_summary": {
+        "active_campaigns": 0,
+        "paused_campaigns": 0,
+        "objective_mix": {}
+      },
+      "totals": {
+        "spend": 0.0,
+        "impressions": 0,
+        "reach": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": 0,
+        "cpm": 0,
+        "actions": {},
+        "action_values": {},
+        "cost_per_action_type": [],
+        "purchase_roas": [],
+        "website_purchase_roas": []
+      },
+      "counts": {
+        "campaigns": 0,
+        "adsets": 0,
+        "ads": 0
+      },
+      "ai_summary": "RESUMO EXECUTIVO  \nNos últimos sete dias, não foram registradas atividades em campanhas na conta analisada. Todos os indicadores apresentam valor zero, refletindo a ausência total de gastos, impressões, cliques ou qualquer tipo de engajamento.\n\nKPIS PRINCIPAIS  \nOs KPIs principais não podem ser avaliados devido à ausência de interações. Os valores de spend, impressions, clicks e demais métricas são iguais a zero. Portanto, não há dados sobre custo por resultado ou ROAS.\n\nCAMPANHAS ATIVAS NO PERÍODO  \nNão há campanhas ativas nem pausadas. O total de campanhas registradas na conta é zero, o que evidencia a falta de atividade publicitária.\n\nRESULTADOS POR OBJETIVO  \nNenhum resultado pode ser apresentado uma vez que não existem objetivos definidos, nem campanhas que gerassem mensagens, cadastros ou vendas.\n\nDEMOGRAFIA  \nNão há informações disponíveis sobre demografia, já que não foram geradas interações que permitissem a coleta de dados demográficos.\n\nRISCOS  \nA ausência de campanhas pode indicar riscos significativos, como perda de visibilidade no mercado e potencial queda nas vendas futuras. Além disso, a falta de dados pode dificultar a análise de performance anterior.\n\nOPORTUNIDADES  \nRecomenda-se a criação ou reativação de campanhas para aproveitar o potencial de captação de leads e vendas. O desenvolvimento de estratégias para aumentar a presença digital é crucial.\n\nPRÓXIMOS PASSOS  \nÉ necessário revisar a estratégia de mídia paga, estabelecendo campanhas focadas em mensagens, cadastros e vendas. A definição clara de objetivos e a implementação de ações publicitárias são essenciais para retomar a geração de resultados.",
+      "ai_model": "gpt-4o-mini",
+      "ai_provider": "openai",
+      "ai_cost_usd": 0.000295
+    }
+  ]
+}
